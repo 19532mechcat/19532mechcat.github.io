@@ -1,2 +1,1215 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[834],{89253:function(e,t,n){Promise.resolve().then(n.bind(n,93134))},25628:function(e,t,n){"use strict";n.d(t,{V:function(){return r},l:function(){return useLayoutContext}});var i=n(58036);let r=(0,i.createContext)({scrollBlocked:{current:!1}}),useLayoutContext=()=>(0,i.useContext)(r)},93134:function(e,t,n){"use strict";n.r(t),n.d(t,{NewsClient:function(){return NewsClient}});var i=n(84548),r=n(58036),s=n(18315),a=n(40156),c=n.n(a),o=n(34548),A=n(24216),l=n.n(A),d=n(10402),m=n(91168),u=n(25628),f=n(9737),h=n(50610),g=n(29769),v=n(16928),_=n(70165),x=n(15184),E=n(62841),p=n(19174),b=n(81087),N=n(87273),w=n.n(N);let C=["LATEST","ANNOUNCEMENT","ACTIVITY","NEWS"],I=(0,r.createContext)({loading:!1,bannerList:[],data:{LATEST:{list:[],map:{},total:0,end:!0},ANNOUNCEMENT:{list:[],map:{},total:0,end:!0},ACTIVITY:{list:[],map:{},total:0,end:!0},NEWS:{list:[],map:{},total:0,end:!0}},fetchData:b.ZT,category:{state:"LATEST",setState:b.ZT},page:{state:1,setState:b.ZT}}),NewsClient=e=>{let{initialData:t,bannerData:n}=e,[s,a]=(0,r.useState)(t),[c,A]=(0,r.useState)(C[0]),[l,d]=(0,r.useState)(1),[m,u]=(0,r.useState)(!1),f=(0,x.f)(async(e,t)=>{try{u(!0);let n=await fetch("/api/news?category=".concat(e,"&page=").concat(t));if(u(!1),n.status>=200&&n.status<400){let i=await n.json();if(0===i.code&&i.data){let n=i.data;a(i=>({...i,[e]:{list:(0,o.Z)([...i[e].list,...n.list],e=>e.cid),map:{...i[e].map,[t]:n.list},total:n.total,end:n.end}}))}else console.error(i.msg)}else console.log(n.statusText)}catch(e){u(!1),e instanceof Error&&console.error((null==e?void 0:e.message)||"Network Error.")}}),h=(0,_.R)();return(0,r.useEffect)(()=>{d(1)},[c]),(0,i.jsx)(I.Provider,{value:{loading:m,data:s,fetchData:f,bannerList:n,category:{state:c,setState:A},page:{state:l,setState:d}},children:(0,i.jsx)("div",{className:w().container,children:h?"portrait"===h?(0,i.jsx)(Portrait,{}):(0,i.jsx)(Landscape,{}):null})})},Landscape=()=>{let{category:e,data:t,page:n}=(0,r.useContext)(I),a=Math.ceil(t[e.state].total/6),c=(0,v.x)(),{scrollBlocked:o}=(0,u.l)();return(0,i.jsxs)("div",{className:w().containerLandscape,children:[(0,i.jsx)(h.I,{nodeRef:c,state:e.state,children:(0,i.jsx)(j,{ref:c,category:e.state})}),(0,i.jsxs)("div",{className:w().pageInfo,children:[(0,i.jsxs)("div",{className:w().titleRow,children:[(0,i.jsx)("div",{className:w().title,children:p.f.pageNews.pageTitle}),(0,i.jsx)("div",{className:w().slogan,children:"INFO"}),(0,i.jsxs)("div",{className:w().pagination,children:[(0,i.jsx)(g.id,{className:w().arrow}),(0,i.jsx)("div",{className:w().cur,children:n.state<10?"0"+n.state:n.state}),(0,i.jsx)("div",{className:w().slash,children:"\\"}),(0,i.jsx)("div",{className:w().max,children:a<10?"0"+a:a}),(0,i.jsx)(g.f2,{className:w().arrow})]})]}),(0,i.jsx)("div",{className:w().tabList,children:C.map(t=>(0,i.jsxs)("div",{className:(0,s.W)(w().tabItem,e.state===t&&w().active),onClick:()=>e.setState(t),children:[(0,i.jsx)("div",{className:w().icon,children:(0,i.jsx)(g.PZ,{})}),(0,i.jsx)("span",{children:p.f.info.category[t]})]},t))}),(0,i.jsx)("div",{className:w().buttonRow,children:(0,i.jsxs)(l(),{className:(0,s.W)(w().button,w().returnBtn),href:"/",onClick:()=>{o.current=!0},prefetch:!1,children:[(0,i.jsx)("div",{className:w().icon,children:(0,i.jsx)(g.PZ,{})}),(0,i.jsxs)("div",{className:w().text,children:[(0,i.jsx)("div",{className:w().main,children:p.f.common.backToHome}),(0,i.jsx)("div",{className:w().sub,children:"GO BACK"})]})]})})]})]})},j=(0,r.forwardRef)((e,t)=>{let{category:s}=e,{loading:a,data:o,fetchData:A,page:d}=(0,r.useContext)(I),{list:m,total:u,end:h}=o[s],g=(0,r.useRef)(m.length);g.current=m.length;let _=(0,r.useRef)(h);_.current=h;let x=(0,v.x)();(0,r.useEffect)(()=>{let e=x.current,listener=e=>{e.stopPropagation()};return e.addEventListener("wheel",listener,{passive:!1}),()=>{e.removeEventListener("wheel",listener)}},[null]),(0,r.useEffect)(()=>{let e=x.current,listener=e=>{e.stopPropagation()};return e.addEventListener("touchmove",listener,{passive:!1}),()=>{e.removeEventListener("touchmove",listener)}},[null]);let[E,b]=(0,r.useState)([0,4]);(0,r.useEffect)(()=>{let e=x.current;e.style.overflowY="scroll",e.style.marginRight="".concat(-window.__SCROLLBAR_WIDTH,"px");let listener=()=>{let t=window.__ROOT_FONT_SIZE||16,n=e.scrollTop/t,i=e.clientHeight/t,r=e.scrollHeight/t;r-i-n<=20&&!_.current&&A(s,Math.floor(g.current/6)+1);let a=Math.floor((n-3)/17),c=a+Math.ceil(i/17);b(e=>e[0]!==a||e[1]!==c?[a,c]:e),d.setState(1+Math.floor((Math.floor(n/17)+2)/3))};return e.addEventListener("scroll",listener),()=>{e.removeEventListener("scroll",listener)}},[null]);let N=(0,v.x)();return(0,i.jsxs)("div",{ref:t,className:w().scrollerWrapper,children:[(0,i.jsxs)("div",{ref:x,className:w().scroller,children:[(0,i.jsx)("div",{ref:N,className:w().list,style:{minHeight:17*Math.ceil(o[s].list.length/2)+6+"rem"},children:o[s].list.map((e,t)=>Math.floor(t/2)<E[0]||Math.floor(t/2)>E[1]?null:(0,i.jsxs)(l(),{className:w().item,title:e.title,href:"/news/".concat(e.cid),style:{transform:"translateY(".concat(17*Math.floor(t/2),"rem)")},prefetch:!1,children:[(0,i.jsx)("div",{className:w().cover,children:(0,i.jsx)("img",{className:w().img,src:e.cover||({0:n(74122).Z.src,1:n(54795).Z.src,2:n(35186).Z.src})[e.tab]})}),(0,i.jsxs)("div",{className:w().itemInfo,children:[(0,i.jsx)("div",{className:w().cate,children:p.f.info.category[(0,f.o)(e.tab)]}),(0,i.jsxs)("div",{className:w().dateAndTitle,children:[(0,i.jsx)("div",{className:w().date,children:c().unix(e.displayTime).format("YYYY // MM / DD")}),(0,i.jsx)("div",{className:w().title,children:e.title})]})]})]},e.cid))}),h?(0,i.jsx)("div",{className:w().endOfList,children:"— END —"}):null]}),a?(0,i.jsx)("div",{className:w().loadingText,children:"LOADING..."}):null]})});j.displayName="Scroller";let Portrait=()=>{let{loading:e,bannerList:t,category:n,data:a,fetchData:o,page:A}=(0,r.useContext)(I),_=Math.ceil(a[n.state].total/6),x=(0,v.x)();(0,r.useEffect)(()=>{a[n.state].map[A.state]||o(n.state,A.state)},[n.state,A.state]);let{scrollBlocked:b}=(0,u.l)();return(0,i.jsxs)("div",{className:w().containerPortrait,children:[(0,i.jsxs)("div",{className:w()._container,children:[(0,i.jsx)("div",{className:w().bannerContainer,children:(0,i.jsx)(m.tq,{grabCursor:!0,className:w().swiper,modules:[d.pt,d.LW],autoplay:{delay:5e3},scrollbar:{el:".".concat(w().bannerScrollBar),enabled:!0,draggable:!0,hide:!1},children:t.map((e,t)=>(0,i.jsx)(m.o5,{children:(0,i.jsx)("a",{href:e.link.replace(p.f.links.host,"/"),target:"_blank",onClick:()=>{E.t.event("click",{target:"banner:".concat(e.link)})},children:(0,i.jsx)("img",{className:w().img,src:e.mobileCover})})},t))})}),(0,i.jsx)("div",{className:w().bannerScrollBarContainer,children:(0,i.jsx)("div",{className:w().bannerScrollBar})}),(0,i.jsx)("div",{className:w().tabList,children:C.map(e=>(0,i.jsxs)("div",{className:(0,s.W)(w().tabItem,n.state===e&&w().active),onClick:()=>n.setState(e),children:[(0,i.jsx)("span",{children:p.f.info.category[e]}),(0,i.jsx)("div",{className:w().icon,children:(0,i.jsx)(g.bI,{})})]},e))}),(0,i.jsx)(h.I,{state:"".concat(n.state,":").concat(A.state,":").concat(e),dir:"hrz",nodeRef:x,children:(0,i.jsx)("div",{className:w().newsList,ref:x,children:e?(0,i.jsx)("div",{className:w().loadingText,children:"LOADING..."}):(a[n.state].map[A.state]||[]).map(e=>(0,i.jsxs)(l(),{className:w().newsItem,href:"/news/".concat(e.cid),prefetch:!1,children:[(0,i.jsx)("div",{className:w().cate,children:p.f.info.category[(0,f.o)(e.tab)]}),(0,i.jsxs)("div",{className:w().newsInfo,children:[(0,i.jsx)("div",{className:w().date,children:c().unix(e.displayTime).format("YYYY // MM / DD")}),(0,i.jsx)("div",{className:w().newsTitle,children:e.title})]})]},e.cid))})}),(0,i.jsxs)("div",{className:w().pagination,children:[(0,i.jsx)("div",{className:(0,s.W)(w().arrow,1===A.state&&w().disabled),onClick:()=>A.setState(Math.max(1,A.state-1)),children:(0,i.jsx)(g.PZ,{})}),(0,i.jsx)("div",{className:w().cur,children:A.state<10?"0"+A.state:A.state}),(0,i.jsx)("div",{className:w().slash,children:"/"}),(0,i.jsx)("div",{className:w().max,children:_<10?"0"+_:_}),(0,i.jsx)("div",{className:(0,s.W)(w().arrow,A.state===_&&w().disabled),onClick:()=>A.setState(Math.min(_,A.state+1)),children:(0,i.jsx)(g.bI,{})})]})]}),(0,i.jsx)("div",{className:w().buttonRow,children:(0,i.jsxs)(l(),{className:(0,s.W)(w().button,w().returnBtn),href:"/",onClick:()=>{b.current=!0},prefetch:!1,children:[(0,i.jsx)("div",{className:w().icon,children:(0,i.jsx)(g.PZ,{})}),(0,i.jsxs)("div",{className:w().text,children:[(0,i.jsx)("div",{className:w().main,children:p.f.common.backToHome}),(0,i.jsx)("div",{className:w().sub,children:"GO BACK"})]})]})})]})}},9737:function(e,t,n){"use strict";n.d(t,{D:function(){return i},o:function(){return mapCategoryToCategoryString}});let i=["LATEST","ANNOUNCEMENT","ACTIVITY","NEWS"],mapCategoryToCategoryString=e=>({0:"ANNOUNCEMENT",1:"ACTIVITY",2:"NEWS"})[e]||"LATEST"},50610:function(e,t,n){"use strict";n.d(t,{I:function(){return CommonTransition}});var i=n(84548);n(58036);var r=n(65568),s=n(49246),a=n(18315),c=n(16571),o=n.n(c);let CommonTransition=e=>{let{state:t,dir:n,reverse:c,slow:A,nodeRef:l,children:d}=e;return(0,i.jsx)(r.Z,{children:(0,i.jsx)(s.Z,{nodeRef:l,addEndListener:e=>{var t;return null===(t=l.current)||void 0===t?void 0:t.addEventListener("transitionend",e,!1)},classNames:n?"hrz"===n?{enter:c?o().commonHrzEnterReverse:o().commonHrzEnter,enterActive:(0,a.Z)(c?o().commonHrzEnterActiveReverse:o().commonHrzEnterActive,A&&o().slow),exit:c?o().commonHrzExitReverse:o().commonHrzExit,exitActive:(0,a.Z)(c?o().commonHrzExitActiveReverse:o().commonHrzExitActive,A&&o().slow)}:{enter:c?o().commonVtcEnterReverse:o().commonVtcEnter,enterActive:(0,a.Z)(c?o().commonVtcEnterActiveReverse:o().commonVtcEnterActive,A&&o().slow),exit:c?o().commonVtcExitReverse:o().commonVtcExit,exitActive:(0,a.Z)(c?o().commonVtcExitActiveReverse:o().commonVtcExitActive,A&&o().slow)}:{enter:o().commonEnter,enterActive:(0,a.Z)(o().commonEnterActive,A&&o().slow),exit:o().commonExit,exitActive:(0,a.Z)(o().commonExitActive,A&&o().slow)},unmountOnExit:!0,children:d},t)})}},29769:function(e,t,n){"use strict";n.d(t,{PZ:function(){return IconArrowLeftSvg},bI:function(){return IconArrowRightSvg},f2:function(){return IconArrowDownSvg},id:function(){return IconArrowUpSvg}});var i=n(84548);n(58036);var r=n(83961);let s="0 0 7 15",IconArrowRightSvg=e=>{let{children:t,...n}=e;return(0,i.jsx)("svg",{viewBox:s,...n,children:(0,i.jsx)("use",{xlinkHref:"#".concat(r.b.iconArrow)})})},IconArrowLeftSvg=e=>{let{children:t,style:n={},...a}=e;return(0,i.jsx)("svg",{viewBox:s,...a,style:{...n,transform:"rotate(180deg)"},children:(0,i.jsx)("use",{xlinkHref:"#".concat(r.b.iconArrow)})})},IconArrowUpSvg=e=>{let{children:t,style:n={},...a}=e;return(0,i.jsx)("svg",{viewBox:s,...a,style:{...n,transform:"rotate(-90deg)"},children:(0,i.jsx)("use",{xlinkHref:"#".concat(r.b.iconArrow)})})},IconArrowDownSvg=e=>{let{children:t,style:n={},...a}=e;return(0,i.jsx)("svg",{viewBox:s,...a,style:{...n,transform:"rotate(90deg)"},children:(0,i.jsx)("use",{xlinkHref:"#".concat(r.b.iconArrow)})})}},83961:function(e,t,n){"use strict";n.d(t,{b:function(){return i}}),n(84548);let i={titleArknights:"svg_def-title_arknights",copyrightMini:"svg_def-copyright_mini",iconArrow:"svg_def-icon_arrow",iconArrowHrz:"svg_def-icon_arrow_hrz",iconDblArrow:"svg_def-icon_dblArrow",iconUser:"svg_def-icon_user",iconSound:"svg_def-icon_sound",iconVoice:"svg_def-icon_voice",iconPlayBtn:"svg_def-icon_play_btn",iconMiniPlayBtn:"svg_def-icon_mini_play_btn",iconMiniLinkBtn:"svg_def-icon_mini_link_btn",iconSocial:"svg_def-icon_social",iconIOS:"svg_def-icon_iOS",iconAndroid:"svg_def-icon_Android",iconTapTap:"svg_def-icon_TapTap",iconSkland:"svg_def-icon_skland",iconBilibili:"svg_def-icon_bilibili",iconWechat:"svg_def-icon_wechat",iconWeibo:"svg_def-icon_weibo",iconYouTube:"svg_def-icon_youtube",iconDiscord:"svg_def-icon_discord",iconFacebook:"svg_def-icon_facebook",iconElitePhase0:"svg_def-elite_phase_0",iconElitePhase1:"svg_def-elite_phase_1",iconElitePhase2:"svg_def-elite_phase_2",iconHanger:"svg_def-hanger",iconHammer:"svg_def-hammer",logoRhodesIsland:"svg_def-logo_rhodes_island"}},16928:function(e,t,n){"use strict";n.d(t,{x:function(){return useElemRef}});var i=n(58036);let useElemRef=()=>(0,i.useRef)(null)},70165:function(e,t,n){"use strict";n.d(t,{R:function(){return useOrientation}});var i=n(58036),r=n(31903);let useOrientation=()=>{let[e,t]=(0,i.useState)(null);return(0,r.a)(()=>{t(window.innerWidth>=window.innerHeight?"landscape":"portrait")}),e}},31903:function(e,t,n){"use strict";n.d(t,{a:function(){return useResize}});var i=n(58036),r=n(45391);let s=[];window.addEventListener("resize",()=>{for(let e of s)e()});let useResize=function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[null];(0,i.useEffect)(()=>{e();let t=(0,r.Z)(e,100,{leading:!1,trailing:!0});return s.push(t),()=>{let e=s.indexOf(t);e>=0&&s.splice(e,1)}},t)}},15184:function(e,t,n){"use strict";n.d(t,{f:function(){return useThrottle}});var i=n(58036);let useThrottle=e=>{let t=(0,i.useRef)(!1),n=(0,i.useCallback)(e=>async function(){for(var n=arguments.length,i=Array(n),r=0;r<n;r++)i[r]=arguments[r];if(!t.current){t.current=!0;try{let n=await e(...i);return t.current=!1,n}catch(e){throw t.current=!1,e}}},[null]);return n(e)}},62841:function(e,t,n){"use strict";n.d(t,{M:function(){return s},t:function(){return a}});var i=n(51844),r=n(89217);let s=(0,i.z)(r.L.sdk.src,{etl:{domain:"arknights",sub_domain:"official"}}),a={event(){for(var e=arguments.length,t=Array(e),i=0;i<e;i++)t[i]=arguments[i];let[r,a]=t;Promise.all([n.e(13),n.e(979),n.e(24),n.e(710)]).then(n.bind(n,30710)).then(e=>{let{adapter:t}=e;s(e=>{e.ETL.event(r,{...a,domain:"arknights",sub_domain:"official",source:t.source.from})})})}}},19174:function(e,t,n){"use strict";n.d(t,{f:function(){return i}});let i={locale:"zh-cn",links:{host:"https://ak.hypergryph.com/",userCenter:"https://ak.hypergryph.com/user/",csCenter:"https://customer-service.hypergryph.com/ak",msr:"https://monster-siren.hypergryph.com/",animeSite:"https://ak.hypergryph.com/anime/",comicSite:"https://comic.hypergryph.com/terra-historicus/"},document:{title:"明日方舟 - Arknights",subtitle:{dynamicCompile:"干员动态集录 - 明日方舟",dynamicFurn:"互动家具 - 明日方舟",video:"视频列表 - 明日方舟",news:"情报中心 - 明日方舟",commonSuffix:" - 明日方舟"},description:"《明日方舟》是一款魔物主题的策略手游。在游戏中，玩家将管理一艘满载“ 魔物干员”的方舟，为调查来源神秘的矿石灾难而踏上旅途。在这个宽广而危机四伏的世界中，你或许会看到废土中的城市废墟，或许会看到仿若幻境的亚人国度，或许会遭遇无法解读的神秘，或许参与无比残酷的战争。在有关幻想与异种生命的世界中，体验史诗与想象，情感与牵绊！",keywords:["明日方舟","明日方舟官网","明日方舟手游","二次元","明日方舟Arknights","魔物娘","战棋","策略","塔防","塔防RPG","Arknights","人外","Monster"],favicon:"https://web.hycdn.cn/favicon.ico"},common:{goBack:"返回",backToList:"返回列表",backToHome:"返回首页",readMore:"更多情报",viewDetail:"查看详情",retry:"重试",wechatQrcodeTip:"微信扫码关注公众号"},download:{qrcode:"扫码下载"},userPanel:{pleaseLogin:"请先登录您的账号。",welcomeDoctor:"欢迎回来，博士。",idle:"暂无待处理工作。",actions:{customerService:"客服中心",login:"立即登录",register:"前往注册",userCenter:"个人中心",logout:"登出"}},sectionTitle:{index:"首页",information:"情报",operator:"干员",world:"设定",media:"泰拉万象",more:"更多内容",customerService:"客服中心"},info:{category:{LATEST:"最新",ANNOUNCEMENT:"公告",ACTIVITY:"活动",NEWS:"新闻"}},char:{infoMap:{B003:{name:"凯尔希",codename:"KAL'TSIT",intro:"罗德岛最高管理者之一，阿米娅的直接辅导者。\n罗德岛医疗部门的总负责人。\n作为罗德岛的老成员，凯尔希医生是在阿米娅背后最稳固的援护者。",voiceActor:{cn:"刘雪",ja:"日笠阳子"}},R001:{name:"阿米娅",codename:"AMIYA",intro:"罗德岛的公开领袖，在内部拥有最高执行权。虽然，从外表上看起来仅仅是个不成熟的少女，实际上，她却是深受大家信任的合格的领袖。现在，阿米娅正带领着罗德岛，为了感染者的未来，为了让这片大地挣脱矿石病的阴霾而不懈努力。",voiceActor:{cn:"陶典",ja:"黑泽朋世"}},LM04:{name:"陈",codename:"CH'EN",intro:"陈，龙门高级警司，龙门近卫局特别督查组组长，毕业于维多利亚皇家近卫学校，成绩优异，表现突出。在龙门近卫局供职期间，力主取缔龙门境内非法活动，对抗暴力犯罪和有组织犯罪，追缉武装逃犯与国际重犯等行动，并取得多项重大成果。\n现作为特别人员协助罗德岛行动，并为现场提供战术指挥支援。",voiceActor:{cn:"虫虫",ja:"石上静香"}},PL02:{name:"德克萨斯",codename:"TEXAS",intro:"企鹅物流员工，单兵作战能力出类拔萃。\n于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛的多项行动提供协助。",voiceActor:{cn:"杨梦露",ja:"田所梓"}},PL03:{name:"能天使",codename:"EXUSIAI",intro:"能天使，拉特兰公民，适用拉特兰一至十三项公民权益。企鹅物流公司成员。从事秘密联络，武装押运等非公开活动，推测身份：信使。于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛多项行动提供协助。",voiceActor:{cn:"蔡书瑾",ja:"石见舞菜香"}},RL04:{name:"白面鸮",codename:"PTILOPSIS",intro:"白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",voiceActor:{cn:"龟娘",ja:"金元寿子"}}}},world:{infoMap:{originiums:{name:"源石",nameEn:"ORIGINIUMS",intro:"大地被起因不明的天灾四处肆虐，经由天灾席卷过的土地上出现了大量的神秘矿物——“源石”。依赖于技术的进步，源石蕴含的能量投入工业后使得文明顺利迈入现代，与此同时，源石本身也催生出“感染者”的存在。"},originium_arts:{name:"源石技艺",nameEn:"ORIGINIUM ARTS",intro:"源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。源石技艺所运用的能源，一般被认为来自于源石本身。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"},reunion:{name:"整合运动",nameEn:"REUNION",intro:"无种族立场，极端排外的感染者组织。他们宣称“感染者应对自己的身份感到骄傲，积极去获取并使用属于自己的力量”。试图用最原始的手段去争夺世界的公正。以某座被摧毁的伟大城市为开端，医疗机构“罗德岛”的突然介入，令整个事态向着未知发展。"},infected:{name:"感染者",nameEn:"INFECTED",intro:"被源石所感染的人。理论致死率100% ，死亡时存在扩散传染性以及潜在危险能力，是各国隔离驱逐的目标。长久以来，没人告诉他们该如何渡过余生，如今伴随着一位颠覆者的出现，越来越多的感染者被纳入一场名为“整合运动”的反抗浪潮。"},nomadic_city:{name:"移动城邦",nameEn:"NOMADIC CITY",intro:"建造在可移动设备上的城市。频繁发生且破坏力巨大的天灾，迫使几乎所有的国家，都需要采用定期迁移家园与聚落的方式进行躲避。而移动城市，正是在这种需求下慢慢诞生的。人们在迁徙的过程中，尝试将建筑和种种装置安设在移动设备之上，并不断地扩大载具的规模。在文明与技术的演变之下，人们最终创造出了十分庞大的移动城市"},rhodes_island:{name:"罗德岛",nameEn:"RHODES ISLAND",intro:"罗德岛制药公司作为感染者问题专家，聘用感染者，深入危险地区，通过种种手段，已经成功解决了数起感染者引发的事件。而今，他们将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻，你的决策将决定罗德岛的方向。"}}},media:{infoMap:{"ABOUT TERRA":{title:"泰拉万象"},"MONSTER SIREN":{title:"塞壬唱片",desc:"一个已知或未知的世界"},GALLERY:{title:"游戏图集",desc:"节事回顾"},FURNITURE:{title:"家具图鉴",desc:"互动家具展示"},OPERATOR:{title:"干员展示",desc:"干员动态集录"},VIDEO:{title:"视频展示",desc:"视频展示"}},videoCategory:{version_pv:"版本PV",cg_animation:"CG动画",terra_exploration:"泰拉探索",special:"特别映像",operator_pv:"干员PV"},tip:"请选择您要查看的内容"},more:{infoMap:{integrated_strategies:{name:"集成战略"},reclamation_algorithm:{name:"生息演算"},animation:{name:"衍生动画"},terra_historicus:{name:"泰拉记事社"}},themeActivity:{website:"活动主题网站"}},pageDynamicCompile:{pageTitle:"干员动态集录",detailPageTitle:"动态动作预览",typeAll:"综合",typePromotion:"干员晋升",typeSkin:"干员时装"},pageDynamicFurn:{pageTitle:"互动家具",detailPageTitle:"互动家具展示"},pageNews:{pageTitle:"情报中心"},pageVideo:{pageTitle:"视频列表"},msg:{videoFormatNotSupported:"浏览器不支持播放，请更换浏览器后重试",protocolLoadFailed:"协议内容加载失败，请稍后重试"}}},81087:function(e,t,n){"use strict";n.d(t,{s2:function(){return alter},gK:function(){return r},mI:function(){return isLandscape},Fq:function(){return isMobileDevice},s$:function(){return i},ZT:function(){return noop}});let i=!1,noop=()=>{},alter=e=>!e,isMobileDevice=()=>void 0!==document.body.ontouchstart,isLandscape=()=>window.innerWidth>window.innerHeight,r="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="},87273:function(e){e.exports={container:"_3195bc2c",containerLandscape:"_a54368c1",scrollerWrapper:"_7667358c",loadingText:"_8c3fa1d2",flashing:"_1eb0f771",scroller:"_272521bc",list:"_507ac726",item:"_aa8c4091",cover:"_d0f0a88a",img:"_ad0e4cf9",tip:"_72e09131",text:"_88d2dcc8",icon:"_6c1bd713",itemInfo:"_b7bb77e7",cate:"_555571b7",dateAndTitle:"_61c88ddf",date:"_59a08c8a",title:"_1b88147d",endOfList:"_60d5dbbb",pageInfo:"_fa5f01f0",titleRow:"_924b0aea",slogan:"_c855f482",pagination:"_1f923c24",arrow:"_752b0018",slash:"_7ed659e0",cur:"_3aef8f91",max:"_1024e139",tabList:"_6d08ebcc",tabItem:"_2f4a7684",active:"_005db7de",buttonRow:"_7d58a020",button:"_81561f87",main:"_c89373ce",sub:"_c98619d8",returnBtn:"_7740aadd",containerPortrait:"_0acda780",_container:"_10bd85ba",bannerContainer:"_b3e5d04d",swiper:"_245316da",imgWrapper:"_7b8cb6a2",bannerScrollBarContainer:"_9a6e7e96",bannerScrollBar:"_f9b8521b",newsList:"_5db1183d",newsItem:"_8fd7f2e0",newsInfo:"_4cacca44",newsTitle:"_15bbc878",disabled:"_50b4d956"}},16571:function(e){e.exports={commonEnter:"_eb4b54cf",commonEnterActive:"_1c6ab7b0",slow:"_8f9f5cb8",commonExit:"_e78fd8bb",commonExitActive:"_755edefa",commonVtcEnter:"_51d426e8",commonVtcEnterActive:"_6fcaf6bd",commonVtcExit:"_c351f654",commonVtcExitActive:"_4a078e72",commonVtcEnterReverse:"_f19ce370",commonVtcEnterActiveReverse:"_6784e4f3",commonVtcExitReverse:"_9b585686",commonVtcExitActiveReverse:"_23c76a64",commonHrzEnter:"_0d63f511",commonHrzEnterActive:"_514d8ddc",commonHrzExit:"_a99f32fc",commonHrzExitActive:"_f4564e83",commonHrzEnterReverse:"_e9263d6c",commonHrzEnterActiveReverse:"_494f9d49",commonHrzExitReverse:"_849e29fe",commonHrzExitActiveReverse:"_f6b2e0f9"}},54795:function(e,t){"use strict";t.Z={src:"https://web.hycdn.cn/arknights/official/_next/static/media/ACTIVITY.c48956ee.jpg",height:158,width:613,blurDataURL:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAIACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAAAkQof/8QAHRAAAAUFAAAAAAAAAAAAAAAAAAECAxEEBSFBkv/aAAgBAQABPwBebvVzpgo5H//EABYRAQEBAAAAAAAAAAAAAAAAAAEAMv/aAAgBAgEBPwAyX//EABgRAAIDAAAAAAAAAAAAAAAAAAABAjKB/9oACAEDAQE/AHeeH//Z",blurWidth:8,blurHeight:2}},74122:function(e,t){"use strict";t.Z={src:"https://web.hycdn.cn/arknights/official/_next/static/media/ANNOUNCEMENT.29aad141.jpg",height:158,width:613,blurDataURL:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAIACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABQEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAAAiBQ//8QAGRABAAIDAAAAAAAAAAAAAAAAAQACAyGC/9oACAEBAAE/AM9rLcVQNHM//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAy/9oACAECAQE/ADJf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECMoH/2gAIAQMBAT8Ad5Yf/9k=",blurWidth:8,blurHeight:2}},35186:function(e,t){"use strict";t.Z={src:"https://web.hycdn.cn/arknights/official/_next/static/media/NEWS.b39a5f6b.jpg",height:158,width:613,blurDataURL:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAIACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAAAkgof/8QAHBAAAQMFAAAAAAAAAAAAAAAAAwABEQQFIUGS/9oACAEBAAE/ACZvFXOgNHK//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAy/9oACAECAQE/ADJf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECMoH/2gAIAQMBAT8Ad54f/9k=",blurWidth:8,blurHeight:2}},71480:function(e,t){"use strict";t.Z=function(){}},34548:function(e,t,n){"use strict";n.d(t,{Z:function(){return lodash_es_uniqBy}});var i=n(7009),r=n(73576),_baseFindIndex=function(e,t,n,i){for(var r=e.length,s=n+(i?1:-1);i?s--:++s<r;)if(t(e[s],s,e))return s;return -1},_baseIsNaN=function(e){return e!=e},_strictIndexOf=function(e,t,n){for(var i=n-1,r=e.length;++i<r;)if(e[i]===t)return i;return -1},_arrayIncludes=function(e,t){return!!(null==e?0:e.length)&&(t==t?_strictIndexOf(e,t,0):_baseFindIndex(e,_baseIsNaN,0))>-1},_arrayIncludesWith=function(e,t,n){for(var i=-1,r=null==e?0:e.length;++i<r;)if(n(t,e[i]))return!0;return!1},s=n(14658),a=n(57390),c=n(71480),o=n(59410),A=a.Z&&1/(0,o.Z)(new a.Z([,-0]))[1]==1/0?function(e){return new a.Z(e)}:c.Z,_baseUniq=function(e,t,n){var i=-1,a=_arrayIncludes,c=e.length,l=!0,d=[],m=d;if(n)l=!1,a=_arrayIncludesWith;else if(c>=200){var u=t?null:A(e);if(u)return(0,o.Z)(u);l=!1,a=s.Z,m=new r.Z}else m=t?[]:d;e:for(;++i<c;){var f=e[i],h=t?t(f):f;if(f=n||0!==f?f:0,l&&h==h){for(var g=m.length;g--;)if(m[g]===h)continue e;t&&m.push(h),d.push(f)}else a(m,h,n)||(m!==d&&m.push(h),d.push(f))}return d},lodash_es_uniqBy=function(e,t){return e&&e.length?_baseUniq(e,(0,i.Z)(t,2)):[]}}},function(e){e.O(0,[474,815,558,874,571,126,868,744],function(){return e(e.s=89253)}),_N_E=e.O()}]);
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [834],
+  {
+    89253: function (e, t, n) {
+      Promise.resolve().then(n.bind(n, 93134));
+    },
+    25628: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        V: function () {
+          return r;
+        },
+        l: function () {
+          return useLayoutContext;
+        },
+      });
+      var i = n(58036);
+      let r = (0, i.createContext)({ scrollBlocked: { current: !1 } }),
+        useLayoutContext = () => (0, i.useContext)(r);
+    },
+    93134: function (e, t, n) {
+      "use strict";
+      (n.r(t),
+        n.d(t, {
+          NewsClient: function () {
+            return NewsClient;
+          },
+        }));
+      var i = n(84548),
+        r = n(58036),
+        s = n(18315),
+        a = n(40156),
+        c = n.n(a),
+        o = n(34548),
+        A = n(24216),
+        l = n.n(A),
+        d = n(10402),
+        m = n(91168),
+        u = n(25628),
+        f = n(9737),
+        h = n(50610),
+        g = n(29769),
+        v = n(16928),
+        _ = n(70165),
+        x = n(15184),
+        E = n(62841),
+        p = n(19174),
+        b = n(81087),
+        N = n(87273),
+        w = n.n(N);
+      let C = ["LATEST", "ANNOUNCEMENT", "ACTIVITY", "NEWS"],
+        I = (0, r.createContext)({
+          loading: !1,
+          bannerList: [],
+          data: {
+            LATEST: { list: [], map: {}, total: 0, end: !0 },
+            ANNOUNCEMENT: { list: [], map: {}, total: 0, end: !0 },
+            ACTIVITY: { list: [], map: {}, total: 0, end: !0 },
+            NEWS: { list: [], map: {}, total: 0, end: !0 },
+          },
+          fetchData: b.ZT,
+          category: { state: "LATEST", setState: b.ZT },
+          page: { state: 1, setState: b.ZT },
+        }),
+        NewsClient = (e) => {
+          let { initialData: t, bannerData: n } = e,
+            [s, a] = (0, r.useState)(t),
+            [c, A] = (0, r.useState)(C[0]),
+            [l, d] = (0, r.useState)(1),
+            [m, u] = (0, r.useState)(!1),
+            f = (0, x.f)(async (e, t) => {
+              try {
+                u(!0);
+                let n = await fetch(
+                  "/api/news?category=".concat(e, "&page=").concat(t),
+                );
+                if ((u(!1), n.status >= 200 && n.status < 400)) {
+                  let i = await n.json();
+                  if (0 === i.code && i.data) {
+                    let n = i.data;
+                    a((i) => ({
+                      ...i,
+                      [e]: {
+                        list: (0, o.Z)([...i[e].list, ...n.list], (e) => e.cid),
+                        map: { ...i[e].map, [t]: n.list },
+                        total: n.total,
+                        end: n.end,
+                      },
+                    }));
+                  } else console.error(i.msg);
+                } else console.log(n.statusText);
+              } catch (e) {
+                (u(!1),
+                  e instanceof Error &&
+                    console.error(
+                      (null == e ? void 0 : e.message) || "Network Error.",
+                    ));
+              }
+            }),
+            h = (0, _.R)();
+          return (
+            (0, r.useEffect)(() => {
+              d(1);
+            }, [c]),
+            (0, i.jsx)(I.Provider, {
+              value: {
+                loading: m,
+                data: s,
+                fetchData: f,
+                bannerList: n,
+                category: { state: c, setState: A },
+                page: { state: l, setState: d },
+              },
+              children: (0, i.jsx)("div", {
+                className: w().container,
+                children: h
+                  ? "portrait" === h
+                    ? (0, i.jsx)(Portrait, {})
+                    : (0, i.jsx)(Landscape, {})
+                  : null,
+              }),
+            })
+          );
+        },
+        Landscape = () => {
+          let { category: e, data: t, page: n } = (0, r.useContext)(I),
+            a = Math.ceil(t[e.state].total / 6),
+            c = (0, v.x)(),
+            { scrollBlocked: o } = (0, u.l)();
+          return (0, i.jsxs)("div", {
+            className: w().containerLandscape,
+            children: [
+              (0, i.jsx)(h.I, {
+                nodeRef: c,
+                state: e.state,
+                children: (0, i.jsx)(j, { ref: c, category: e.state }),
+              }),
+              (0, i.jsxs)("div", {
+                className: w().pageInfo,
+                children: [
+                  (0, i.jsxs)("div", {
+                    className: w().titleRow,
+                    children: [
+                      (0, i.jsx)("div", {
+                        className: w().title,
+                        children: p.f.pageNews.pageTitle,
+                      }),
+                      (0, i.jsx)("div", {
+                        className: w().slogan,
+                        children: "INFO",
+                      }),
+                      (0, i.jsxs)("div", {
+                        className: w().pagination,
+                        children: [
+                          (0, i.jsx)(g.id, { className: w().arrow }),
+                          (0, i.jsx)("div", {
+                            className: w().cur,
+                            children: n.state < 10 ? "0" + n.state : n.state,
+                          }),
+                          (0, i.jsx)("div", {
+                            className: w().slash,
+                            children: "\\",
+                          }),
+                          (0, i.jsx)("div", {
+                            className: w().max,
+                            children: a < 10 ? "0" + a : a,
+                          }),
+                          (0, i.jsx)(g.f2, { className: w().arrow }),
+                        ],
+                      }),
+                    ],
+                  }),
+                  (0, i.jsx)("div", {
+                    className: w().tabList,
+                    children: C.map((t) =>
+                      (0, i.jsxs)(
+                        "div",
+                        {
+                          className: (0, s.W)(
+                            w().tabItem,
+                            e.state === t && w().active,
+                          ),
+                          onClick: () => e.setState(t),
+                          children: [
+                            (0, i.jsx)("div", {
+                              className: w().icon,
+                              children: (0, i.jsx)(g.PZ, {}),
+                            }),
+                            (0, i.jsx)("span", {
+                              children: p.f.info.category[t],
+                            }),
+                          ],
+                        },
+                        t,
+                      ),
+                    ),
+                  }),
+                  (0, i.jsx)("div", {
+                    className: w().buttonRow,
+                    children: (0, i.jsxs)(l(), {
+                      className: (0, s.W)(w().button, w().returnBtn),
+                      href: "/",
+                      onClick: () => {
+                        o.current = !0;
+                      },
+                      prefetch: !1,
+                      children: [
+                        (0, i.jsx)("div", {
+                          className: w().icon,
+                          children: (0, i.jsx)(g.PZ, {}),
+                        }),
+                        (0, i.jsxs)("div", {
+                          className: w().text,
+                          children: [
+                            (0, i.jsx)("div", {
+                              className: w().main,
+                              children: p.f.common.backToHome,
+                            }),
+                            (0, i.jsx)("div", {
+                              className: w().sub,
+                              children: "GO BACK",
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+            ],
+          });
+        },
+        j = (0, r.forwardRef)((e, t) => {
+          let { category: s } = e,
+            {
+              loading: a,
+              data: o,
+              fetchData: A,
+              page: d,
+            } = (0, r.useContext)(I),
+            { list: m, total: u, end: h } = o[s],
+            g = (0, r.useRef)(m.length);
+          g.current = m.length;
+          let _ = (0, r.useRef)(h);
+          _.current = h;
+          let x = (0, v.x)();
+          ((0, r.useEffect)(() => {
+            let e = x.current,
+              listener = (e) => {
+                e.stopPropagation();
+              };
+            return (
+              e.addEventListener("wheel", listener, { passive: !1 }),
+              () => {
+                e.removeEventListener("wheel", listener);
+              }
+            );
+          }, [null]),
+            (0, r.useEffect)(() => {
+              let e = x.current,
+                listener = (e) => {
+                  e.stopPropagation();
+                };
+              return (
+                e.addEventListener("touchmove", listener, { passive: !1 }),
+                () => {
+                  e.removeEventListener("touchmove", listener);
+                }
+              );
+            }, [null]));
+          let [E, b] = (0, r.useState)([0, 4]);
+          (0, r.useEffect)(() => {
+            let e = x.current;
+            ((e.style.overflowY = "scroll"),
+              (e.style.marginRight = "".concat(
+                -window.__SCROLLBAR_WIDTH,
+                "px",
+              )));
+            let listener = () => {
+              let t = window.__ROOT_FONT_SIZE || 16,
+                n = e.scrollTop / t,
+                i = e.clientHeight / t,
+                r = e.scrollHeight / t;
+              r - i - n <= 20 &&
+                !_.current &&
+                A(s, Math.floor(g.current / 6) + 1);
+              let a = Math.floor((n - 3) / 17),
+                c = a + Math.ceil(i / 17);
+              (b((e) => (e[0] !== a || e[1] !== c ? [a, c] : e)),
+                d.setState(1 + Math.floor((Math.floor(n / 17) + 2) / 3)));
+            };
+            return (
+              e.addEventListener("scroll", listener),
+              () => {
+                e.removeEventListener("scroll", listener);
+              }
+            );
+          }, [null]);
+          let N = (0, v.x)();
+          return (0, i.jsxs)("div", {
+            ref: t,
+            className: w().scrollerWrapper,
+            children: [
+              (0, i.jsxs)("div", {
+                ref: x,
+                className: w().scroller,
+                children: [
+                  (0, i.jsx)("div", {
+                    ref: N,
+                    className: w().list,
+                    style: {
+                      minHeight:
+                        17 * Math.ceil(o[s].list.length / 2) + 6 + "rem",
+                    },
+                    children: o[s].list.map((e, t) =>
+                      Math.floor(t / 2) < E[0] || Math.floor(t / 2) > E[1]
+                        ? null
+                        : (0, i.jsxs)(
+                            l(),
+                            {
+                              className: w().item,
+                              title: e.title,
+                              href: "/news/".concat(e.cid),
+                              style: {
+                                transform: "translateY(".concat(
+                                  17 * Math.floor(t / 2),
+                                  "rem)",
+                                ),
+                              },
+                              prefetch: !1,
+                              children: [
+                                (0, i.jsx)("div", {
+                                  className: w().cover,
+                                  children: (0, i.jsx)("img", {
+                                    className: w().img,
+                                    src:
+                                      e.cover ||
+                                      {
+                                        0: n(74122).Z.src,
+                                        1: n(54795).Z.src,
+                                        2: n(35186).Z.src,
+                                      }[e.tab],
+                                  }),
+                                }),
+                                (0, i.jsxs)("div", {
+                                  className: w().itemInfo,
+                                  children: [
+                                    (0, i.jsx)("div", {
+                                      className: w().cate,
+                                      children:
+                                        p.f.info.category[(0, f.o)(e.tab)],
+                                    }),
+                                    (0, i.jsxs)("div", {
+                                      className: w().dateAndTitle,
+                                      children: [
+                                        (0, i.jsx)("div", {
+                                          className: w().date,
+                                          children: c()
+                                            .unix(e.displayTime)
+                                            .format("YYYY // MM / DD"),
+                                        }),
+                                        (0, i.jsx)("div", {
+                                          className: w().title,
+                                          children: e.title,
+                                        }),
+                                      ],
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            },
+                            e.cid,
+                          ),
+                    ),
+                  }),
+                  h
+                    ? (0, i.jsx)("div", {
+                        className: w().endOfList,
+                        children: "— END —",
+                      })
+                    : null,
+                ],
+              }),
+              a
+                ? (0, i.jsx)("div", {
+                    className: w().loadingText,
+                    children: "LOADING...",
+                  })
+                : null,
+            ],
+          });
+        });
+      j.displayName = "Scroller";
+      let Portrait = () => {
+        let {
+            loading: e,
+            bannerList: t,
+            category: n,
+            data: a,
+            fetchData: o,
+            page: A,
+          } = (0, r.useContext)(I),
+          _ = Math.ceil(a[n.state].total / 6),
+          x = (0, v.x)();
+        (0, r.useEffect)(() => {
+          a[n.state].map[A.state] || o(n.state, A.state);
+        }, [n.state, A.state]);
+        let { scrollBlocked: b } = (0, u.l)();
+        return (0, i.jsxs)("div", {
+          className: w().containerPortrait,
+          children: [
+            (0, i.jsxs)("div", {
+              className: w()._container,
+              children: [
+                (0, i.jsx)("div", {
+                  className: w().bannerContainer,
+                  children: (0, i.jsx)(m.tq, {
+                    grabCursor: !0,
+                    className: w().swiper,
+                    modules: [d.pt, d.LW],
+                    autoplay: { delay: 5e3 },
+                    scrollbar: {
+                      el: ".".concat(w().bannerScrollBar),
+                      enabled: !0,
+                      draggable: !0,
+                      hide: !1,
+                    },
+                    children: t.map((e, t) =>
+                      (0, i.jsx)(
+                        m.o5,
+                        {
+                          children: (0, i.jsx)("a", {
+                            href: e.link.replace(p.f.links.host, "/"),
+                            target: "_blank",
+                            onClick: () => {
+                              E.t.event("click", {
+                                target: "banner:".concat(e.link),
+                              });
+                            },
+                            children: (0, i.jsx)("img", {
+                              className: w().img,
+                              src: e.mobileCover,
+                            }),
+                          }),
+                        },
+                        t,
+                      ),
+                    ),
+                  }),
+                }),
+                (0, i.jsx)("div", {
+                  className: w().bannerScrollBarContainer,
+                  children: (0, i.jsx)("div", {
+                    className: w().bannerScrollBar,
+                  }),
+                }),
+                (0, i.jsx)("div", {
+                  className: w().tabList,
+                  children: C.map((e) =>
+                    (0, i.jsxs)(
+                      "div",
+                      {
+                        className: (0, s.W)(
+                          w().tabItem,
+                          n.state === e && w().active,
+                        ),
+                        onClick: () => n.setState(e),
+                        children: [
+                          (0, i.jsx)("span", {
+                            children: p.f.info.category[e],
+                          }),
+                          (0, i.jsx)("div", {
+                            className: w().icon,
+                            children: (0, i.jsx)(g.bI, {}),
+                          }),
+                        ],
+                      },
+                      e,
+                    ),
+                  ),
+                }),
+                (0, i.jsx)(h.I, {
+                  state: "".concat(n.state, ":").concat(A.state, ":").concat(e),
+                  dir: "hrz",
+                  nodeRef: x,
+                  children: (0, i.jsx)("div", {
+                    className: w().newsList,
+                    ref: x,
+                    children: e
+                      ? (0, i.jsx)("div", {
+                          className: w().loadingText,
+                          children: "LOADING...",
+                        })
+                      : (a[n.state].map[A.state] || []).map((e) =>
+                          (0, i.jsxs)(
+                            l(),
+                            {
+                              className: w().newsItem,
+                              href: "/news/".concat(e.cid),
+                              prefetch: !1,
+                              children: [
+                                (0, i.jsx)("div", {
+                                  className: w().cate,
+                                  children: p.f.info.category[(0, f.o)(e.tab)],
+                                }),
+                                (0, i.jsxs)("div", {
+                                  className: w().newsInfo,
+                                  children: [
+                                    (0, i.jsx)("div", {
+                                      className: w().date,
+                                      children: c()
+                                        .unix(e.displayTime)
+                                        .format("YYYY // MM / DD"),
+                                    }),
+                                    (0, i.jsx)("div", {
+                                      className: w().newsTitle,
+                                      children: e.title,
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            },
+                            e.cid,
+                          ),
+                        ),
+                  }),
+                }),
+                (0, i.jsxs)("div", {
+                  className: w().pagination,
+                  children: [
+                    (0, i.jsx)("div", {
+                      className: (0, s.W)(
+                        w().arrow,
+                        1 === A.state && w().disabled,
+                      ),
+                      onClick: () => A.setState(Math.max(1, A.state - 1)),
+                      children: (0, i.jsx)(g.PZ, {}),
+                    }),
+                    (0, i.jsx)("div", {
+                      className: w().cur,
+                      children: A.state < 10 ? "0" + A.state : A.state,
+                    }),
+                    (0, i.jsx)("div", { className: w().slash, children: "/" }),
+                    (0, i.jsx)("div", {
+                      className: w().max,
+                      children: _ < 10 ? "0" + _ : _,
+                    }),
+                    (0, i.jsx)("div", {
+                      className: (0, s.W)(
+                        w().arrow,
+                        A.state === _ && w().disabled,
+                      ),
+                      onClick: () => A.setState(Math.min(_, A.state + 1)),
+                      children: (0, i.jsx)(g.bI, {}),
+                    }),
+                  ],
+                }),
+              ],
+            }),
+            (0, i.jsx)("div", {
+              className: w().buttonRow,
+              children: (0, i.jsxs)(l(), {
+                className: (0, s.W)(w().button, w().returnBtn),
+                href: "/",
+                onClick: () => {
+                  b.current = !0;
+                },
+                prefetch: !1,
+                children: [
+                  (0, i.jsx)("div", {
+                    className: w().icon,
+                    children: (0, i.jsx)(g.PZ, {}),
+                  }),
+                  (0, i.jsxs)("div", {
+                    className: w().text,
+                    children: [
+                      (0, i.jsx)("div", {
+                        className: w().main,
+                        children: p.f.common.backToHome,
+                      }),
+                      (0, i.jsx)("div", {
+                        className: w().sub,
+                        children: "GO BACK",
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            }),
+          ],
+        });
+      };
+    },
+    9737: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        D: function () {
+          return i;
+        },
+        o: function () {
+          return mapCategoryToCategoryString;
+        },
+      });
+      let i = ["LATEST", "ANNOUNCEMENT", "ACTIVITY", "NEWS"],
+        mapCategoryToCategoryString = (e) =>
+          ({ 0: "ANNOUNCEMENT", 1: "ACTIVITY", 2: "NEWS" })[e] || "LATEST";
+    },
+    50610: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        I: function () {
+          return CommonTransition;
+        },
+      });
+      var i = n(84548);
+      n(58036);
+      var r = n(65568),
+        s = n(49246),
+        a = n(18315),
+        c = n(16571),
+        o = n.n(c);
+      let CommonTransition = (e) => {
+        let {
+          state: t,
+          dir: n,
+          reverse: c,
+          slow: A,
+          nodeRef: l,
+          children: d,
+        } = e;
+        return (0, i.jsx)(r.Z, {
+          children: (0, i.jsx)(
+            s.Z,
+            {
+              nodeRef: l,
+              addEndListener: (e) => {
+                var t;
+                return null === (t = l.current) || void 0 === t
+                  ? void 0
+                  : t.addEventListener("transitionend", e, !1);
+              },
+              classNames: n
+                ? "hrz" === n
+                  ? {
+                      enter: c ? o().commonHrzEnterReverse : o().commonHrzEnter,
+                      enterActive: (0, a.Z)(
+                        c
+                          ? o().commonHrzEnterActiveReverse
+                          : o().commonHrzEnterActive,
+                        A && o().slow,
+                      ),
+                      exit: c ? o().commonHrzExitReverse : o().commonHrzExit,
+                      exitActive: (0, a.Z)(
+                        c
+                          ? o().commonHrzExitActiveReverse
+                          : o().commonHrzExitActive,
+                        A && o().slow,
+                      ),
+                    }
+                  : {
+                      enter: c ? o().commonVtcEnterReverse : o().commonVtcEnter,
+                      enterActive: (0, a.Z)(
+                        c
+                          ? o().commonVtcEnterActiveReverse
+                          : o().commonVtcEnterActive,
+                        A && o().slow,
+                      ),
+                      exit: c ? o().commonVtcExitReverse : o().commonVtcExit,
+                      exitActive: (0, a.Z)(
+                        c
+                          ? o().commonVtcExitActiveReverse
+                          : o().commonVtcExitActive,
+                        A && o().slow,
+                      ),
+                    }
+                : {
+                    enter: o().commonEnter,
+                    enterActive: (0, a.Z)(o().commonEnterActive, A && o().slow),
+                    exit: o().commonExit,
+                    exitActive: (0, a.Z)(o().commonExitActive, A && o().slow),
+                  },
+              unmountOnExit: !0,
+              children: d,
+            },
+            t,
+          ),
+        });
+      };
+    },
+    29769: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        PZ: function () {
+          return IconArrowLeftSvg;
+        },
+        bI: function () {
+          return IconArrowRightSvg;
+        },
+        f2: function () {
+          return IconArrowDownSvg;
+        },
+        id: function () {
+          return IconArrowUpSvg;
+        },
+      });
+      var i = n(84548);
+      n(58036);
+      var r = n(83961);
+      let s = "0 0 7 15",
+        IconArrowRightSvg = (e) => {
+          let { children: t, ...n } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: s,
+            ...n,
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(r.b.iconArrow),
+            }),
+          });
+        },
+        IconArrowLeftSvg = (e) => {
+          let { children: t, style: n = {}, ...a } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: s,
+            ...a,
+            style: { ...n, transform: "rotate(180deg)" },
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(r.b.iconArrow),
+            }),
+          });
+        },
+        IconArrowUpSvg = (e) => {
+          let { children: t, style: n = {}, ...a } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: s,
+            ...a,
+            style: { ...n, transform: "rotate(-90deg)" },
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(r.b.iconArrow),
+            }),
+          });
+        },
+        IconArrowDownSvg = (e) => {
+          let { children: t, style: n = {}, ...a } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: s,
+            ...a,
+            style: { ...n, transform: "rotate(90deg)" },
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(r.b.iconArrow),
+            }),
+          });
+        };
+    },
+    83961: function (e, t, n) {
+      "use strict";
+      (n.d(t, {
+        b: function () {
+          return i;
+        },
+      }),
+        n(84548));
+      let i = {
+        titleArknights: "svg_def-title_arknights",
+        copyrightMini: "svg_def-copyright_mini",
+        iconArrow: "svg_def-icon_arrow",
+        iconArrowHrz: "svg_def-icon_arrow_hrz",
+        iconDblArrow: "svg_def-icon_dblArrow",
+        iconUser: "svg_def-icon_user",
+        iconSound: "svg_def-icon_sound",
+        iconVoice: "svg_def-icon_voice",
+        iconPlayBtn: "svg_def-icon_play_btn",
+        iconMiniPlayBtn: "svg_def-icon_mini_play_btn",
+        iconMiniLinkBtn: "svg_def-icon_mini_link_btn",
+        iconSocial: "svg_def-icon_social",
+        iconIOS: "svg_def-icon_iOS",
+        iconAndroid: "svg_def-icon_Android",
+        iconTapTap: "svg_def-icon_TapTap",
+        iconSkland: "svg_def-icon_skland",
+        iconBilibili: "svg_def-icon_bilibili",
+        iconWechat: "svg_def-icon_wechat",
+        iconWeibo: "svg_def-icon_weibo",
+        iconYouTube: "svg_def-icon_youtube",
+        iconDiscord: "svg_def-icon_discord",
+        iconFacebook: "svg_def-icon_facebook",
+        iconElitePhase0: "svg_def-elite_phase_0",
+        iconElitePhase1: "svg_def-elite_phase_1",
+        iconElitePhase2: "svg_def-elite_phase_2",
+        iconHanger: "svg_def-hanger",
+        iconHammer: "svg_def-hammer",
+        logoRhodesIsland: "svg_def-logo_rhodes_island",
+      };
+    },
+    16928: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        x: function () {
+          return useElemRef;
+        },
+      });
+      var i = n(58036);
+      let useElemRef = () => (0, i.useRef)(null);
+    },
+    70165: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        R: function () {
+          return useOrientation;
+        },
+      });
+      var i = n(58036),
+        r = n(31903);
+      let useOrientation = () => {
+        let [e, t] = (0, i.useState)(null);
+        return (
+          (0, r.a)(() => {
+            t(
+              window.innerWidth >= window.innerHeight
+                ? "landscape"
+                : "portrait",
+            );
+          }),
+          e
+        );
+      };
+    },
+    31903: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        a: function () {
+          return useResize;
+        },
+      });
+      var i = n(58036),
+        r = n(45391);
+      let s = [];
+      window.addEventListener("resize", () => {
+        for (let e of s) e();
+      });
+      let useResize = function (e) {
+        let t =
+          arguments.length > 1 && void 0 !== arguments[1]
+            ? arguments[1]
+            : [null];
+        (0, i.useEffect)(() => {
+          e();
+          let t = (0, r.Z)(e, 100, { leading: !1, trailing: !0 });
+          return (
+            s.push(t),
+            () => {
+              let e = s.indexOf(t);
+              e >= 0 && s.splice(e, 1);
+            }
+          );
+        }, t);
+      };
+    },
+    15184: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        f: function () {
+          return useThrottle;
+        },
+      });
+      var i = n(58036);
+      let useThrottle = (e) => {
+        let t = (0, i.useRef)(!1),
+          n = (0, i.useCallback)(
+            (e) =>
+              async function () {
+                for (var n = arguments.length, i = Array(n), r = 0; r < n; r++)
+                  i[r] = arguments[r];
+                if (!t.current) {
+                  t.current = !0;
+                  try {
+                    let n = await e(...i);
+                    return ((t.current = !1), n);
+                  } catch (e) {
+                    throw ((t.current = !1), e);
+                  }
+                }
+              },
+            [null],
+          );
+        return n(e);
+      };
+    },
+    62841: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        M: function () {
+          return s;
+        },
+        t: function () {
+          return a;
+        },
+      });
+      var i = n(51844),
+        r = n(89217);
+      let s = (0, i.z)(r.L.sdk.src, {
+          etl: { domain: "arknights", sub_domain: "official" },
+        }),
+        a = {
+          event() {
+            for (var e = arguments.length, t = Array(e), i = 0; i < e; i++)
+              t[i] = arguments[i];
+            let [r, a] = t;
+            Promise.all([n.e(13), n.e(979), n.e(24), n.e(710)])
+              .then(n.bind(n, 30710))
+              .then((e) => {
+                let { adapter: t } = e;
+                s((e) => {
+                  e.ETL.event(r, {
+                    ...a,
+                    domain: "arknights",
+                    sub_domain: "official",
+                    source: t.source.from,
+                  });
+                });
+              });
+          },
+        };
+    },
+    19174: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        f: function () {
+          return i;
+        },
+      });
+      let i = {
+        locale: "zh-cn",
+        links: {
+          host: "https://ak.hypergryph.com/",
+          userCenter: "https://ak.hypergryph.com/user/",
+          csCenter: "https://customer-service.hypergryph.com/ak",
+          msr: "https://monster-siren.hypergryph.com/",
+          animeSite: "https://ak.hypergryph.com/anime/",
+          comicSite: "https://comic.hypergryph.com/terra-historicus/",
+        },
+        document: {
+          title: "19532 MechCaT",
+          subtitle: {
+            dynamicCompile: "干员动态集录 - 明日方舟",
+            dynamicFurn: "互动家具 - 明日方舟",
+            video: "视频列表 - 明日方舟",
+            news: "情报中心 - 明日方舟",
+            commonSuffix: " ",
+          },
+        
+            
+          
+          favicon: "https://web.hycdn.cn/favicon.ico",
+        },
+       
+        download: { qrcode: "扫码下载" },
+        userPanel: {
+          pleaseLogin: "请先登录您的账号。",
+          welcomeDoctor: "欢迎回来，博士。",
+          idle: "暂无待处理工作。",
+          actions: {
+            customerService: "客服中心",
+            login: "立即登录",
+            register: "前往注册",
+            userCenter: "个人中心",
+            logout: "登出",
+          },
+        },
+        sectionTitle: {
+          index: "",
+          information: "",
+          operator: "",
+          world: "",
+          media: "",
+          more: "",
+          customerService: "",
+        },
+        info: {
+          category: {
+            LATEST: "最新",
+            ANNOUNCEMENT: "公告",
+            ACTIVITY: "活动",
+            NEWS: "新闻",
+          },
+        },
+      
+       
+       
+      };
+    },
+    81087: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        s2: function () {
+          return alter;
+        },
+        gK: function () {
+          return r;
+        },
+        mI: function () {
+          return isLandscape;
+        },
+        Fq: function () {
+          return isMobileDevice;
+        },
+        s$: function () {
+          return i;
+        },
+        ZT: function () {
+          return noop;
+        },
+      });
+      let i = !1,
+        noop = () => {},
+        alter = (e) => !e,
+        isMobileDevice = () => void 0 !== document.body.ontouchstart,
+        isLandscape = () => window.innerWidth > window.innerHeight,
+        r =
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+    },
+    87273: function (e) {
+      e.exports = {
+        container: "_3195bc2c",
+        containerLandscape: "_a54368c1",
+        scrollerWrapper: "_7667358c",
+        loadingText: "_8c3fa1d2",
+        flashing: "_1eb0f771",
+        scroller: "_272521bc",
+        list: "_507ac726",
+        item: "_aa8c4091",
+        cover: "_d0f0a88a",
+        img: "_ad0e4cf9",
+        tip: "_72e09131",
+        text: "_88d2dcc8",
+        icon: "_6c1bd713",
+        itemInfo: "_b7bb77e7",
+        cate: "_555571b7",
+        dateAndTitle: "_61c88ddf",
+        date: "_59a08c8a",
+        title: "_1b88147d",
+        endOfList: "_60d5dbbb",
+        pageInfo: "_fa5f01f0",
+        titleRow: "_924b0aea",
+        slogan: "_c855f482",
+        pagination: "_1f923c24",
+        arrow: "_752b0018",
+        slash: "_7ed659e0",
+        cur: "_3aef8f91",
+        max: "_1024e139",
+        tabList: "_6d08ebcc",
+        tabItem: "_2f4a7684",
+        active: "_005db7de",
+        buttonRow: "_7d58a020",
+        button: "_81561f87",
+        main: "_c89373ce",
+        sub: "_c98619d8",
+        returnBtn: "_7740aadd",
+        containerPortrait: "_0acda780",
+        _container: "_10bd85ba",
+        bannerContainer: "_b3e5d04d",
+        swiper: "_245316da",
+        imgWrapper: "_7b8cb6a2",
+        bannerScrollBarContainer: "_9a6e7e96",
+        bannerScrollBar: "_f9b8521b",
+        newsList: "_5db1183d",
+        newsItem: "_8fd7f2e0",
+        newsInfo: "_4cacca44",
+        newsTitle: "_15bbc878",
+        disabled: "_50b4d956",
+      };
+    },
+    16571: function (e) {
+      e.exports = {
+        commonEnter: "_eb4b54cf",
+        commonEnterActive: "_1c6ab7b0",
+        slow: "_8f9f5cb8",
+        commonExit: "_e78fd8bb",
+        commonExitActive: "_755edefa",
+        commonVtcEnter: "_51d426e8",
+        commonVtcEnterActive: "_6fcaf6bd",
+        commonVtcExit: "_c351f654",
+        commonVtcExitActive: "_4a078e72",
+        commonVtcEnterReverse: "_f19ce370",
+        commonVtcEnterActiveReverse: "_6784e4f3",
+        commonVtcExitReverse: "_9b585686",
+        commonVtcExitActiveReverse: "_23c76a64",
+        commonHrzEnter: "_0d63f511",
+        commonHrzEnterActive: "_514d8ddc",
+        commonHrzExit: "_a99f32fc",
+        commonHrzExitActive: "_f4564e83",
+        commonHrzEnterReverse: "_e9263d6c",
+        commonHrzEnterActiveReverse: "_494f9d49",
+        commonHrzExitReverse: "_849e29fe",
+        commonHrzExitActiveReverse: "_f6b2e0f9",
+      };
+    },
+    54795: function (e, t) {
+      "use strict";
+      t.Z = {
+        src: "https://web.hycdn.cn/arknights/official/_next/static/media/ACTIVITY.c48956ee.jpg",
+        height: 158,
+        width: 613,
+        blurDataURL:
+          "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAIACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAAAkQof/8QAHRAAAAUFAAAAAAAAAAAAAAAAAAECAxEEBSFBkv/aAAgBAQABPwBebvVzpgo5H//EABYRAQEBAAAAAAAAAAAAAAAAAAEAMv/aAAgBAgEBPwAyX//EABgRAAIDAAAAAAAAAAAAAAAAAAABAjKB/9oACAEDAQE/AHeeH//Z",
+        blurWidth: 8,
+        blurHeight: 2,
+      };
+    },
+    74122: function (e, t) {
+      "use strict";
+      t.Z = {
+        src: "https://web.hycdn.cn/arknights/official/_next/static/media/ANNOUNCEMENT.29aad141.jpg",
+        height: 158,
+        width: 613,
+        blurDataURL:
+          "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAIACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABQEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAAAiBQ//8QAGRABAAIDAAAAAAAAAAAAAAAAAQACAyGC/9oACAEBAAE/AM9rLcVQNHM//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAy/9oACAECAQE/ADJf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECMoH/2gAIAQMBAT8Ad5Yf/9k=",
+        blurWidth: 8,
+        blurHeight: 2,
+      };
+    },
+    35186: function (e, t) {
+      "use strict";
+      t.Z = {
+        src: "https://web.hycdn.cn/arknights/official/_next/static/media/NEWS.b39a5f6b.jpg",
+        height: 158,
+        width: 613,
+        blurDataURL:
+          "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKCgoKCgsMDAsPEA4QDxYUExMUFiIYGhgaGCIzICUgICUgMy03LCksNy1RQDg4QFFeT0pPXnFlZXGPiI+7u/sBCgoKCgoKCwwMCw8QDhAPFhQTExQWIhgaGBoYIjMgJSAgJSAzLTcsKSw3LVFAODhAUV5PSk9ecWVlcY+Ij7u7+//CABEIAAIACAMBIgACEQEDEQH/xAAnAAEBAAAAAAAAAAAAAAAAAAAABgEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAAAkgof/8QAHBAAAQMFAAAAAAAAAAAAAAAAAwABEQQFIUGS/9oACAEBAAE/ACZvFXOgNHK//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAy/9oACAECAQE/ADJf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECMoH/2gAIAQMBAT8Ad54f/9k=",
+        blurWidth: 8,
+        blurHeight: 2,
+      };
+    },
+    71480: function (e, t) {
+      "use strict";
+      t.Z = function () {};
+    },
+    34548: function (e, t, n) {
+      "use strict";
+      n.d(t, {
+        Z: function () {
+          return lodash_es_uniqBy;
+        },
+      });
+      var i = n(7009),
+        r = n(73576),
+        _baseFindIndex = function (e, t, n, i) {
+          for (var r = e.length, s = n + (i ? 1 : -1); i ? s-- : ++s < r; )
+            if (t(e[s], s, e)) return s;
+          return -1;
+        },
+        _baseIsNaN = function (e) {
+          return e != e;
+        },
+        _strictIndexOf = function (e, t, n) {
+          for (var i = n - 1, r = e.length; ++i < r; ) if (e[i] === t) return i;
+          return -1;
+        },
+        _arrayIncludes = function (e, t) {
+          return (
+            !!(null == e ? 0 : e.length) &&
+            (t == t
+              ? _strictIndexOf(e, t, 0)
+              : _baseFindIndex(e, _baseIsNaN, 0)) > -1
+          );
+        },
+        _arrayIncludesWith = function (e, t, n) {
+          for (var i = -1, r = null == e ? 0 : e.length; ++i < r; )
+            if (n(t, e[i])) return !0;
+          return !1;
+        },
+        s = n(14658),
+        a = n(57390),
+        c = n(71480),
+        o = n(59410),
+        A =
+          a.Z && 1 / (0, o.Z)(new a.Z([, -0]))[1] == 1 / 0
+            ? function (e) {
+                return new a.Z(e);
+              }
+            : c.Z,
+        _baseUniq = function (e, t, n) {
+          var i = -1,
+            a = _arrayIncludes,
+            c = e.length,
+            l = !0,
+            d = [],
+            m = d;
+          if (n) ((l = !1), (a = _arrayIncludesWith));
+          else if (c >= 200) {
+            var u = t ? null : A(e);
+            if (u) return (0, o.Z)(u);
+            ((l = !1), (a = s.Z), (m = new r.Z()));
+          } else m = t ? [] : d;
+          e: for (; ++i < c; ) {
+            var f = e[i],
+              h = t ? t(f) : f;
+            if (((f = n || 0 !== f ? f : 0), l && h == h)) {
+              for (var g = m.length; g--; ) if (m[g] === h) continue e;
+              (t && m.push(h), d.push(f));
+            } else a(m, h, n) || (m !== d && m.push(h), d.push(f));
+          }
+          return d;
+        },
+        lodash_es_uniqBy = function (e, t) {
+          return e && e.length ? _baseUniq(e, (0, i.Z)(t, 2)) : [];
+        };
+    },
+  },
+  function (e) {
+    (e.O(0, [474, 815, 558, 874, 571, 126, 868, 744], function () {
+      return e((e.s = 89253));
+    }),
+      (_N_E = e.O()));
+  },
+]);
 //# sourceMappingURL=page-dce4bac03340f68b.js.map

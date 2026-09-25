@@ -1,2 +1,1051 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[703],{40156:function(e){var n,r,i,s,o,a,c,u,f,m,v,g,_,p,S,w,N,b,A,T,x,E;e.exports=(n="millisecond",r="second",i="minute",s="hour",o="week",a="month",c="quarter",u="year",f="date",m="Invalid Date",v=/^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/,g=/\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g,_=function(e,n,r){var i=String(e);return!i||i.length>=n?e:""+Array(n+1-i.length).join(r)+e},(S={})[p="en"]={name:"en",weekdays:"Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),months:"January_February_March_April_May_June_July_August_September_October_November_December".split("_"),ordinal:function(e){var n=["th","st","nd","rd"],r=e%100;return"["+e+(n[(r-20)%10]||n[r]||"th")+"]"}},w="$isDayjsObject",N=function(e){return e instanceof x||!(!e||!e[w])},b=function t(e,n,r){var i;if(!e)return p;if("string"==typeof e){var s=e.toLowerCase();S[s]&&(i=s),n&&(S[s]=n,i=s);var o=e.split("-");if(!i&&o.length>1)return t(o[0])}else{var a=e.name;S[a]=e,i=a}return!r&&i&&(p=i),i||!r&&p},A=function(e,n){if(N(e))return e.clone();var r="object"==typeof n?n:{};return r.date=e,r.args=arguments,new x(r)},(T={s:_,z:function(e){var n=-e.utcOffset(),r=Math.abs(n);return(n<=0?"+":"-")+_(Math.floor(r/60),2,"0")+":"+_(r%60,2,"0")},m:function t(e,n){if(e.date()<n.date())return-t(n,e);var r=12*(n.year()-e.year())+(n.month()-e.month()),i=e.clone().add(r,a),s=n-i<0,o=e.clone().add(r+(s?-1:1),a);return+(-(r+(n-i)/(s?i-o:o-i))||0)},a:function(e){return e<0?Math.ceil(e)||0:Math.floor(e)},p:function(e){return({M:a,y:u,w:o,d:"day",D:f,h:s,m:i,s:r,ms:n,Q:c})[e]||String(e||"").toLowerCase().replace(/s$/,"")},u:function(e){return void 0===e}}).l=b,T.i=N,T.w=function(e,n){return A(e,{locale:n.$L,utc:n.$u,x:n.$x,$offset:n.$offset})},E=(x=function(){function M(e){this.$L=b(e.locale,null,!0),this.parse(e),this.$x=this.$x||e.x||{},this[w]=!0}var e=M.prototype;return e.parse=function(e){this.$d=function(e){var n=e.date,r=e.utc;if(null===n)return new Date(NaN);if(T.u(n))return new Date;if(n instanceof Date)return new Date(n);if("string"==typeof n&&!/Z$/i.test(n)){var i=n.match(v);if(i){var s=i[2]-1||0,o=(i[7]||"0").substring(0,3);return r?new Date(Date.UTC(i[1],s,i[3]||1,i[4]||0,i[5]||0,i[6]||0,o)):new Date(i[1],s,i[3]||1,i[4]||0,i[5]||0,i[6]||0,o)}}return new Date(n)}(e),this.init()},e.init=function(){var e=this.$d;this.$y=e.getFullYear(),this.$M=e.getMonth(),this.$D=e.getDate(),this.$W=e.getDay(),this.$H=e.getHours(),this.$m=e.getMinutes(),this.$s=e.getSeconds(),this.$ms=e.getMilliseconds()},e.$utils=function(){return T},e.isValid=function(){return this.$d.toString()!==m},e.isSame=function(e,n){var r=A(e);return this.startOf(n)<=r&&r<=this.endOf(n)},e.isAfter=function(e,n){return A(e)<this.startOf(n)},e.isBefore=function(e,n){return this.endOf(n)<A(e)},e.$g=function(e,n,r){return T.u(e)?this[n]:this.set(r,e)},e.unix=function(){return Math.floor(this.valueOf()/1e3)},e.valueOf=function(){return this.$d.getTime()},e.startOf=function(e,n){var c=this,m=!!T.u(n)||n,v=T.p(e),l=function(e,n){var r=T.w(c.$u?Date.UTC(c.$y,n,e):new Date(c.$y,n,e),c);return m?r:r.endOf("day")},$=function(e,n){return T.w(c.toDate()[e].apply(c.toDate("s"),(m?[0,0,0,0]:[23,59,59,999]).slice(n)),c)},g=this.$W,_=this.$M,p=this.$D,S="set"+(this.$u?"UTC":"");switch(v){case u:return m?l(1,0):l(31,11);case a:return m?l(1,_):l(0,_+1);case o:var w=this.$locale().weekStart||0,N=(g<w?g+7:g)-w;return l(m?p-N:p+(6-N),_);case"day":case f:return $(S+"Hours",0);case s:return $(S+"Minutes",1);case i:return $(S+"Seconds",2);case r:return $(S+"Milliseconds",3);default:return this.clone()}},e.endOf=function(e){return this.startOf(e,!1)},e.$set=function(e,o){var c,m=T.p(e),v="set"+(this.$u?"UTC":""),g=((c={}).day=v+"Date",c[f]=v+"Date",c[a]=v+"Month",c[u]=v+"FullYear",c[s]=v+"Hours",c[i]=v+"Minutes",c[r]=v+"Seconds",c[n]=v+"Milliseconds",c)[m],_="day"===m?this.$D+(o-this.$W):o;if(m===a||m===u){var p=this.clone().set(f,1);p.$d[g](_),p.init(),this.$d=p.set(f,Math.min(this.$D,p.daysInMonth())).$d}else g&&this.$d[g](_);return this.init(),this},e.set=function(e,n){return this.clone().$set(e,n)},e.get=function(e){return this[T.p(e)]()},e.add=function(e,n){var c,f=this;e=Number(e);var m=T.p(n),y=function(n){var r=A(f);return T.w(r.date(r.date()+Math.round(n*e)),f)};if(m===a)return this.set(a,this.$M+e);if(m===u)return this.set(u,this.$y+e);if("day"===m)return y(1);if(m===o)return y(7);var v=((c={})[i]=6e4,c[s]=36e5,c[r]=1e3,c)[m]||1,g=this.$d.getTime()+e*v;return T.w(g,this)},e.subtract=function(e,n){return this.add(-1*e,n)},e.format=function(e){var n=this,r=this.$locale();if(!this.isValid())return r.invalidDate||m;var i=e||"YYYY-MM-DDTHH:mm:ssZ",s=T.z(this),o=this.$H,a=this.$m,c=this.$M,u=r.weekdays,f=r.months,v=r.meridiem,h=function(e,r,s,o){return e&&(e[r]||e(n,i))||s[r].slice(0,o)},d=function(e){return T.s(o%12||12,e,"0")},_=v||function(e,n,r){var i=e<12?"AM":"PM";return r?i.toLowerCase():i};return i.replace(g,function(e,i){return i||function(e){switch(e){case"YY":return String(n.$y).slice(-2);case"YYYY":return T.s(n.$y,4,"0");case"M":return c+1;case"MM":return T.s(c+1,2,"0");case"MMM":return h(r.monthsShort,c,f,3);case"MMMM":return h(f,c);case"D":return n.$D;case"DD":return T.s(n.$D,2,"0");case"d":return String(n.$W);case"dd":return h(r.weekdaysMin,n.$W,u,2);case"ddd":return h(r.weekdaysShort,n.$W,u,3);case"dddd":return u[n.$W];case"H":return String(o);case"HH":return T.s(o,2,"0");case"h":return d(1);case"hh":return d(2);case"a":return _(o,a,!0);case"A":return _(o,a,!1);case"m":return String(a);case"mm":return T.s(a,2,"0");case"s":return String(n.$s);case"ss":return T.s(n.$s,2,"0");case"SSS":return T.s(n.$ms,3,"0");case"Z":return s}return null}(e)||s.replace(":","")})},e.utcOffset=function(){return-(15*Math.round(this.$d.getTimezoneOffset()/15))},e.diff=function(e,n,f){var m,v=this,g=T.p(n),_=A(e),p=(_.utcOffset()-this.utcOffset())*6e4,S=this-_,D=function(){return T.m(v,_)};switch(g){case u:m=D()/12;break;case a:m=D();break;case c:m=D()/3;break;case o:m=(S-p)/6048e5;break;case"day":m=(S-p)/864e5;break;case s:m=S/36e5;break;case i:m=S/6e4;break;case r:m=S/1e3;break;default:m=S}return f?m:T.a(m)},e.daysInMonth=function(){return this.endOf(a).$D},e.$locale=function(){return S[this.$L]},e.locale=function(e,n){if(!e)return this.$L;var r=this.clone(),i=b(e,n,!0);return i&&(r.$L=i),r},e.clone=function(){return T.w(this.$d,this)},e.toDate=function(){return new Date(this.valueOf())},e.toJSON=function(){return this.isValid()?this.toISOString():null},e.toISOString=function(){return this.$d.toISOString()},e.toString=function(){return this.$d.toUTCString()},M}()).prototype,A.prototype=E,[["$ms",n],["$s",r],["$m",i],["$H",s],["$W","day"],["$M",a],["$y",u],["$D",f]].forEach(function(e){E[e[1]]=function(n){return this.$g(n,e[0],e[1])}}),A.extend=function(e,n){return e.$i||(e(n,x,A),e.$i=!0),A},A.locale=b,A.isDayjs=N,A.unix=function(e){return A(1e3*e)},A.en=S[p],A.Ls=S,A.p={},A)},37746:function(e,n,r){Promise.resolve().then(r.t.bind(r,42314,23)),Promise.resolve().then(r.bind(r,41659))},42314:function(e,n,r){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),function(e,n){for(var r in n)Object.defineProperty(e,r,{enumerable:!0,get:n[r]})}(n,{suspense:function(){return suspense},NoSSR:function(){return NoSSR}});let i=r(88536);function suspense(){let e=Error(i.NEXT_DYNAMIC_NO_SSR_CODE);throw e.digest=i.NEXT_DYNAMIC_NO_SSR_CODE,e}function NoSSR(e){let{children:n}=e;return n}},41659:function(e,n,r){"use strict";r.r(n),r.d(n,{ArticleClient:function(){return ArticleClient}});var i=r(84548),s=r(58036),o=r(18315),a=r(40156),c=r.n(a),u=r(24216),f=r.n(u),m=r(9737),v=r(29769),g=r(16928),_=r(19174),p=r(37689),S=r.n(p);let ArticleClient=e=>{let{articleData:n}=e;return(0,i.jsxs)("div",{className:S().container,children:[(0,i.jsx)("div",{className:S().article,children:(0,i.jsxs)("div",{className:S()._article,children:[(0,i.jsxs)("div",{className:S().cateAndTitle,children:[(0,i.jsx)("div",{className:S().cate,children:_.f.info.category[(0,m.o)(n.tab)]}),(0,i.jsx)("div",{className:S().title,children:n.title})]}),(0,i.jsx)("div",{className:S().date,children:c().unix(n.displayTime).format("YYYY // MM / DD")}),(0,i.jsx)("div",{className:S().divider}),(0,i.jsx)("div",{className:S().contentWrapper,children:(0,i.jsx)(Scroller,{children:(0,i.jsx)("div",{className:S().content,dangerouslySetInnerHTML:{__html:n.data}})})})]})}),(0,i.jsxs)("div",{className:S().pageInfo,children:[(0,i.jsx)("div",{className:S().title,children:"INFO"}),(0,i.jsxs)("div",{className:S().buttonRow,children:[(0,i.jsxs)(f(),{className:(0,o.W)(S().button,S().returnListBtn),href:"/news",prefetch:!1,children:[(0,i.jsx)("div",{className:S().icon,children:(0,i.jsx)(v.PZ,{})}),(0,i.jsxs)("div",{className:S().text,children:[(0,i.jsx)("div",{className:S().main,children:_.f.common.backToList}),(0,i.jsx)("div",{className:S().sub,children:"GO BACK"})]})]}),(0,i.jsx)(f(),{className:(0,o.W)(S().button,S().returnHomeBtn),href:"/",prefetch:!1,children:(0,i.jsxs)("div",{className:S().text,children:[(0,i.jsx)("div",{className:S().main,children:_.f.common.backToHome}),(0,i.jsx)("div",{className:S().sub,children:"HOMEPAGE"})]})})]})]})]})},Scroller=e=>{let{children:n}=e,r=(0,g.x)();return(0,s.useEffect)(()=>{let e=r.current,listener=e=>{e.stopPropagation()};return e.addEventListener("wheel",listener,{passive:!1}),()=>{e.removeEventListener("wheel",listener)}},[null]),(0,s.useEffect)(()=>{let e=r.current,listener=e=>{e.stopPropagation()};return e.addEventListener("touchmove",listener,{passive:!1}),()=>{e.removeEventListener("touchmove",listener)}},[null]),(0,i.jsx)("div",{className:S().scrollerWrapper,children:(0,i.jsx)("div",{ref:e=>{r.current=e,e&&(e.style.overflowY="scroll",e.style.marginRight="".concat(-window.__SCROLLBAR_WIDTH,"px"))},className:S().scroller,children:n})})}},9737:function(e,n,r){"use strict";r.d(n,{D:function(){return i},o:function(){return mapCategoryToCategoryString}});let i=["LATEST","ANNOUNCEMENT","ACTIVITY","NEWS"],mapCategoryToCategoryString=e=>({0:"ANNOUNCEMENT",1:"ACTIVITY",2:"NEWS"})[e]||"LATEST"},29769:function(e,n,r){"use strict";r.d(n,{PZ:function(){return IconArrowLeftSvg},bI:function(){return IconArrowRightSvg},f2:function(){return IconArrowDownSvg},id:function(){return IconArrowUpSvg}});var i=r(84548);r(58036);var s=r(83961);let o="0 0 7 15",IconArrowRightSvg=e=>{let{children:n,...r}=e;return(0,i.jsx)("svg",{viewBox:o,...r,children:(0,i.jsx)("use",{xlinkHref:"#".concat(s.b.iconArrow)})})},IconArrowLeftSvg=e=>{let{children:n,style:r={},...a}=e;return(0,i.jsx)("svg",{viewBox:o,...a,style:{...r,transform:"rotate(180deg)"},children:(0,i.jsx)("use",{xlinkHref:"#".concat(s.b.iconArrow)})})},IconArrowUpSvg=e=>{let{children:n,style:r={},...a}=e;return(0,i.jsx)("svg",{viewBox:o,...a,style:{...r,transform:"rotate(-90deg)"},children:(0,i.jsx)("use",{xlinkHref:"#".concat(s.b.iconArrow)})})},IconArrowDownSvg=e=>{let{children:n,style:r={},...a}=e;return(0,i.jsx)("svg",{viewBox:o,...a,style:{...r,transform:"rotate(90deg)"},children:(0,i.jsx)("use",{xlinkHref:"#".concat(s.b.iconArrow)})})}},83961:function(e,n,r){"use strict";r.d(n,{b:function(){return i}}),r(84548);let i={titleArknights:"svg_def-title_arknights",copyrightMini:"svg_def-copyright_mini",iconArrow:"svg_def-icon_arrow",iconArrowHrz:"svg_def-icon_arrow_hrz",iconDblArrow:"svg_def-icon_dblArrow",iconUser:"svg_def-icon_user",iconSound:"svg_def-icon_sound",iconVoice:"svg_def-icon_voice",iconPlayBtn:"svg_def-icon_play_btn",iconMiniPlayBtn:"svg_def-icon_mini_play_btn",iconMiniLinkBtn:"svg_def-icon_mini_link_btn",iconSocial:"svg_def-icon_social",iconIOS:"svg_def-icon_iOS",iconAndroid:"svg_def-icon_Android",iconTapTap:"svg_def-icon_TapTap",iconSkland:"svg_def-icon_skland",iconBilibili:"svg_def-icon_bilibili",iconWechat:"svg_def-icon_wechat",iconWeibo:"svg_def-icon_weibo",iconYouTube:"svg_def-icon_youtube",iconDiscord:"svg_def-icon_discord",iconFacebook:"svg_def-icon_facebook",iconElitePhase0:"svg_def-elite_phase_0",iconElitePhase1:"svg_def-elite_phase_1",iconElitePhase2:"svg_def-elite_phase_2",iconHanger:"svg_def-hanger",iconHammer:"svg_def-hammer",logoRhodesIsland:"svg_def-logo_rhodes_island"}},16928:function(e,n,r){"use strict";r.d(n,{x:function(){return useElemRef}});var i=r(58036);let useElemRef=()=>(0,i.useRef)(null)},19174:function(e,n,r){"use strict";r.d(n,{f:function(){return i}});let i={locale:"zh-cn",links:{host:"https://ak.hypergryph.com/",userCenter:"https://ak.hypergryph.com/user/",csCenter:"https://customer-service.hypergryph.com/ak",msr:"https://monster-siren.hypergryph.com/",animeSite:"https://ak.hypergryph.com/anime/",comicSite:"https://comic.hypergryph.com/terra-historicus/"},document:{title:"明日方舟 - Arknights",subtitle:{dynamicCompile:"干员动态集录 - 明日方舟",dynamicFurn:"互动家具 - 明日方舟",video:"视频列表 - 明日方舟",news:"情报中心 - 明日方舟",commonSuffix:" - 明日方舟"},description:"《明日方舟》是一款魔物主题的策略手游。在游戏中，玩家将管理一艘满载“ 魔物干员”的方舟，为调查来源神秘的矿石灾难而踏上旅途。在这个宽广而危机四伏的世界中，你或许会看到废土中的城市废墟，或许会看到仿若幻境的亚人国度，或许会遭遇无法解读的神秘，或许参与无比残酷的战争。在有关幻想与异种生命的世界中，体验史诗与想象，情感与牵绊！",keywords:["明日方舟","明日方舟官网","明日方舟手游","二次元","明日方舟Arknights","魔物娘","战棋","策略","塔防","塔防RPG","Arknights","人外","Monster"],favicon:"https://web.hycdn.cn/favicon.ico"},common:{goBack:"返回",backToList:"返回列表",backToHome:"返回首页",readMore:"更多情报",viewDetail:"查看详情",retry:"重试",wechatQrcodeTip:"微信扫码关注公众号"},download:{qrcode:"扫码下载"},userPanel:{pleaseLogin:"请先登录您的账号。",welcomeDoctor:"欢迎回来，博士。",idle:"暂无待处理工作。",actions:{customerService:"客服中心",login:"立即登录",register:"前往注册",userCenter:"个人中心",logout:"登出"}},sectionTitle:{index:"首页",information:"情报",operator:"干员",world:"设定",media:"泰拉万象",more:"更多内容",customerService:"客服中心"},info:{category:{LATEST:"最新",ANNOUNCEMENT:"公告",ACTIVITY:"活动",NEWS:"新闻"}},char:{infoMap:{B003:{name:"凯尔希",codename:"KAL'TSIT",intro:"罗德岛最高管理者之一，阿米娅的直接辅导者。\n罗德岛医疗部门的总负责人。\n作为罗德岛的老成员，凯尔希医生是在阿米娅背后最稳固的援护者。",voiceActor:{cn:"刘雪",ja:"日笠阳子"}},R001:{name:"阿米娅",codename:"AMIYA",intro:"罗德岛的公开领袖，在内部拥有最高执行权。虽然，从外表上看起来仅仅是个不成熟的少女，实际上，她却是深受大家信任的合格的领袖。现在，阿米娅正带领着罗德岛，为了感染者的未来，为了让这片大地挣脱矿石病的阴霾而不懈努力。",voiceActor:{cn:"陶典",ja:"黑泽朋世"}},LM04:{name:"陈",codename:"CH'EN",intro:"陈，龙门高级警司，龙门近卫局特别督查组组长，毕业于维多利亚皇家近卫学校，成绩优异，表现突出。在龙门近卫局供职期间，力主取缔龙门境内非法活动，对抗暴力犯罪和有组织犯罪，追缉武装逃犯与国际重犯等行动，并取得多项重大成果。\n现作为特别人员协助罗德岛行动，并为现场提供战术指挥支援。",voiceActor:{cn:"虫虫",ja:"石上静香"}},PL02:{name:"德克萨斯",codename:"TEXAS",intro:"企鹅物流员工，单兵作战能力出类拔萃。\n于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛的多项行动提供协助。",voiceActor:{cn:"杨梦露",ja:"田所梓"}},PL03:{name:"能天使",codename:"EXUSIAI",intro:"能天使，拉特兰公民，适用拉特兰一至十三项公民权益。企鹅物流公司成员。从事秘密联络，武装押运等非公开活动，推测身份：信使。于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛多项行动提供协助。",voiceActor:{cn:"蔡书瑾",ja:"石见舞菜香"}},RL04:{name:"白面鸮",codename:"PTILOPSIS",intro:"白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",voiceActor:{cn:"龟娘",ja:"金元寿子"}}}},world:{infoMap:{originiums:{name:"源石",nameEn:"ORIGINIUMS",intro:"大地被起因不明的天灾四处肆虐，经由天灾席卷过的土地上出现了大量的神秘矿物——“源石”。依赖于技术的进步，源石蕴含的能量投入工业后使得文明顺利迈入现代，与此同时，源石本身也催生出“感染者”的存在。"},originium_arts:{name:"源石技艺",nameEn:"ORIGINIUM ARTS",intro:"源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。源石技艺所运用的能源，一般被认为来自于源石本身。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。"},reunion:{name:"整合运动",nameEn:"REUNION",intro:"无种族立场，极端排外的感染者组织。他们宣称“感染者应对自己的身份感到骄傲，积极去获取并使用属于自己的力量”。试图用最原始的手段去争夺世界的公正。以某座被摧毁的伟大城市为开端，医疗机构“罗德岛”的突然介入，令整个事态向着未知发展。"},infected:{name:"感染者",nameEn:"INFECTED",intro:"被源石所感染的人。理论致死率100% ，死亡时存在扩散传染性以及潜在危险能力，是各国隔离驱逐的目标。长久以来，没人告诉他们该如何渡过余生，如今伴随着一位颠覆者的出现，越来越多的感染者被纳入一场名为“整合运动”的反抗浪潮。"},nomadic_city:{name:"移动城邦",nameEn:"NOMADIC CITY",intro:"建造在可移动设备上的城市。频繁发生且破坏力巨大的天灾，迫使几乎所有的国家，都需要采用定期迁移家园与聚落的方式进行躲避。而移动城市，正是在这种需求下慢慢诞生的。人们在迁徙的过程中，尝试将建筑和种种装置安设在移动设备之上，并不断地扩大载具的规模。在文明与技术的演变之下，人们最终创造出了十分庞大的移动城市"},rhodes_island:{name:"罗德岛",nameEn:"RHODES ISLAND",intro:"罗德岛制药公司作为感染者问题专家，聘用感染者，深入危险地区，通过种种手段，已经成功解决了数起感染者引发的事件。而今，他们将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻，你的决策将决定罗德岛的方向。"}}},media:{infoMap:{"ABOUT TERRA":{title:"泰拉万象"},"MONSTER SIREN":{title:"塞壬唱片",desc:"一个已知或未知的世界"},GALLERY:{title:"游戏图集",desc:"节事回顾"},FURNITURE:{title:"家具图鉴",desc:"互动家具展示"},OPERATOR:{title:"干员展示",desc:"干员动态集录"},VIDEO:{title:"视频展示",desc:"视频展示"}},videoCategory:{version_pv:"版本PV",cg_animation:"CG动画",terra_exploration:"泰拉探索",special:"特别映像",operator_pv:"干员PV"},tip:"请选择您要查看的内容"},more:{infoMap:{integrated_strategies:{name:"集成战略"},reclamation_algorithm:{name:"生息演算"},animation:{name:"衍生动画"},terra_historicus:{name:"泰拉记事社"}},themeActivity:{website:"活动主题网站"}},pageDynamicCompile:{pageTitle:"干员动态集录",detailPageTitle:"动态动作预览",typeAll:"综合",typePromotion:"干员晋升",typeSkin:"干员时装"},pageDynamicFurn:{pageTitle:"互动家具",detailPageTitle:"互动家具展示"},pageNews:{pageTitle:"情报中心"},pageVideo:{pageTitle:"视频列表"},msg:{videoFormatNotSupported:"浏览器不支持播放，请更换浏览器后重试",protocolLoadFailed:"协议内容加载失败，请稍后重试"}}},37689:function(e){e.exports={container:"_86aa9ca1",scrollerWrapper:"_e842d1ca",loadingText:"_1955ef0e",flashing:"_b1cd402f",scroller:"_ca9cde55",article:"_58fe4125",_article:"_d6be3557",cateAndTitle:"_22cbc199",cate:"_0edddcb6",title:"_86483275",date:"_8f259902",divider:"_5a657cba",contentWrapper:"_d53f48fa",content:"_0868052a",pageInfo:"_61725cbe",buttonRow:"_04d276ea",button:"_8ef1c771",text:"_76c45225",main:"_52e2a715",sub:"_82702d79",returnListBtn:"_d5aa5bf8",icon:"_7428e50c",returnHomeBtn:"_2e7e91f7"}}},function(e){e.O(0,[474,571,126,868,744],function(){return e(e.s=37746)}),_N_E=e.O()}]);
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [703],
+  {
+    40156: function (e) {
+      var n, r, i, s, o, a, c, u, f, m, v, g, _, p, S, w, N, b, A, T, x, E;
+      e.exports =
+        ((n = "millisecond"),
+        (r = "second"),
+        (i = "minute"),
+        (s = "hour"),
+        (o = "week"),
+        (a = "month"),
+        (c = "quarter"),
+        (u = "year"),
+        (f = "date"),
+        (m = "Invalid Date"),
+        (v =
+          /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/),
+        (g =
+          /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g),
+        (_ = function (e, n, r) {
+          var i = String(e);
+          return !i || i.length >= n
+            ? e
+            : "" + Array(n + 1 - i.length).join(r) + e;
+        }),
+        ((S = {})[(p = "en")] = {
+          name: "en",
+          weekdays:
+            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+              "_",
+            ),
+          months:
+            "January_February_March_April_May_June_July_August_September_October_November_December".split(
+              "_",
+            ),
+          ordinal: function (e) {
+            var n = ["th", "st", "nd", "rd"],
+              r = e % 100;
+            return "[" + e + (n[(r - 20) % 10] || n[r] || "th") + "]";
+          },
+        }),
+        (w = "$isDayjsObject"),
+        (N = function (e) {
+          return e instanceof x || !(!e || !e[w]);
+        }),
+        (b = function t(e, n, r) {
+          var i;
+          if (!e) return p;
+          if ("string" == typeof e) {
+            var s = e.toLowerCase();
+            (S[s] && (i = s), n && ((S[s] = n), (i = s)));
+            var o = e.split("-");
+            if (!i && o.length > 1) return t(o[0]);
+          } else {
+            var a = e.name;
+            ((S[a] = e), (i = a));
+          }
+          return (!r && i && (p = i), i || (!r && p));
+        }),
+        (A = function (e, n) {
+          if (N(e)) return e.clone();
+          var r = "object" == typeof n ? n : {};
+          return ((r.date = e), (r.args = arguments), new x(r));
+        }),
+        ((T = {
+          s: _,
+          z: function (e) {
+            var n = -e.utcOffset(),
+              r = Math.abs(n);
+            return (
+              (n <= 0 ? "+" : "-") +
+              _(Math.floor(r / 60), 2, "0") +
+              ":" +
+              _(r % 60, 2, "0")
+            );
+          },
+          m: function t(e, n) {
+            if (e.date() < n.date()) return -t(n, e);
+            var r = 12 * (n.year() - e.year()) + (n.month() - e.month()),
+              i = e.clone().add(r, a),
+              s = n - i < 0,
+              o = e.clone().add(r + (s ? -1 : 1), a);
+            return +(-(r + (n - i) / (s ? i - o : o - i)) || 0);
+          },
+          a: function (e) {
+            return e < 0 ? Math.ceil(e) || 0 : Math.floor(e);
+          },
+          p: function (e) {
+            return (
+              {
+                M: a,
+                y: u,
+                w: o,
+                d: "day",
+                D: f,
+                h: s,
+                m: i,
+                s: r,
+                ms: n,
+                Q: c,
+              }[e] ||
+              String(e || "")
+                .toLowerCase()
+                .replace(/s$/, "")
+            );
+          },
+          u: function (e) {
+            return void 0 === e;
+          },
+        }).l = b),
+        (T.i = N),
+        (T.w = function (e, n) {
+          return A(e, { locale: n.$L, utc: n.$u, x: n.$x, $offset: n.$offset });
+        }),
+        (E = (x = (function () {
+          function M(e) {
+            ((this.$L = b(e.locale, null, !0)),
+              this.parse(e),
+              (this.$x = this.$x || e.x || {}),
+              (this[w] = !0));
+          }
+          var e = M.prototype;
+          return (
+            (e.parse = function (e) {
+              ((this.$d = (function (e) {
+                var n = e.date,
+                  r = e.utc;
+                if (null === n) return new Date(NaN);
+                if (T.u(n)) return new Date();
+                if (n instanceof Date) return new Date(n);
+                if ("string" == typeof n && !/Z$/i.test(n)) {
+                  var i = n.match(v);
+                  if (i) {
+                    var s = i[2] - 1 || 0,
+                      o = (i[7] || "0").substring(0, 3);
+                    return r
+                      ? new Date(
+                          Date.UTC(
+                            i[1],
+                            s,
+                            i[3] || 1,
+                            i[4] || 0,
+                            i[5] || 0,
+                            i[6] || 0,
+                            o,
+                          ),
+                        )
+                      : new Date(
+                          i[1],
+                          s,
+                          i[3] || 1,
+                          i[4] || 0,
+                          i[5] || 0,
+                          i[6] || 0,
+                          o,
+                        );
+                  }
+                }
+                return new Date(n);
+              })(e)),
+                this.init());
+            }),
+            (e.init = function () {
+              var e = this.$d;
+              ((this.$y = e.getFullYear()),
+                (this.$M = e.getMonth()),
+                (this.$D = e.getDate()),
+                (this.$W = e.getDay()),
+                (this.$H = e.getHours()),
+                (this.$m = e.getMinutes()),
+                (this.$s = e.getSeconds()),
+                (this.$ms = e.getMilliseconds()));
+            }),
+            (e.$utils = function () {
+              return T;
+            }),
+            (e.isValid = function () {
+              return this.$d.toString() !== m;
+            }),
+            (e.isSame = function (e, n) {
+              var r = A(e);
+              return this.startOf(n) <= r && r <= this.endOf(n);
+            }),
+            (e.isAfter = function (e, n) {
+              return A(e) < this.startOf(n);
+            }),
+            (e.isBefore = function (e, n) {
+              return this.endOf(n) < A(e);
+            }),
+            (e.$g = function (e, n, r) {
+              return T.u(e) ? this[n] : this.set(r, e);
+            }),
+            (e.unix = function () {
+              return Math.floor(this.valueOf() / 1e3);
+            }),
+            (e.valueOf = function () {
+              return this.$d.getTime();
+            }),
+            (e.startOf = function (e, n) {
+              var c = this,
+                m = !!T.u(n) || n,
+                v = T.p(e),
+                l = function (e, n) {
+                  var r = T.w(
+                    c.$u ? Date.UTC(c.$y, n, e) : new Date(c.$y, n, e),
+                    c,
+                  );
+                  return m ? r : r.endOf("day");
+                },
+                $ = function (e, n) {
+                  return T.w(
+                    c
+                      .toDate()
+                      [
+                        e
+                      ].apply(c.toDate("s"), (m ? [0, 0, 0, 0] : [23, 59, 59,
+                              999]).slice(n)),
+                    c,
+                  );
+                },
+                g = this.$W,
+                _ = this.$M,
+                p = this.$D,
+                S = "set" + (this.$u ? "UTC" : "");
+              switch (v) {
+                case u:
+                  return m ? l(1, 0) : l(31, 11);
+                case a:
+                  return m ? l(1, _) : l(0, _ + 1);
+                case o:
+                  var w = this.$locale().weekStart || 0,
+                    N = (g < w ? g + 7 : g) - w;
+                  return l(m ? p - N : p + (6 - N), _);
+                case "day":
+                case f:
+                  return $(S + "Hours", 0);
+                case s:
+                  return $(S + "Minutes", 1);
+                case i:
+                  return $(S + "Seconds", 2);
+                case r:
+                  return $(S + "Milliseconds", 3);
+                default:
+                  return this.clone();
+              }
+            }),
+            (e.endOf = function (e) {
+              return this.startOf(e, !1);
+            }),
+            (e.$set = function (e, o) {
+              var c,
+                m = T.p(e),
+                v = "set" + (this.$u ? "UTC" : ""),
+                g = (((c = {}).day = v + "Date"),
+                (c[f] = v + "Date"),
+                (c[a] = v + "Month"),
+                (c[u] = v + "FullYear"),
+                (c[s] = v + "Hours"),
+                (c[i] = v + "Minutes"),
+                (c[r] = v + "Seconds"),
+                (c[n] = v + "Milliseconds"),
+                c)[m],
+                _ = "day" === m ? this.$D + (o - this.$W) : o;
+              if (m === a || m === u) {
+                var p = this.clone().set(f, 1);
+                (p.$d[g](_),
+                  p.init(),
+                  (this.$d = p.set(f, Math.min(this.$D, p.daysInMonth())).$d));
+              } else g && this.$d[g](_);
+              return (this.init(), this);
+            }),
+            (e.set = function (e, n) {
+              return this.clone().$set(e, n);
+            }),
+            (e.get = function (e) {
+              return this[T.p(e)]();
+            }),
+            (e.add = function (e, n) {
+              var c,
+                f = this;
+              e = Number(e);
+              var m = T.p(n),
+                y = function (n) {
+                  var r = A(f);
+                  return T.w(r.date(r.date() + Math.round(n * e)), f);
+                };
+              if (m === a) return this.set(a, this.$M + e);
+              if (m === u) return this.set(u, this.$y + e);
+              if ("day" === m) return y(1);
+              if (m === o) return y(7);
+              var v =
+                  (((c = {})[i] = 6e4), (c[s] = 36e5), (c[r] = 1e3), c)[m] || 1,
+                g = this.$d.getTime() + e * v;
+              return T.w(g, this);
+            }),
+            (e.subtract = function (e, n) {
+              return this.add(-1 * e, n);
+            }),
+            (e.format = function (e) {
+              var n = this,
+                r = this.$locale();
+              if (!this.isValid()) return r.invalidDate || m;
+              var i = e || "YYYY-MM-DDTHH:mm:ssZ",
+                s = T.z(this),
+                o = this.$H,
+                a = this.$m,
+                c = this.$M,
+                u = r.weekdays,
+                f = r.months,
+                v = r.meridiem,
+                h = function (e, r, s, o) {
+                  return (e && (e[r] || e(n, i))) || s[r].slice(0, o);
+                },
+                d = function (e) {
+                  return T.s(o % 12 || 12, e, "0");
+                },
+                _ =
+                  v ||
+                  function (e, n, r) {
+                    var i = e < 12 ? "AM" : "PM";
+                    return r ? i.toLowerCase() : i;
+                  };
+              return i.replace(g, function (e, i) {
+                return (
+                  i ||
+                  (function (e) {
+                    switch (e) {
+                      case "YY":
+                        return String(n.$y).slice(-2);
+                      case "YYYY":
+                        return T.s(n.$y, 4, "0");
+                      case "M":
+                        return c + 1;
+                      case "MM":
+                        return T.s(c + 1, 2, "0");
+                      case "MMM":
+                        return h(r.monthsShort, c, f, 3);
+                      case "MMMM":
+                        return h(f, c);
+                      case "D":
+                        return n.$D;
+                      case "DD":
+                        return T.s(n.$D, 2, "0");
+                      case "d":
+                        return String(n.$W);
+                      case "dd":
+                        return h(r.weekdaysMin, n.$W, u, 2);
+                      case "ddd":
+                        return h(r.weekdaysShort, n.$W, u, 3);
+                      case "dddd":
+                        return u[n.$W];
+                      case "H":
+                        return String(o);
+                      case "HH":
+                        return T.s(o, 2, "0");
+                      case "h":
+                        return d(1);
+                      case "hh":
+                        return d(2);
+                      case "a":
+                        return _(o, a, !0);
+                      case "A":
+                        return _(o, a, !1);
+                      case "m":
+                        return String(a);
+                      case "mm":
+                        return T.s(a, 2, "0");
+                      case "s":
+                        return String(n.$s);
+                      case "ss":
+                        return T.s(n.$s, 2, "0");
+                      case "SSS":
+                        return T.s(n.$ms, 3, "0");
+                      case "Z":
+                        return s;
+                    }
+                    return null;
+                  })(e) ||
+                  s.replace(":", "")
+                );
+              });
+            }),
+            (e.utcOffset = function () {
+              return -(15 * Math.round(this.$d.getTimezoneOffset() / 15));
+            }),
+            (e.diff = function (e, n, f) {
+              var m,
+                v = this,
+                g = T.p(n),
+                _ = A(e),
+                p = (_.utcOffset() - this.utcOffset()) * 6e4,
+                S = this - _,
+                D = function () {
+                  return T.m(v, _);
+                };
+              switch (g) {
+                case u:
+                  m = D() / 12;
+                  break;
+                case a:
+                  m = D();
+                  break;
+                case c:
+                  m = D() / 3;
+                  break;
+                case o:
+                  m = (S - p) / 6048e5;
+                  break;
+                case "day":
+                  m = (S - p) / 864e5;
+                  break;
+                case s:
+                  m = S / 36e5;
+                  break;
+                case i:
+                  m = S / 6e4;
+                  break;
+                case r:
+                  m = S / 1e3;
+                  break;
+                default:
+                  m = S;
+              }
+              return f ? m : T.a(m);
+            }),
+            (e.daysInMonth = function () {
+              return this.endOf(a).$D;
+            }),
+            (e.$locale = function () {
+              return S[this.$L];
+            }),
+            (e.locale = function (e, n) {
+              if (!e) return this.$L;
+              var r = this.clone(),
+                i = b(e, n, !0);
+              return (i && (r.$L = i), r);
+            }),
+            (e.clone = function () {
+              return T.w(this.$d, this);
+            }),
+            (e.toDate = function () {
+              return new Date(this.valueOf());
+            }),
+            (e.toJSON = function () {
+              return this.isValid() ? this.toISOString() : null;
+            }),
+            (e.toISOString = function () {
+              return this.$d.toISOString();
+            }),
+            (e.toString = function () {
+              return this.$d.toUTCString();
+            }),
+            M
+          );
+        })()).prototype),
+        (A.prototype = E),
+        [
+          ["$ms", n],
+          ["$s", r],
+          ["$m", i],
+          ["$H", s],
+          ["$W", "day"],
+          ["$M", a],
+          ["$y", u],
+          ["$D", f],
+        ].forEach(function (e) {
+          E[e[1]] = function (n) {
+            return this.$g(n, e[0], e[1]);
+          };
+        }),
+        (A.extend = function (e, n) {
+          return (e.$i || (e(n, x, A), (e.$i = !0)), A);
+        }),
+        (A.locale = b),
+        (A.isDayjs = N),
+        (A.unix = function (e) {
+          return A(1e3 * e);
+        }),
+        (A.en = S[p]),
+        (A.Ls = S),
+        (A.p = {}),
+        A);
+    },
+    37746: function (e, n, r) {
+      (Promise.resolve().then(r.t.bind(r, 42314, 23)),
+        Promise.resolve().then(r.bind(r, 41659)));
+    },
+    42314: function (e, n, r) {
+      "use strict";
+      (Object.defineProperty(n, "__esModule", { value: !0 }),
+        (function (e, n) {
+          for (var r in n)
+            Object.defineProperty(e, r, { enumerable: !0, get: n[r] });
+        })(n, {
+          suspense: function () {
+            return suspense;
+          },
+          NoSSR: function () {
+            return NoSSR;
+          },
+        }));
+      let i = r(88536);
+      function suspense() {
+        let e = Error(i.NEXT_DYNAMIC_NO_SSR_CODE);
+        throw ((e.digest = i.NEXT_DYNAMIC_NO_SSR_CODE), e);
+      }
+      function NoSSR(e) {
+        let { children: n } = e;
+        return n;
+      }
+    },
+    41659: function (e, n, r) {
+      "use strict";
+      (r.r(n),
+        r.d(n, {
+          ArticleClient: function () {
+            return ArticleClient;
+          },
+        }));
+      var i = r(84548),
+        s = r(58036),
+        o = r(18315),
+        a = r(40156),
+        c = r.n(a),
+        u = r(24216),
+        f = r.n(u),
+        m = r(9737),
+        v = r(29769),
+        g = r(16928),
+        _ = r(19174),
+        p = r(37689),
+        S = r.n(p);
+      let ArticleClient = (e) => {
+          let { articleData: n } = e;
+          return (0, i.jsxs)("div", {
+            className: S().container,
+            children: [
+              (0, i.jsx)("div", {
+                className: S().article,
+                children: (0, i.jsxs)("div", {
+                  className: S()._article,
+                  children: [
+                    (0, i.jsxs)("div", {
+                      className: S().cateAndTitle,
+                      children: [
+                        (0, i.jsx)("div", {
+                          className: S().cate,
+                          children: _.f.info.category[(0, m.o)(n.tab)],
+                        }),
+                        (0, i.jsx)("div", {
+                          className: S().title,
+                          children: n.title,
+                        }),
+                      ],
+                    }),
+                    (0, i.jsx)("div", {
+                      className: S().date,
+                      children: c()
+                        .unix(n.displayTime)
+                        .format("YYYY // MM / DD"),
+                    }),
+                    (0, i.jsx)("div", { className: S().divider }),
+                    (0, i.jsx)("div", {
+                      className: S().contentWrapper,
+                      children: (0, i.jsx)(Scroller, {
+                        children: (0, i.jsx)("div", {
+                          className: S().content,
+                          dangerouslySetInnerHTML: { __html: n.data },
+                        }),
+                      }),
+                    }),
+                  ],
+                }),
+              }),
+              (0, i.jsxs)("div", {
+                className: S().pageInfo,
+                children: [
+                  (0, i.jsx)("div", { className: S().title, children: "INFO" }),
+                  (0, i.jsxs)("div", {
+                    className: S().buttonRow,
+                    children: [
+                      (0, i.jsxs)(f(), {
+                        className: (0, o.W)(S().button, S().returnListBtn),
+                        href: "/news",
+                        prefetch: !1,
+                        children: [
+                          (0, i.jsx)("div", {
+                            className: S().icon,
+                            children: (0, i.jsx)(v.PZ, {}),
+                          }),
+                          (0, i.jsxs)("div", {
+                            className: S().text,
+                            children: [
+                              (0, i.jsx)("div", {
+                                className: S().main,
+                                children: _.f.common.backToList,
+                              }),
+                              (0, i.jsx)("div", {
+                                className: S().sub,
+                                children: "GO BACK",
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      (0, i.jsx)(f(), {
+                        className: (0, o.W)(S().button, S().returnHomeBtn),
+                        href: "/",
+                        prefetch: !1,
+                        children: (0, i.jsxs)("div", {
+                          className: S().text,
+                          children: [
+                            (0, i.jsx)("div", {
+                              className: S().main,
+                              children: _.f.common.backToHome,
+                            }),
+                            (0, i.jsx)("div", {
+                              className: S().sub,
+                              children: "HOMEPAGE",
+                            }),
+                          ],
+                        }),
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            ],
+          });
+        },
+        Scroller = (e) => {
+          let { children: n } = e,
+            r = (0, g.x)();
+          return (
+            (0, s.useEffect)(() => {
+              let e = r.current,
+                listener = (e) => {
+                  e.stopPropagation();
+                };
+              return (
+                e.addEventListener("wheel", listener, { passive: !1 }),
+                () => {
+                  e.removeEventListener("wheel", listener);
+                }
+              );
+            }, [null]),
+            (0, s.useEffect)(() => {
+              let e = r.current,
+                listener = (e) => {
+                  e.stopPropagation();
+                };
+              return (
+                e.addEventListener("touchmove", listener, { passive: !1 }),
+                () => {
+                  e.removeEventListener("touchmove", listener);
+                }
+              );
+            }, [null]),
+            (0, i.jsx)("div", {
+              className: S().scrollerWrapper,
+              children: (0, i.jsx)("div", {
+                ref: (e) => {
+                  ((r.current = e),
+                    e &&
+                      ((e.style.overflowY = "scroll"),
+                      (e.style.marginRight = "".concat(
+                        -window.__SCROLLBAR_WIDTH,
+                        "px",
+                      ))));
+                },
+                className: S().scroller,
+                children: n,
+              }),
+            })
+          );
+        };
+    },
+    9737: function (e, n, r) {
+      "use strict";
+      r.d(n, {
+        D: function () {
+          return i;
+        },
+        o: function () {
+          return mapCategoryToCategoryString;
+        },
+      });
+      let i = ["LATEST", "ANNOUNCEMENT", "ACTIVITY", "NEWS"],
+        mapCategoryToCategoryString = (e) =>
+          ({ 0: "ANNOUNCEMENT", 1: "ACTIVITY", 2: "NEWS" })[e] || "LATEST";
+    },
+    29769: function (e, n, r) {
+      "use strict";
+      r.d(n, {
+        PZ: function () {
+          return IconArrowLeftSvg;
+        },
+        bI: function () {
+          return IconArrowRightSvg;
+        },
+        f2: function () {
+          return IconArrowDownSvg;
+        },
+        id: function () {
+          return IconArrowUpSvg;
+        },
+      });
+      var i = r(84548);
+      r(58036);
+      var s = r(83961);
+      let o = "0 0 7 15",
+        IconArrowRightSvg = (e) => {
+          let { children: n, ...r } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: o,
+            ...r,
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(s.b.iconArrow),
+            }),
+          });
+        },
+        IconArrowLeftSvg = (e) => {
+          let { children: n, style: r = {}, ...a } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: o,
+            ...a,
+            style: { ...r, transform: "rotate(180deg)" },
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(s.b.iconArrow),
+            }),
+          });
+        },
+        IconArrowUpSvg = (e) => {
+          let { children: n, style: r = {}, ...a } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: o,
+            ...a,
+            style: { ...r, transform: "rotate(-90deg)" },
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(s.b.iconArrow),
+            }),
+          });
+        },
+        IconArrowDownSvg = (e) => {
+          let { children: n, style: r = {}, ...a } = e;
+          return (0, i.jsx)("svg", {
+            viewBox: o,
+            ...a,
+            style: { ...r, transform: "rotate(90deg)" },
+            children: (0, i.jsx)("use", {
+              xlinkHref: "#".concat(s.b.iconArrow),
+            }),
+          });
+        };
+    },
+    83961: function (e, n, r) {
+      "use strict";
+      (r.d(n, {
+        b: function () {
+          return i;
+        },
+      }),
+        r(84548));
+      let i = {
+        titleArknights: "svg_def-title_arknights",
+        copyrightMini: "svg_def-copyright_mini",
+        iconArrow: "svg_def-icon_arrow",
+        iconArrowHrz: "svg_def-icon_arrow_hrz",
+        iconDblArrow: "svg_def-icon_dblArrow",
+        iconUser: "svg_def-icon_user",
+        iconSound: "svg_def-icon_sound",
+        iconVoice: "svg_def-icon_voice",
+        iconPlayBtn: "svg_def-icon_play_btn",
+        iconMiniPlayBtn: "svg_def-icon_mini_play_btn",
+        iconMiniLinkBtn: "svg_def-icon_mini_link_btn",
+        iconSocial: "svg_def-icon_social",
+        iconIOS: "svg_def-icon_iOS",
+        iconAndroid: "svg_def-icon_Android",
+        iconTapTap: "svg_def-icon_TapTap",
+        iconSkland: "svg_def-icon_skland",
+        iconBilibili: "svg_def-icon_bilibili",
+        iconWechat: "svg_def-icon_wechat",
+        iconWeibo: "svg_def-icon_weibo",
+        iconYouTube: "svg_def-icon_youtube",
+        iconDiscord: "svg_def-icon_discord",
+        iconFacebook: "svg_def-icon_facebook",
+        iconElitePhase0: "svg_def-elite_phase_0",
+        iconElitePhase1: "svg_def-elite_phase_1",
+        iconElitePhase2: "svg_def-elite_phase_2",
+        iconHanger: "svg_def-hanger",
+        iconHammer: "svg_def-hammer",
+        logoRhodesIsland: "svg_def-logo_rhodes_island",
+      };
+    },
+    16928: function (e, n, r) {
+      "use strict";
+      r.d(n, {
+        x: function () {
+          return useElemRef;
+        },
+      });
+      var i = r(58036);
+      let useElemRef = () => (0, i.useRef)(null);
+    },
+    19174: function (e, n, r) {
+      "use strict";
+      r.d(n, {
+        f: function () {
+          return i;
+        },
+      });
+      let i = {
+        locale: "zh-cn",
+        links: {
+          host: "https://ak.hypergryph.com/",
+          userCenter: "https://ak.hypergryph.com/user/",
+          csCenter: "https://customer-service.hypergryph.com/ak",
+          msr: "https://monster-siren.hypergryph.com/",
+          animeSite: "https://ak.hypergryph.com/anime/",
+          comicSite: "https://comic.hypergryph.com/terra-historicus/",
+        },
+        document: {
+          title: "19532 MechCaT",
+          subtitle: {
+            dynamicCompile: "干员动态集录 - 明日方舟",
+            dynamicFurn: "互动家具 - 明日方舟",
+            video: "视频列表 - 明日方舟",
+            news: "情报中心 - 明日方舟",
+            commonSuffix: " - 明日方舟",
+          },
+          description:
+            "《明日方舟》是一款魔物主题的策略手游。在游戏中，玩家将管理一艘满载“ 魔物干员”的方舟，为调查来源神秘的矿石灾难而踏上旅途。在这个宽广而危机四伏的世界中，你或许会看到废土中的城市废墟，或许会看到仿若幻境的亚人国度，或许会遭遇无法解读的神秘，或许参与无比残酷的战争。在有关幻想与异种生命的世界中，体验史诗与想象，情感与牵绊！",
+          keywords: [
+            "19532",
+            "MechCat",
+            "Robotics",
+          
+          ],
+          favicon: "https://web.hycdn.cn/favicon.ico",
+        },
+        common: {
+          goBack: "返回",
+          backToList: "返回列表",
+          backToHome: "返回首页",
+          readMore: "更多情报",
+          viewDetail: "查看详情",
+          retry: "重试",
+          wechatQrcodeTip: "微信扫码关注公众号",
+        },
+        download: { qrcode: "扫码下载" },
+        userPanel: {
+          pleaseLogin: "请先登录您的账号。",
+          welcomeDoctor: "欢迎回来，博士。",
+          idle: "暂无待处理工作。",
+          actions: {
+            customerService: "客服中心",
+            login: "立即登录",
+            register: "前往注册",
+            userCenter: "个人中心",
+            logout: "登出",
+          },
+        },
+        sectionTitle: {
+          index: "",
+          information: "",
+          operator: "",
+          world: "",
+          media: "",
+          more: "",
+          customerService: "",
+        },
+        info: {
+          category: {
+            LATEST: "最新",
+            ANNOUNCEMENT: "公告",
+            ACTIVITY: "活动",
+            NEWS: "新闻",
+          },
+        },
+        char: {
+          infoMap: {
+            B003: {
+              name: "凯尔希",
+              codename: "KAL'TSIT",
+              intro:
+                "罗德岛最高管理者之一，阿米娅的直接辅导者。\n罗德岛医疗部门的总负责人。\n作为罗德岛的老成员，凯尔希医生是在阿米娅背后最稳固的援护者。",
+              voiceActor: { cn: "刘雪", ja: "日笠阳子" },
+            },
+            R001: {
+              name: "阿米娅",
+              codename: "AMIYA",
+              intro:
+                "罗德岛的公开领袖，在内部拥有最高执行权。虽然，从外表上看起来仅仅是个不成熟的少女，实际上，她却是深受大家信任的合格的领袖。现在，阿米娅正带领着罗德岛，为了感染者的未来，为了让这片大地挣脱矿石病的阴霾而不懈努力。",
+              voiceActor: { cn: "陶典", ja: "黑泽朋世" },
+            },
+            LM04: {
+              name: "陈",
+              codename: "CH'EN",
+              intro:
+                "陈，龙门高级警司，龙门近卫局特别督查组组长，毕业于维多利亚皇家近卫学校，成绩优异，表现突出。在龙门近卫局供职期间，力主取缔龙门境内非法活动，对抗暴力犯罪和有组织犯罪，追缉武装逃犯与国际重犯等行动，并取得多项重大成果。\n现作为特别人员协助罗德岛行动，并为现场提供战术指挥支援。",
+              voiceActor: { cn: "虫虫", ja: "石上静香" },
+            },
+            PL02: {
+              name: "德克萨斯",
+              codename: "TEXAS",
+              intro:
+                "企鹅物流员工，单兵作战能力出类拔萃。\n于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛的多项行动提供协助。",
+              voiceActor: { cn: "杨梦露", ja: "田所梓" },
+            },
+            PL03: {
+              name: "能天使",
+              codename: "EXUSIAI",
+              intro:
+                "能天使，拉特兰公民，适用拉特兰一至十三项公民权益。企鹅物流公司成员。从事秘密联络，武装押运等非公开活动，推测身份：信使。于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛多项行动提供协助。",
+              voiceActor: { cn: "蔡书瑾", ja: "石见舞菜香" },
+            },
+            RL04: {
+              name: "白面鸮",
+              codename: "PTILOPSIS",
+              intro:
+                "白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",
+              voiceActor: { cn: "龟娘", ja: "金元寿子" },
+            },
+          },
+        },
+        world: {
+          infoMap: {
+            originiums: {
+              name: "源石",
+              nameEn: "ORIGINIUMS",
+              intro:
+                "大地被起因不明的天灾四处肆虐，经由天灾席卷过的土地上出现了大量的神秘矿物——“源石”。依赖于技术的进步，源石蕴含的能量投入工业后使得文明顺利迈入现代，与此同时，源石本身也催生出“感染者”的存在。",
+            },
+            originium_arts: {
+              name: "源石技艺",
+              nameEn: "ORIGINIUM ARTS",
+              intro:
+                "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。源石技艺所运用的能源，一般被认为来自于源石本身。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。",
+            },
+            reunion: {
+              name: "整合运动",
+              nameEn: "REUNION",
+              intro:
+                "无种族立场，极端排外的感染者组织。他们宣称“感染者应对自己的身份感到骄傲，积极去获取并使用属于自己的力量”。试图用最原始的手段去争夺世界的公正。以某座被摧毁的伟大城市为开端，医疗机构“罗德岛”的突然介入，令整个事态向着未知发展。",
+            },
+            infected: {
+              name: "感染者",
+              nameEn: "INFECTED",
+              intro:
+                "被源石所感染的人。理论致死率100% ，死亡时存在扩散传染性以及潜在危险能力，是各国隔离驱逐的目标。长久以来，没人告诉他们该如何渡过余生，如今伴随着一位颠覆者的出现，越来越多的感染者被纳入一场名为“整合运动”的反抗浪潮。",
+            },
+            nomadic_city: {
+              name: "移动城邦",
+              nameEn: "NOMADIC CITY",
+              intro:
+                "建造在可移动设备上的城市。频繁发生且破坏力巨大的天灾，迫使几乎所有的国家，都需要采用定期迁移家园与聚落的方式进行躲避。而移动城市，正是在这种需求下慢慢诞生的。人们在迁徙的过程中，尝试将建筑和种种装置安设在移动设备之上，并不断地扩大载具的规模。在文明与技术的演变之下，人们最终创造出了十分庞大的移动城市",
+            },
+            rhodes_island: {
+              name: "罗德岛",
+              nameEn: "RHODES ISLAND",
+              intro:
+                "罗德岛制药公司作为感染者问题专家，聘用感染者，深入危险地区，通过种种手段，已经成功解决了数起感染者引发的事件。而今，他们将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻，你的决策将决定罗德岛的方向。",
+            },
+          },
+        },
+        media: {
+          infoMap: {
+            "ABOUT TERRA": { title: "泰拉万象" },
+            "MONSTER SIREN": {
+              title: "塞壬唱片",
+              desc: "一个已知或未知的世界",
+            },
+            GALLERY: { title: "游戏图集", desc: "节事回顾" },
+            FURNITURE: { title: "家具图鉴", desc: "互动家具展示" },
+            OPERATOR: { title: "干员展示", desc: "干员动态集录" },
+            VIDEO: { title: "视频展示", desc: "视频展示" },
+          },
+          videoCategory: {
+            version_pv: "版本PV",
+            cg_animation: "CG动画",
+            terra_exploration: "泰拉探索",
+            special: "特别映像",
+            operator_pv: "干员PV",
+          },
+          tip: "请选择您要查看的内容",
+        },
+        more: {
+          infoMap: {
+            integrated_strategies: { name: "集成战略" },
+            reclamation_algorithm: { name: "生息演算" },
+            animation: { name: "衍生动画" },
+            terra_historicus: { name: "泰拉记事社" },
+          },
+          themeActivity: { website: "活动主题网站" },
+        },
+        pageDynamicCompile: {
+          pageTitle: "干员动态集录",
+          detailPageTitle: "动态动作预览",
+          typeAll: "综合",
+          typePromotion: "干员晋升",
+          typeSkin: "干员时装",
+        },
+        pageDynamicFurn: {
+          pageTitle: "互动家具",
+          detailPageTitle: "互动家具展示",
+        },
+        pageNews: { pageTitle: "情报中心" },
+        pageVideo: { pageTitle: "视频列表" },
+        msg: {
+          videoFormatNotSupported: "浏览器不支持播放，请更换浏览器后重试",
+          protocolLoadFailed: "协议内容加载失败，请稍后重试",
+        },
+      };
+    },
+    37689: function (e) {
+      e.exports = {
+        container: "_86aa9ca1",
+        scrollerWrapper: "_e842d1ca",
+        loadingText: "_1955ef0e",
+        flashing: "_b1cd402f",
+        scroller: "_ca9cde55",
+        article: "_58fe4125",
+        _article: "_d6be3557",
+        cateAndTitle: "_22cbc199",
+        cate: "_0edddcb6",
+        title: "_86483275",
+        date: "_8f259902",
+        divider: "_5a657cba",
+        contentWrapper: "_d53f48fa",
+        content: "_0868052a",
+        pageInfo: "_61725cbe",
+        buttonRow: "_04d276ea",
+        button: "_8ef1c771",
+        text: "_76c45225",
+        main: "_52e2a715",
+        sub: "_82702d79",
+        returnListBtn: "_d5aa5bf8",
+        icon: "_7428e50c",
+        returnHomeBtn: "_2e7e91f7",
+      };
+    },
+  },
+  function (e) {
+    (e.O(0, [474, 571, 126, 868, 744], function () {
+      return e((e.s = 37746));
+    }),
+      (_N_E = e.O()));
+  },
+]);
 //# sourceMappingURL=page-4ddcb5272c2cd6b7.js.map

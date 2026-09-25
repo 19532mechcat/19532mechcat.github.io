@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1100 320"
+     fill="none">
+  <title>MechCat Logo</title>
+
+  <g transform="translate(104 180)">
+    <circle r="86" stroke="#021bff" stroke-width="10"/>
+    <circle r="75" stroke="#00e4ef" stroke-width="12"/>
+    <circle r="62" stroke="#a4edf3" stroke-width="12"/>
+    <circle r="49" stroke="#a5a3dc" stroke-width="10"/>
+    <circle r="38" stroke="#a6a0ee" stroke-width="8"/>
+    <circle r="27" stroke="#00a7b2" stroke-width="12"/>
+  </g>
+
+  <ellipse cx="91" cy="111" rx="26" ry="10"
+           stroke="#389eb5" stroke-width="7"/>
+  <path d="M87 106V93H98V106"
+        stroke="#087c90" stroke-width="7"/>
+
+  <g transform="translate(92 79)">
+    <g stroke="#1685a2" stroke-width="11"
+       stroke-linecap="round">
+      <path d="M0-22V-28 M0 22V28"/>
+      <path d="M-22 0H-28 M22 0H28"/>
+      <path d="M-16-16L-20-20 M16 16L20 20"/>
+      <path d="M16-16L20-20 M-16 16L-20 20"/>
+    </g>
+    <circle r="20" stroke="#9ab7c0" stroke-width="12"/>
+    <circle r="8" stroke="#087d98" stroke-width="4"/>
+  </g>
+
+  
+  <path
+    d="M99 170
+       C124 189 72 254 100 266
+       C130 283 184 210 218 163
+       L290 66
+       C266 105 221 180 202 222
+       C229 203 253 183 267 199
+       C280 218 276 251 293 270"
+    stroke="#073b80"
+    stroke-width="39"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  
+  <g stroke="#073b80" stroke-linecap="round"
+     stroke-linejoin="round">
+    <path d="M327 151L402 134" stroke-width="29"/>
+    <path d="M331 173
+             C329 204 327 245 349 258
+             C370 270 393 261 412 264"
+          stroke-width="32"/>
+    <path d="M337 213L386 196" stroke-width="29"/>
+  </g>
+
+  
+  <path
+    d="M521 150
+       C508 106 467 127 445 158
+       C417 199 428 249 464 262
+       C485 270 510 258 531 246"
+    stroke="#073b80"
+    stroke-width="33"
+    stroke-linecap="round"/>
+
+  <g stroke="#073b80" stroke-linecap="round"
+     stroke-linejoin="round">
+    <path d="M585 130L550 267" stroke-width="25"/>
+    <path d="M572 192
+             C597 184 623 183 653 186"
+          stroke-width="27"/>
+    <path d="M686 113
+             C667 152 642 228 654 271"
+          stroke-width="33"/>
+  </g>
+
+  
+  <path
+    d="M811 143
+       C772 121 713 144 681 181
+       C646 222 687 255 732 264
+       C763 270 798 266 828 253"
+    stroke="#aacdfa"
+    stroke-width="37"
+    stroke-linecap="round"/>
+
+  <path
+    d="M769 127
+       C788 100 810 76 826 78
+       C841 84 847 128 859 177"
+    stroke="#83aadc"
+    stroke-width="25"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  
+  <path
+    d="M840 188
+       C890 164 958 130 1015 114
+       C1026 111 1035 112 1041 117"
+    stroke="#96b5df"
+    stroke-width="36"
+    stroke-linecap="round"/>
+
+  
+  <path
+    d="M963 155
+       C966 184 952 222 963 255"
+    stroke="#cbdef7"
+    stroke-width="35"
+    stroke-linecap="round"/>
+</svg>

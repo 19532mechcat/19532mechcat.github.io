@@ -769,34 +769,32 @@
   });
 },
         DownloadBtn_Emulator = (e) => {
-          let { className: t, leidianLink: s, mumuLink: c, ...A } = e;
-          return (0, a.jsxs)("a", {
-            className: (0, n.Z)(h().button, h().MuMu, t),
-            onClick: (e) => {
-              (e.preventDefault(),
-                l.r.show({ mumuLink: c || "", leidianLink: s || "" }),
-                r.t.event("emulator_selection_modal", { action: "open" }));
-            },
-            href: "https://www.tdsb.on.ca/Find-your/Schools/schno/4116",
-            children: [
-              (0, a.jsx)("div", {
-                className: h().icon,
-                children: (0, a.jsx)("img", {
-                  className: h().img,
-                  src: "./images/school.png",
-                  alt: "school",
-                }),
-              }),
-              (0, a.jsx)("div", {
-                className: h().text,
-                children: (0, a.jsx)("div", {
-                  className: h().main,
-                  children: "Our School",
-                }),
-              }),
-            ],
-          });
-        },
+  let { className: t, leidianLink: s, mumuLink: c, ...A } = e;
+
+  return (0, a.jsxs)("a", {
+    className: (0, n.Z)(h().button, h().MuMu, t),
+    href: "https://www.tdsb.on.ca/Find-your/Schools/schno/4116",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    children: [
+      (0, a.jsx)("div", {
+        className: h().icon,
+        children: (0, a.jsx)("img", {
+          className: h().img,
+          src: "./images/school.png",
+          alt: "School",
+        }),
+      }),
+      (0, a.jsx)("div", {
+        className: h().text,
+        children: (0, a.jsx)("div", {
+          className: h().main,
+          children: "Our School",
+        }),
+      }),
+    ],
+  });
+},
         DownloadBtn_Windows = (e) => {
           let { className: t, ...s } = e,
             handleClick = async () => {

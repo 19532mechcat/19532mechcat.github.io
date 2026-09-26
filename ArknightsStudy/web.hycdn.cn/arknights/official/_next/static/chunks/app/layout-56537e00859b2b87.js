@@ -3,7 +3,7 @@
   {
     91542: function (e, n, t) {
       "use strict";
-      e.exports = t.p + "static/media/audio/bgm.ea4286.mp3";
+      e.exports = "./AudioVideo/TheManWhoSoldTheWorld.m4a";
     },
     21061: function (e, n, t) {
       (Promise.resolve().then(t.bind(t, 37501)),
@@ -444,7 +444,24 @@
                     children: [
                       (0, i.jsx)("div", {
                         className: (0, s.Z)(F().button, f && F().active),
-                        onClick: () => p(!0),
+                        onClick: async () => {
+  p(false);
+
+  try {
+    if (navigator.share) {
+      await navigator.share({
+        title: document.title,
+        url: window.location.href,
+      });
+    } else {
+      window.prompt("Copy this link to share:", window.location.href);
+    }
+  } catch (err) {
+    if (err.name !== "AbortError") {
+      window.prompt("Copy this link to share:", window.location.href);
+    }
+  }
+},
                         children: (0, i.jsx)(IconSocialSvg, {}),
                       }),
                       (0, i.jsx)("div", {
@@ -1565,7 +1582,7 @@
           retry: "重试",
           wechatQrcodeTip: "微信扫码关注公众号",
         },
-        download: { qrcode: "扫码下载" },
+        download: { qrcode: "19532" },
         userPanel: {
           pleaseLogin: "请先登录您的账号。",
           welcomeDoctor: "欢迎回来，博士。",

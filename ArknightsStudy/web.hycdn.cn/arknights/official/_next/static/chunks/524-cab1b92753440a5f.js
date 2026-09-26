@@ -355,7 +355,7 @@
       var a = i(83961);
      let TitleSvg = (e) => {
     let { children: t, ...i } = e;
-    return (0, n.jsx)("svg", {viewBox:"0 0 381 178.5", ...i, role:"img", "aria-label":"MechCat", children:(0, n.jsx)("image", {href:"./images/Titlelogo.svg", x:0, y:0, width:381, height:178.5, preserveAspectRatio:"xMidYMid meet"})});
+    return (0, n.jsx)("svg", {viewBox:"0 0 254 119", ...i, role:"img", "aria-label":"MechCat", children:(0, n.jsx)("image", {href:"./images/Titlelogo.svg", x:0, y:0, width:254, height:119, preserveAspectRatio:"xMidYMid meet"})});
 };
     },
     62841: function (e, t, i) {

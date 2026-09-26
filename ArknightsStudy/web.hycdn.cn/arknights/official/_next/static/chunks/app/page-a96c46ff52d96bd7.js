@@ -674,23 +674,27 @@
           return (0, a.jsxs)("a", {
             className: (0, n.Z)(h().button, h().iOS, t),
             target: "_blank",
-            ...i,
+            href: "https://discord.com/",
             onClick: () => {
               r.t.event("download", { channel: "ios" });
             },
             children: [
               (0, a.jsx)("div", {
                 className: h().icon,
-                children: (0, a.jsx)(IconIOSSvg, {}),
+                children: (0, a.jsx)("img", {
+          className: h().img,
+          src: "./images/discord.png",
+          alt: "Discord",
+        }),
               }),
               (0, a.jsxs)("div", {
                 className: h().text,
                 children: [
                   (0, a.jsx)("div", {
                     className: h().main,
-                    children: "App Store",
+                    children: "Discord",
                   }),
-                  (0, a.jsx)("div", { className: h().sub, children: "下载" }),
+                  (0, a.jsx)("div", { className: h().sub, children: "Link" }),
                 ],
               }),
             ],
@@ -701,44 +705,69 @@
           return (0, a.jsxs)("a", {
             className: (0, n.Z)(h().button, h().Android, t),
             target: "_blank",
-            ...i,
+            href: "https://www.youtube.com/",
             onClick: () => {
               r.t.event("download", { channel: "android" });
             },
             children: [
               (0, a.jsx)("div", {
                 className: h().icon,
-                children: (0, a.jsx)(IconAndroidSvg, {}),
+                children: (0, a.jsx)("img", {
+          className: h().img,
+          src: "./images/youtube.png",
+          alt: "Youtube",
+        }),
               }),
               (0, a.jsxs)("div", {
                 className: h().text,
                 children: [
                   (0, a.jsx)("div", {
                     className: h().main,
-                    children: "Android",
+                    children: "Youtube",
                   }),
-                  (0, a.jsx)("div", { className: h().sub, children: "下载" }),
+                  (0, a.jsx)("div", { className: h().sub, children: "Link" }),
                 ],
               }),
             ],
           });
         },
         DownloadBtn_TapTap = (e) => {
-          let { className: t, ...s } = e;
-          return (0, a.jsx)("a", {
-            className: (0, n.Z)(h().button, h().TapTap, t),
-            target: "_blank",
-            ...s,
-            onClick: () => {
-              r.t.event("download", { channel: "taptap" });
-            },
-            children: (0, a.jsx)("img", {
-              className: h().fullIcon,
-              src: i(96998).Z.src,
-              alt: "TapTap",
-            }),
-          });
-        },
+  let { className: t, ...s } = e;
+
+  return (0, a.jsxs)("a", {
+    className: (0, n.Z)(h().button, h().TapTap, t),
+    ...s,
+    target: "_blank",
+    rel: "noopener noreferrer",
+    href: "https://www.twitter.com/",
+    onClick: () => {
+      r.t.event("download", { channel: "taptap" });
+    },
+    children: [
+      (0, a.jsx)("div", {
+        className: h().icon,
+        children: (0, a.jsx)("img", {
+          className: h().img,
+          src: "./images/twitter.png",
+          alt: "Twitter",
+        }),
+      }),
+      (0, a.jsxs)("div", {
+        className: h().text,
+        children: [
+          (0, a.jsx)("div", {
+            className: h().main,
+            children: "Twitter",
+          }),
+          (0, a.jsx)("div", {
+            className: h().sub,
+            children: "Link",
+          }),
+        ],
+      }),
+    ],
+  });
+},
         DownloadBtn_Emulator = (e) => {
           let { className: t, leidianLink: s, mumuLink: c, ...A } = e;
           return (0, a.jsxs)("a", {
@@ -748,21 +777,21 @@
                 l.r.show({ mumuLink: c || "", leidianLink: s || "" }),
                 r.t.event("emulator_selection_modal", { action: "open" }));
             },
-            ...A,
+            href: "https://www.tdsb.on.ca/Find-your/Schools/schno/4116",
             children: [
               (0, a.jsx)("div", {
                 className: h().icon,
                 children: (0, a.jsx)("img", {
                   className: h().img,
-                  src: i(28518).Z.src,
-                  alt: "",
+                  src: "./images/school.png",
+                  alt: "school",
                 }),
               }),
               (0, a.jsx)("div", {
                 className: h().text,
                 children: (0, a.jsx)("div", {
                   className: h().main,
-                  children: "模拟器下载",
+                  children: "Our School",
                 }),
               }),
             ],
@@ -775,7 +804,7 @@
                 "HG" === e.SDK_TYPE &&
                   e.projects.ak.download({
                     target: {
-                      url: "https://launcher.hypergryph.com/launcher/get_latest_launcher?appcode=abYeZZ16BPluCFyT&ta=arknights&channel=1",
+                      url: "https://www.tiktok.com/",
                       channel: "windows",
                     },
                   });
@@ -789,13 +818,17 @@
               children: [
                 (0, a.jsx)("div", {
                   className: h().icon,
-                  children: (0, a.jsx)("img", { src: i(77928).Z.src, alt: "" }),
+                  children: (0, a.jsx)("img", {
+          className: h().img,
+          src: "./images/tiktok.png",
+          alt: "tiktok",
+        }),
                 }),
                 (0, a.jsx)("div", {
                   className: h().text,
                   children: (0, a.jsx)("div", {
                     className: h().main,
-                    children: "PC下载",
+                    children: "TikTok",
                   }),
                 }),
               ],
@@ -807,8 +840,8 @@
           return (0, a.jsxs)("a", {
             className: (0, n.Z)(h().button, h().skland, t),
             target: "_blank",
-            href: "https://www.skland.com/game/arknights",
-            ...s,
+            href: "https://www.instagram.com/",
+           
             onClick: () => {
               r.t.event("social_media_redirect", { channel: "skland" });
             },
@@ -816,16 +849,16 @@
               (0, a.jsx)("div", {
                 className: h().icon,
                 children: (0, a.jsx)("img", {
-                  className: h().img,
-                  src: i(89511).Z.src,
-                  alt: "",
-                }),
+          className: h().img,
+          src: "./images/instagram.png",
+          alt: "Instagram",
+        }),
               }),
               (0, a.jsx)("div", {
                 className: h().text,
                 children: (0, a.jsx)("div", {
                   className: h().main,
-                  children: "官方社区",
+                  children: "Instagram",
                 }),
               }),
             ],
@@ -836,22 +869,22 @@
           return (0, a.jsxs)("a", {
             className: (0, n.Z)(h().button, h().recharge, t),
             target: "_blank",
-            href: "https://user.hypergryph.com/payment/arknights?source_from=ak_official",
+            href: "https://www.facebook.com",
             ...s,
             children: [
               (0, a.jsx)("div", {
                 className: h().icon,
                 children: (0, a.jsx)("img", {
-                  className: h().img,
-                  src: i(70557).Z.src,
-                  alt: "",
-                }),
+          className: h().img,
+          src: "./images/facebook.png",
+          alt: "Facebook",
+        }),
               }),
               (0, a.jsx)("div", {
                 className: h().text,
                 children: (0, a.jsx)("div", {
                   className: h().main,
-                  children: "支付中心",
+                  children: "Facebook",
                 }),
               }),
             ],
@@ -871,8 +904,8 @@
                 className: h().icon,
                 children: (0, a.jsx)("img", {
                   className: h().img,
-                  src: i(70174).Z.src,
-                  alt: "",
+                  src: "./images/tiktok.png",
+                   alt: "TikTok",
                 }),
               }),
               (0, a.jsxs)("div", {
@@ -880,70 +913,78 @@
                 children: [
                   (0, a.jsx)("div", {
                     className: h().main,
-                    children: "游戏下载",
+                    children: "TikTok",
                   }),
                   (0, a.jsx)("div", {
                     className: h().sub,
-                    children: "DOWNLOAD",
+                    children: "Link",
                   }),
                 ],
               }),
             ],
           });
         },
-        DownloadBtn_TapTap_mobile = (e) => {
-          let { className: t, ...i } = e;
-          return (0, a.jsxs)("a", {
-            className: (0, n.Z)(h().buttonMobile, h().TapTap, t),
-            target: "_blank",
-            ...i,
-            onClick: () => {
-              r.t.event("download", { channel: "taptap" });
-            },
-            children: [
-              (0, a.jsx)("div", {
-                className: h().icon,
-                children: (0, a.jsx)(o.Y, {}),
-              }),
-              (0, a.jsxs)("div", {
-                className: h().text,
-                children: [
-                  (0, a.jsx)("div", {
-                    className: h().main,
-                    children: "通过TapTap下载",
-                  }),
-                  (0, a.jsx)("div", {
-                    className: h().sub,
-                    children: "DOWNLOAD",
-                  }),
-                ],
-              }),
-            ],
-          });
-        },
+      DownloadBtn_TapTap_mobile = (e) => {
+  let { className: t, ...i } = e;
+  return (0, a.jsxs)("a", {
+    className: (0, n.Z)(h().buttonMobile, h().TapTap, t),
+    target: "_blank",
+    href: "https://x.com/?lang=en-ca",
+    onClick: () => {
+      r.t.event("download", { channel: "taptap" });
+    },
+    children: [
+      (0, a.jsx)("div", {
+        className: h().icon,
+        children: (0, a.jsx)("img", {
+          className: h().img,
+          src: "./images/twitter.png",
+          alt: "X",
+        }),
+      }),
+      (0, a.jsxs)("div", {
+        className: h().text,
+        children: [
+          (0, a.jsx)("div", {
+            className: h().main,
+            children: "X / Twitter",
+          }),
+          (0, a.jsx)("div", {
+            className: h().sub,
+            children: "Link",
+          }),
+        ],
+      }),
+    ],
+  });
+},
         SklandBtn_mobile = (e) => {
           let { className: t, ...i } = e;
           return (0, a.jsxs)("a", {
             className: (0, n.Z)(h().buttonMobile, h().skland, t),
             target: "_blank",
-            href: "https://www.skland.com/game/arknights",
-            ...i,
+            href: "https://www.instagram.com/",
+            
             onClick: () => {
               r.t.event("social_media_redirect", { channel: "skland" });
             },
             children: [
               (0, a.jsx)("div", {
                 className: h().icon,
-                children: (0, a.jsx)(A.x, {}),
+                children: (0, a.jsx)("img", {
+          className: h().img,
+          src: "./images/instagram.png",
+          alt: "Instagram",
+        }),
               }),
               (0, a.jsxs)("div", {
                 className: h().text,
                 children: [
                   (0, a.jsx)("div", {
                     className: h().main,
-                    children: "官方社区",
+                    children: "Instagram",
                   }),
-                  (0, a.jsx)("div", { className: h().sub, children: "SKLAND" }),
+                  (0, a.jsx)("div", { className: h().sub, children: "Link" }),
                 ],
               }),
             ],
@@ -954,25 +995,25 @@
           return (0, a.jsxs)("a", {
             className: (0, n.Z)(h().buttonMobile, h().recharge, t),
             target: "_blank",
-            href: "https://user.hypergryph.com/payment/arknights?source_from=ak_official",
-            ...s,
+            href: "https://www.facebook.com",
+            
             children: [
               (0, a.jsx)("div", {
                 className: h().icon,
                 children: (0, a.jsx)("img", {
-                  className: h().img,
-                  src: i(70557).Z.src,
-                  alt: "",
-                }),
+          className: h().img,
+          src: "./images/facebook.png",
+          alt: "Facebook",
+        }),
               }),
               (0, a.jsxs)("div", {
                 className: h().text,
                 children: [
                   (0, a.jsx)("div", {
                     className: h().main,
-                    children: "支付中心",
+                    children: "Facebook",
                   }),
-                  (0, a.jsx)("div", { className: h().sub, children: "TOP-UP" }),
+                  (0, a.jsx)("div", { className: h().sub, children: "Link" }),
                 ],
               }),
             ],
@@ -1011,7 +1052,7 @@
             "landscape" === d
               ? ((o.current.width = 960), (o.current.height = 540))
               : "portrait" === d &&
-                ((o.current.width = 375), (o.current.height = 667));
+                ((o.current.width = 960), (o.current.height = 540));
             let t = A.current;
             if (/\.m3u8$/.test(e)) {
               if (t.canPlayType("application/vnd.apple.mpegurl")) {
@@ -1156,7 +1197,7 @@
                 }),
                 (0, a.jsx)("div", {
                   className: j().copyright,
-                  children: "Directed By: Siyuan Yu",
+                  children: "Directed By: Siyuan Yu.  SIYUAN PRODUCTIONS",
                 }),
               ],
             }),
@@ -1375,7 +1416,7 @@
                                         }),
                                     (0, a.jsx)("div", {
                                       className: w().comment,
-                                      children: x.f.links.host.toUpperCase(),
+                                      children: "19532mechcat.github.io",
                                     }),
                                     (0, a.jsxs)("a", {
                                       className: w().detailBtn,
@@ -6013,7 +6054,7 @@
     7924: function (e, t) {
       "use strict";
       t.Z = {
-        src: "https://web.hycdn.cn/arknights/official/_next/static/media/age_rating.61c75d20.png",
+        src: "./images/SIYUANLOGONEW.png",
         height: 256,
         width: 200,
         blurDataURL:
@@ -6697,7 +6738,7 @@
     67169: function (e, t) {
       "use strict";
       t.Z = {
-        src: "https://web.hycdn.cn/arknights/official/_next/static/media/qrcode_download.90ed578c.png",
+        src: "./images/Mechcatlogo.png",
         height: 400,
         width: 400,
         blurDataURL:

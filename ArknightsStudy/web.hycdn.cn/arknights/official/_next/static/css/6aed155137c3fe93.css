@@ -735,18 +735,18 @@
     opacity: .78;
     width: 52.5rem;
     height: 60.75rem;
-    background-image: url(https://web.hycdn.cn/arknights/official/_next/static/media/mask_block.33e7b5a1.png);
+    background-image: url(/ArknightsStudy/ak.hypergryph.com/images/MECmask2.png);
     background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: auto 110%
+    background-position: 70% 0;
+    background-size: auto 80%
 }
 
 @media(orientation:portrait) {
     ._2a56b767 ._96034668 {
         width: 18.75rem;
         height: 12rem;
-        background-image: url(https://web.hycdn.cn/arknights/official/_next/static/media/mask_block_m.f8c50bfb.png);
-        background-size: auto 100%
+        background-image: url(//ArknightsStudy/ak.hypergryph.com/images/MECmask2.png);
+        background-size: auto 80%
     }
 }
 
@@ -758,7 +758,7 @@
     opacity: .25;
     width: 52.5rem;
     height: 60.75rem;
-    background-image: url(https://web.hycdn.cn/arknights/official/_next/static/media/mask_block.33e7b5a1.png);
+    background-image: url(//ArknightsStudy/ak.hypergryph.com/images/MECmask1.png);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: auto 110%
@@ -769,7 +769,7 @@
         width: 5.75rem;
         height: 12rem;
         transform: translateX(-3.75rem);
-        background-image: url(https://web.hycdn.cn/arknights/official/_next/static/media/mask_block_m.f8c50bfb.png);
+        background-image: url(//ArknightsStudy/ak.hypergryph.com/images/MECmask1.png);
         background-size: auto 100%
     }
 }

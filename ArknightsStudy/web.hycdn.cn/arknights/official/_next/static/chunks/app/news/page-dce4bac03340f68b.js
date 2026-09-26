@@ -952,7 +952,7 @@
           favicon: "https://web.hycdn.cn/favicon.ico",
         },
        
-        download: { qrcode: "扫码下载" },
+        download: { qrcode: "19532" },
         userPanel: {
           pleaseLogin: "请先登录您的账号。",
           welcomeDoctor: "欢迎回来，博士。",

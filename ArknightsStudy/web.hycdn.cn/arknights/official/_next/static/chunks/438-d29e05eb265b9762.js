@@ -3,7 +3,7 @@
   {
     91542: function (e, n, t) {
       "use strict";
-      e.exports = t.p + "static/media/audio/bgm.ea4286.mp3";
+      e.exports = "./AudioVideo/TheManWhoSoldTheWorld.m4a";
     },
     25628: function (e, n, t) {
       "use strict";
@@ -610,11 +610,11 @@
         locale: "zh-cn",
         links: {
           host: "https://ak.hypergryph.com/",
-          userCenter: "https://ak.hypergryph.com/user/",
-          csCenter: "https://customer-service.hypergryph.com/ak",
-          msr: "https://monster-siren.hypergryph.com/",
-          animeSite: "https://ak.hypergryph.com/anime/",
-          comicSite: "https://comic.hypergryph.com/terra-historicus/",
+          userCenter: "https://19532mechcat.github.io/",
+          csCenter: "https://19532mechcat.github.io/",
+          msr: "https://19532mechcat.github.io/",
+          animeSite: "https://19532mechcat.github.io/",
+          comicSite: "https://19532mechcat.github.io/",
         },
         document: {
           title: "19532 MechCaT",
@@ -653,7 +653,7 @@
           retry: "重试",
           wechatQrcodeTip: "微信扫码关注公众号",
         },
-        download: { qrcode: "扫码下载" },
+        download: { qrcode: "19532" },
         userPanel: {
           pleaseLogin: "请先登录您的账号。",
           welcomeDoctor: "欢迎回来，博士。",

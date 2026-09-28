@@ -3,7 +3,7 @@
   {
     91542: function (e, n, t) {
       "use strict";
-      e.exports = "./AudioVideo/TheManWhoSoldTheWorld.m4a";
+      e.exports = "./AudioVideo/APhantomPain.mp3";
     },
     25628: function (e, n, t) {
       "use strict";
@@ -609,7 +609,7 @@
       let i = {
         locale: "zh-cn",
         links: {
-          host: "https://ak.hypergryph.com/",
+          host: "https://19532mechcat.github.io/",
           userCenter: "https://19532mechcat.github.io/",
           csCenter: "https://19532mechcat.github.io/",
           msr: "https://19532mechcat.github.io/",
@@ -628,21 +628,9 @@
           description:
             "《明日方舟》是一款魔物主题的策略手游。在游戏中，玩家将管理一艘满载“ 魔物干员”的方舟，为调查来源神秘的矿石灾难而踏上旅途。在这个宽广而危机四伏的世界中，你或许会看到废土中的城市废墟，或许会看到仿若幻境的亚人国度，或许会遭遇无法解读的神秘，或许参与无比残酷的战争。在有关幻想与异种生命的世界中，体验史诗与想象，情感与牵绊！",
           keywords: [
-            "明日方舟",
-            "明日方舟官网",
-            "明日方舟手游",
-            "二次元",
-            "明日方舟Arknights",
-            "魔物娘",
-            "战棋",
-            "策略",
-            "塔防",
-            "塔防RPG",
-            "Arknights",
-            "人外",
-            "Monster",
+          "195"
           ],
-          favicon: "https://web.hycdn.cn/favicon.ico",
+          favicon: "https://19532mechcat.github.io/ArknightsStudy/ak.hypergryph.com/images/ico.ico",
         },
         common: {
           goBack: "返回",
@@ -677,10 +665,10 @@
         },
         info: {
           category: {
-            LATEST: "最新",
-            ANNOUNCEMENT: "公告",
-            ACTIVITY: "活动",
-            NEWS: "新闻",
+            LATEST: "",
+            ANNOUNCEMENT: "",
+            ACTIVITY: "",
+            NEWS: "",
           },
         },
         char: {
@@ -771,7 +759,7 @@
         },
         media: {
           infoMap: {
-            "ABOUT TERRA": { title: "泰拉万象" },
+            "ABOUT TERRA": { title: "KFC V50" },
             "MONSTER SIREN": {
               title: "塞壬唱片",
               desc: "一个已知或未知的世界",

@@ -949,7 +949,7 @@
         
             
           
-          favicon: "https://web.hycdn.cn/favicon.ico",
+          favicon: "https://19532mechcat.github.io/ArknightsStudy/ak.hypergryph.com/images/ico.ico",
         },
        
         download: { qrcode: "19532" },
@@ -1096,7 +1096,7 @@
     54795: function (e, t) {
       "use strict";
       t.Z = {
-        src: "https://web.hycdn.cn/arknights/official/_next/static/media/ACTIVITY.c48956ee.jpg",
+        src: "",
         height: 158,
         width: 613,
         blurDataURL:
@@ -1108,7 +1108,7 @@
     74122: function (e, t) {
       "use strict";
       t.Z = {
-        src: "https://web.hycdn.cn/arknights/official/_next/static/media/ANNOUNCEMENT.29aad141.jpg",
+        src: "",
         height: 158,
         width: 613,
         blurDataURL:
@@ -1120,7 +1120,7 @@
     35186: function (e, t) {
       "use strict";
       t.Z = {
-        src: "https://web.hycdn.cn/arknights/official/_next/static/media/NEWS.b39a5f6b.jpg",
+        src: "",
         height: 158,
         width: 613,
         blurDataURL:

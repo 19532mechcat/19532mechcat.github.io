@@ -737,16 +737,16 @@
     height: 60.75rem;
     background-image: url(/ArknightsStudy/ak.hypergryph.com/images/MECmask2.png);
     background-repeat: no-repeat;
-    background-position: 70% 0;
-    background-size: auto 80%
+    background-position: 0% 0;
+    background-size: auto 0%
 }
 
 @media(orientation:portrait) {
     ._2a56b767 ._96034668 {
         width: 18.75rem;
         height: 12rem;
-        background-image: url(//ArknightsStudy/ak.hypergryph.com/images/MECmask2.png);
-        background-size: auto 80%
+        background-image: url(/ArknightsStudy/ak.hypergryph.com/images/MECmask2.png);
+        background-size: auto 0%
     }
 }
 
@@ -758,7 +758,7 @@
     opacity: .25;
     width: 52.5rem;
     height: 60.75rem;
-    background-image: url(//ArknightsStudy/ak.hypergryph.com/images/MECmask1.png);
+    background-image: url(/ArknightsStudy/ak.hypergryph.com/images/MECmask1.png);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: auto 110%
@@ -769,7 +769,7 @@
         width: 5.75rem;
         height: 12rem;
         transform: translateX(-3.75rem);
-        background-image: url(//ArknightsStudy/ak.hypergryph.com/images/MECmask1.png);
+        background-image: url(/ArknightsStudy/ak.hypergryph.com/images/MECmask1.png);
         background-size: auto 100%
     }
 }
@@ -901,7 +901,7 @@
 
     ._2a56b767 ._e32dd037 {
         left: 2rem;
-        bottom: 19.5rem
+        bottom: 21.5rem
     }
 }
 

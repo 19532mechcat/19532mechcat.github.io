@@ -3,7 +3,7 @@
   {
     91542: function (e, n, t) {
       "use strict";
-      e.exports = "./AudioVideo/TheManWhoSoldTheWorld.m4a";
+      e.exports = "./AudioVideo/APhantomPain.mp3";
     },
     21061: function (e, n, t) {
       (Promise.resolve().then(t.bind(t, 37501)),
@@ -1571,7 +1571,7 @@
             "人外",
             "Monster",
           ],
-          favicon: "https://web.hycdn.cn/favicon.ico",
+          favicon: "https://19532mechcat.github.io/ArknightsStudy/ak.hypergryph.com/images/ico.ico",
         },
         common: {
           goBack: "返回",
@@ -1606,24 +1606,24 @@
         },
         info: {
           category: {
-            LATEST: "最新",
-            ANNOUNCEMENT: "公告",
-            ACTIVITY: "活动",
-            NEWS: "新闻",
+            LATEST: "Wetwork",
+            ANNOUNCEMENT: "updates",
+            ACTIVITY: "Events",
+            NEWS: "More",
           },
         },
         char: {
           infoMap: {
             B003: {
-              name: "凯希",
-              codename: "KAL'TSIT",
+              name: "于思远",
+              codename: "SIYUAN YU",
               intro:
-                "罗德岛最高管理者之一，阿米娅的直接辅导者。\n罗德岛医疗部门的总负责人。\n作为罗德岛的老成员，凯尔希医生是在阿米娅背后最稳固的援护者。",
+                "Siyuan Yu (born January 30, 2009) is a filmmaker, media producer, poet, philosopher, logician, professional esports player, cleaner, professional critic, photographer, and software and hardware engineer from China, currently residing in Canada. He is best known for designing and building the competition robot for the Toronto-based0 ‘19532’ team during the FTC BioBuzz season. He also founded the studio SIYUAN PRODUCTIONS, with the aim of solving various challenges for the team.",
               voiceActor: { cn: "刘雪", ja: "日笠阳子" },
             },
             R001: {
-              name: "阿米娅",
-              codename: "AMIYA",
+              name: "Terrence Zhou",
+              codename: "Terrence",
               intro:
                 "罗德岛的公开领袖，在内部拥有最高执行权。虽然，从外表上看起来仅仅是个不成熟的少女，实际上，她却是深受大家信任的合格的领袖。现在，阿米娅正带领着罗德岛，为了感染者的未来，为了让这片大地挣脱矿石病的阴霾而不懈努力。",
               voiceActor: { cn: "陶典", ja: "黑泽朋世" },
@@ -1655,52 +1655,80 @@
               intro:
                 "白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",
               voiceActor: { cn: "龟娘", ja: "金元寿子" },
+
             },
+
           },
+          
+            RL05: {
+              name: "白面鸮",
+              codename: "PTILOPSIS",
+              intro:
+                "白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",
+              voiceActor: { cn: "龟娘", ja: "金元寿子" },
+
+            },
+
+            RL06: {
+              name: "白面鸮",
+              codename: "PTILOPSIS",
+              intro:
+                "白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",
+              voiceActor: { cn: "龟娘", ja: "金元寿子" },
+
+            },
+
+
+
+
+
+
+
+
         },
         world: {
           infoMap: {
             originiums: {
-              name: "源石",
-              nameEn: "ORIGINIUMS",
+              name: "Big Boss",
+              nameEn: "John",
               intro:
-                "大地被起因不明的天灾四处肆虐，经由天灾席卷过的土地上出现了大量的神秘矿物——“源石”。依赖于技术的进步，源石蕴含的能量投入工业后使得文明顺利迈入现代，与此同时，源石本身也催生出“感染者”的存在。",
+                "Big Boss, real name John, also known as Jack, and formerly known as Naked Snake, Vic Boss, Ishmael, Saladin, or simply Snake, was a renowned special forces operative and mercenary commander. He founded U.S. Army Special Forces Unit FOXHOUND, along with the mercenary company Militaires Sans Frontières, and was one of the founding members of the Patriots. Big Boss later established the military states of Outer Heaven and Zanzibar Land as bases for his companies, in order to realize his ambitions of creating a nation for soldiers. Considered by some as 'The Greatest Warrior of the 20th Century,'' he earned such monikers as the Legendary Soldier' and 'the Legendary Mercenary,' feared in combat by both friend and foe as a hero and a madman. ",
             },
             originium_arts: {
-              name: "源石技艺",
-              nameEn: "ORIGINIUM ARTS",
+              name: "Kazuhira Miller",
+              nameEn: "Peace Walker",
               intro:
-                "源石被发现之后，人们发掘出一种通过它来施放一系列令物质改变原有性状的技术，这种技术被称为源石技艺，常被俗称为“法术”。源石技艺所运用的能源，一般被认为来自于源石本身。而人是否能施放法术，以及所能施放法术的形式、强度、效果等，通常受到先天具备的素质、后天对源石技艺的学习能力这两方面因素的制约。",
+                "Kazuhira Miller (カズヒラ・ミラー Kazuhira Mirā?), also known as Kaz, McDonell Benedict Miller and Master Miller, was the subcommander of both the Militaires Sans Frontières and Diamond Dogs, and the survival trainer of FOXHOUND. He was well-read and possessed a vast array of scientific knowledge.",
             },
             reunion: {
-              name: "整合运动",
-              nameEn: "REUNION",
+              name: "Touka Kirishima",
+              nameEn: "Rabitto",
               intro:
-                "无种族立场，极端排外的感染者组织。他们宣称“感染者应对自己的身份感到骄傲，积极去获取并使用属于自己的力量”。试图用最原始的手段去争夺世界的公正。以某座被摧毁的伟大城市为开端，医疗机构“罗德岛”的突然介入，令整个事态向着未知发展。",
+                "Touka Kirishima (霧嶋 董香 Kirishima Tōka) is an ex-waitress at Anteiku. She is the daughter of Arata Kirishima and Hikari Kirishima, the older sister of Ayato Kirishima, the wife of Ken Kaneki and the mother of Ichika Kaneki.",
             },
             infected: {
-              name: "感染者",
-              nameEn: "INFECTED",
+              name: "Cristiano Ronaldo",
+              nameEn: "The Goat",
               intro:
-                "被源石所感染的人。理论致死率100% ，死亡时存在扩散传染性以及潜在危险能力，是各国隔离驱逐的目标。长久以来，没人告诉他们该如何渡过余生，如今伴随着一位颠覆者的出现，越来越多的感染者被纳入一场名为“整合运动”的反抗浪潮。",
+                "Is there anyone who still doesn't know you?",
             },
             nomadic_city: {
-              name: "移动城邦",
-              nameEn: "NOMADIC CITY",
+              name: "SIYUAN PRODUCTIONS",
+              nameEn: "'Virtual Reality'",
               intro:
-                "建造在可移动设备上的城市。频繁发生且破坏力巨大的天灾，迫使几乎所有的国家，都需要采用定期迁移家园与聚落的方式进行躲避。而移动城市，正是在这种需求下慢慢诞生的。人们在迁徙的过程中，尝试将建筑和种种装置安设在移动设备之上，并不断地扩大载具的规模。在文明与技术的演变之下，人们最终创造出了十分庞大的移动城市",
+                "19532 Robotics has a sub-team that handle a wide range of tasks, such as programming and media. The person in charge is SIYUAN YU.",
             },
             rhodes_island: {
-              name: "罗德岛",
-              nameEn: "RHODES ISLAND",
+              name: "Dr. Liu Yuhan",
+              nameEn: "CEO",
               intro:
-                "罗德岛制药公司作为感染者问题专家，聘用感染者，深入危险地区，通过种种手段，已经成功解决了数起感染者引发的事件。而今，他们将面对史无前例的感染者暴乱。在各个势力间游走，发掘不为人知的内幕，抵挡感染者的疯狂进攻，你的决策将决定罗德岛的方向。",
+                "In case you didn't know, I can tell you that he has a protégé named Tim Cook.",
             },
           },
         },
         media: {
           infoMap: {
-            "ABOUT TERRA": { title: "泰拉万象" },
+            "ABOUT TERRA": { title: "In A World Of My Own Design" },
             "MONSTER SIREN": {
               title: "塞壬唱片",
               desc: "一个已知或未知的世界",
@@ -1742,8 +1770,8 @@
         pageNews: { pageTitle: "情报中心" },
         pageVideo: { pageTitle: "视频列表" },
         msg: {
-          videoFormatNotSupported: "浏览器不支持播放，请更换浏览器后重试",
-          protocolLoadFailed: "协议内容加载失败，请稍后重试",
+          videoFormatNotSupported: "error",
+          protocolLoadFailed: "error",
         },
       };
     },
@@ -1882,7 +1910,7 @@
     34861: function (e, n) {
       "use strict";
       n.Z = {
-        src: "https://web.hycdn.cn/arknights/official/_next/static/media/no_account_info.76c6b893.png",
+        src: "./ak.hypergryph.com/images/SIYUANPRODUCTIONS.svg",
         height: 197,
         width: 201,
         blurDataURL:

@@ -44,7 +44,7 @@
         },
         sdk: { src: "https://web.hycdn.cn/hg_web_sdk/lib/sdk.entry.js" },
         sentry: {
-          dsn: "https://638e91c2bdbbff2802be39da0fe5b413@sentry.hypergryph.com/3",
+          dsn: "",
         },
       };
     },

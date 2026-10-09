@@ -1,0 +1,19 @@
+                                                                                                            
+                                                    
+(function (e, t) {
+  "use strict";
+
+  function createHrefFromUrl(e, t) {
+    return void 0 === t && (t = !0), e.pathname + e.search + (t ? e.hash : "");
+  }
+  Object.defineProperty(t, "__esModule", {
+    value: !0
+  }), Object.defineProperty(t, "createHrefFromUrl", {
+    enumerable: !0,
+    get: function () {
+      return createHrefFromUrl;
+    }
+  }), ("function" == typeof t.default || "object" == typeof t.default && null !== t.default) && void 0 === t.default.__esModule && (Object.defineProperty(t.default, "__esModule", {
+    value: !0
+  }), Object.assign(t.default, t), e.exports = t.default);
+});

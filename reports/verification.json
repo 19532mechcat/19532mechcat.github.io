@@ -1,0 +1,82 @@
+{
+  "registeredModules": 531,
+  "bundleRegistrationComparison": "passed",
+  "configExportsComparison": [
+    {
+      "file": "app/layout-56537e00859b2b87.js",
+      "id": 19174,
+      "pass": true
+    },
+    {
+      "file": "app/layout-56537e00859b2b87.js",
+      "id": 91542,
+      "pass": true
+    },
+    {
+      "file": "app/layout-56537e00859b2b87.js",
+      "id": 34861,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 17824,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 28389,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 4420,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 11901,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 44007,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 95075,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 83545,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 54860,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 29285,
+      "pass": true
+    },
+    {
+      "file": "app/page-a96c46ff52d96bd7.js",
+      "id": 85686,
+      "pass": true
+    }
+  ],
+  "configEditBuildSmoke": true,
+  "repeatedBuildDeterministic": true,
+  "syntaxValidation": "20 generated bundles passed",
+  "browserVisualTest": "NOT RUN: local browser blocked by execution environment (socket Operation not permitted)",
+  "fullSiteInteractionTest": "NOT RUN",
+  "missingStaticModuleIds": [],
+  "httpServerChecks": {
+    "homeStatus": 200,
+    "audioRangeStatus": 206,
+    "audioRangeBytes": 100
+  }
+}

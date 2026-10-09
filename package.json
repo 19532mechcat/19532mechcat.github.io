@@ -1,0 +1,13 @@
+{
+  "name": "mechcat-recovered-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Editable modules and configuration for the supplied offline frontend",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "check": "node scripts/build.cjs --check",
+    "start": "node scripts/build.cjs && node scripts/serve.cjs",
+    "serve": "node scripts/serve.cjs"
+  },
+  "engines": { "node": ">=18" }
+}

@@ -1,0 +1,1192 @@
+{
+  "scope": "首页 HTML 与主站 CSS 的静态引用；不含全部动态 JS 引用。媒体删减造成的缺失保持原样。",
+  "counts": {
+    "present": 61,
+    "missing": 14,
+    "external": 81,
+    "fragment": 2
+  },
+  "references": [
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/qrcode_download.90ed578c.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/qrcode_download.90ed578c.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/age_rating.61c75d20.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/age_rating.61c75d20.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/upload/image/20260915/12a9a58869bc67e802b046af21b66dc1.png",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20260915/12a9a58869bc67e802b046af21b66dc1.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/upload/image/20260903/c2bbbe8c0996b87002fc450dba1ba697.jpg",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20260903/c2bbbe8c0996b87002fc450dba1ba697.jpg"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "./images/blackwall.png",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/resourses/images/blackwall.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/upload/image/20260828/e59e8bf7c4da71eba98930cb5a2d4eb4.jpg",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20260828/e59e8bf7c4da71eba98930cb5a2d4eb4.jpg"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/upload/image/20240501/79ea8d4bc878cc8a601a3ab6acea7bb4.png",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20240501/79ea8d4bc878cc8a601a3ab6acea7bb4.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/kaltsit_e1.a53cfc2e.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/kaltsit_e1.a53cfc2e.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/rhodes_island.18d9416c.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/rhodes_island.18d9416c.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/kaltsit.05c0f5e1.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/kaltsit.05c0f5e1.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/webpack-e2b3d0e9f3ea3012.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/webpack-e2b3d0e9f3ea3012.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/bb2c42e6-deb2ddeea53b1b06.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/bb2c42e6-deb2ddeea53b1b06.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/a1377a71-b3da07b045fbf518.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/a1377a71-b3da07b045fbf518.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/868-eff782e865f465a4.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/868-eff782e865f465a4.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/main-app-fccc8d83e156badb.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/main-app-fccc8d83e156badb.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/app/global-error-d28dd8ec7d20aa88.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/app/global-error-d28dd8ec7d20aa88.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/474-b975add4acfe218d.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/474-b975add4acfe218d.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/815-e2294d5ae8c2f084.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/815-e2294d5ae8c2f084.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/465-fbe5772fe0172cbb.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/465-fbe5772fe0172cbb.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/858-6bcaf21c8dce1823.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/858-6bcaf21c8dce1823.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/19-db6de54ae8dae23f.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/19-db6de54ae8dae23f.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/524-cab1b92753440a5f.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/524-cab1b92753440a5f.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/app/layout-56537e00859b2b87.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/app/layout-56537e00859b2b87.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/137e2e70-a4056d5d54967c27.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/137e2e70-a4056d5d54967c27.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/558-bb90ea12ca41aaf4.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/558-bb90ea12ca41aaf4.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/906-550ca574c015c10a.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/906-550ca574c015c10a.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/874-9d6dc0814a20005c.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/874-9d6dc0814a20005c.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/729-fc78fafb7d39c604.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/729-fc78fafb7d39c604.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/438-d29e05eb265b9762.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/438-d29e05eb265b9762.js"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/app/page-a96c46ff52d96bd7.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/app/page-a96c46ff52d96bd7.js"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/amiya.a410de75.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/amiya.a410de75.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/chen.4d5cd8a0.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/chen.4d5cd8a0.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/texas.5a198d4c.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/texas.5a198d4c.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/exusiai.ff3d47d4.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/exusiai.ff3d47d4.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/ptilopsis.0483cb6d.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/ptilopsis.0483cb6d.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/monster_siren_active.8f01230d.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/monster_siren_active.8f01230d.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_monster_siren.27beba82.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_monster_siren.27beba82.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/gallery_active.d45cfc72.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/gallery_active.d45cfc72.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_gallery.08a04a01.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_gallery.08a04a01.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/operator_active.d697ef2d.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/operator_active.d697ef2d.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_operator.c6543e50.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_operator.c6543e50.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/video_active.693c91f3.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/video_active.693c91f3.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_video.c1de0303.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_video.c1de0303.png"
+    },
+    {
+      "tag": "link",
+      "attribute": "href",
+      "url": "https://19532mechcat.github.io/19532main/resourses/images/ico.ico",
+      "source": "19532main/resourses/index.html",
+      "status": "external"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/qrcode_download.90ed578c.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/qrcode_download.90ed578c.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/age_rating.61c75d20.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/age_rating.61c75d20.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/upload/image/20260915/12a9a58869bc67e802b046af21b66dc1.png",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20260915/12a9a58869bc67e802b046af21b66dc1.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/upload/image/20260903/c2bbbe8c0996b87002fc450dba1ba697.jpg",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20260903/c2bbbe8c0996b87002fc450dba1ba697.jpg"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "./images/blackwall.png",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/resourses/images/blackwall.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/upload/image/20260828/e59e8bf7c4da71eba98930cb5a2d4eb4.jpg",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20260828/e59e8bf7c4da71eba98930cb5a2d4eb4.jpg"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/upload/image/20240501/79ea8d4bc878cc8a601a3ab6acea7bb4.png",
+      "source": "19532main/resourses/index.html",
+      "status": "missing",
+      "resolved": "19532main/web.hycdn.cn/upload/image/20240501/79ea8d4bc878cc8a601a3ab6acea7bb4.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "",
+      "source": "19532main/resourses/index.html",
+      "status": "fragment"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "#",
+      "source": "19532main/resourses/index.html",
+      "status": "fragment"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/rhodes_island.18d9416c.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/rhodes_island.18d9416c.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/kaltsit.05c0f5e1.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/kaltsit.05c0f5e1.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/amiya.a410de75.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/amiya.a410de75.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/chen.4d5cd8a0.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/chen.4d5cd8a0.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/texas.5a198d4c.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/texas.5a198d4c.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/exusiai.ff3d47d4.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/exusiai.ff3d47d4.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/ptilopsis.0483cb6d.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/ptilopsis.0483cb6d.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/monster_siren_active.8f01230d.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/monster_siren_active.8f01230d.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_monster_siren.27beba82.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_monster_siren.27beba82.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/gallery_active.d45cfc72.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/gallery_active.d45cfc72.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_gallery.08a04a01.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_gallery.08a04a01.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/operator_active.d697ef2d.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/operator_active.d697ef2d.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_operator.c6543e50.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_operator.c6543e50.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/video_active.693c91f3.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/video_active.693c91f3.png"
+    },
+    {
+      "tag": "img",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/media/logo_video.c1de0303.png",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/logo_video.c1de0303.png"
+    },
+    {
+      "tag": "script",
+      "attribute": "src",
+      "url": "../web.hycdn.cn/arknights/official/_next/static/chunks/webpack-e2b3d0e9f3ea3012.js",
+      "source": "19532main/resourses/index.html",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/chunks/webpack-e2b3d0e9f3ea3012.js"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "../media/bg.8954cef1.jpg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/bg.8954cef1.jpg"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg_m.784bbb87.jpg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "/19532main/resourses/images/MECmask2.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "missing",
+      "resolved": "19532main/resourses/images/MECmask2.png"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "/19532main/resourses/images/MECmask2.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "missing",
+      "resolved": "19532main/resourses/images/MECmask2.png"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "/19532main/resourses/images/MECmask1.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "missing",
+      "resolved": "19532main/resourses/images/MECmask1.png"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "/19532main/resourses/images/MECmask1.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "missing",
+      "resolved": "19532main/resourses/images/MECmask1.png"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/common_mask.55fff2e9.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/list_bg_texture.9bb75037.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg2.e562d9ae.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg2_m.aa95d813.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/common_mask.55fff2e9.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg2.e562d9ae.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/common_mask.55fff2e9.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg_m.866db098.jpg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg_m.866db098.jpg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg_m.866db098.jpg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/common_mask.55fff2e9.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/dots_wide.e2ef693e.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/dots.3f5abd21.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/dots_wide.e2ef693e.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/about_terra.44839d14.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/common_mask.55fff2e9.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/mask.2a894589.png",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/6aed155137c3fe93.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "data:application/font-woff;charset=utf-8;base64, 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",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "../media/bg.c03d00a6.jpg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "present",
+      "resolved": "19532main/web.hycdn.cn/arknights/official/_next/static/media/bg.c03d00a6.jpg"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/bg_m.866db098.jpg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Regular.6950ba72.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Regular.d13414ee.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Regular.4d020cd6.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Regular.f1c8875c.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Regular.cbadf24f.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Bold.b4c7998a.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Bold.48705155.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Bold.241b37f7.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Bold.4793b518.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Bender-Bold.47020687.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-Medium.99836e81.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-Medium.48e9f6be.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-Medium.79aa2d3c.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-Medium.0dedd12b.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-Medium.3b2f3a0a.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-DemiBold.633163ca.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-DemiBold.1f287e59.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-DemiBold.c27e851b.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-DemiBold.e35a9874.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Oswald-DemiBold.65cd147f.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Medium.7a5c757a.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Medium.c5b850bf.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Medium.b614c9ec.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Medium.51415ff7.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Medium.983044ea.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-DemiBold.e7b6abe4.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-DemiBold.9512269f.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-DemiBold.1291788b.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-DemiBold.84527768.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-DemiBold.c07a0914.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Bold.9c78a9fd.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Bold.6d027997.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Bold.0efab1ab.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Bold.743c1803.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-Bold.a534a9e6.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-UltraBold.e5e00ac9.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-UltraBold.66fadc31.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-UltraBold.f18b0177.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-UltraBold.0fb44870.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/Novecentosanswide-UltraBold.efb1aceb.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Regular.850c7fae.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Regular.2276822f.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Regular.b4de9dfe.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Regular.b60f5500.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Regular.0e8b657d.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Bold.5255c6b6.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Bold.b834aad5.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Bold.ea5aa7f7.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Bold.1037db96.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Bold.5d1ee7e3.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Heavy.a894e685.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Heavy.ae869120.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Heavy.da36e615.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Heavy.51e1e124.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Heavy.46ac41f8.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Medium.ccb4ab24.woff2",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Medium.ceaca575.woff",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Medium.e362e35b.ttf",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Medium.c6a11a2e.eot",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    },
+    {
+      "tag": "css",
+      "attribute": "url",
+      "url": "https://web.hycdn.cn/arknights/official/_next/static/media/SourceHanSansSC-Medium.4a304058.svg",
+      "source": "19532main/web.hycdn.cn/arknights/official/_next/static/css/144c734e19afaa20.css",
+      "status": "external"
+    }
+  ]
+}

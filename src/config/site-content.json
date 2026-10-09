@@ -1,0 +1,264 @@
+{
+  "locale": "zh-cn",
+  "links": {
+    "host": "/19532main/resourses/",
+    "userCenter": "/19532main/resourses/user/",
+    "csCenter": "https://customer-service.hypergryph.com/ak",
+    "msr": "https://monster-siren.hypergryph.com/",
+    "animeSite": "/19532main/resourses/anime/",
+    "comicSite": "https://comic.hypergryph.com/terra-historicus/"
+  },
+  "document": {
+    "title": "19532 MechCaT",
+    "subtitle": {
+      "dynamicCompile": "干员动态集录 - 明日方舟",
+      "dynamicFurn": "互动家具 - 明日方舟",
+      "video": "视频列表 - 明日方舟",
+      "news": "情报中心 - 明日方舟",
+      "commonSuffix": " - 明日方舟"
+    },
+    "description": "《明日方舟》是一款魔物主题的策略手游。在游戏中，玩家将管理一艘满载“ 魔物干员”的方舟，为调查来源神秘的矿石灾难而踏上旅途。在这个宽广而危机四伏的世界中，你或许会看到废土中的城市废墟，或许会看到仿若幻境的亚人国度，或许会遭遇无法解读的神秘，或许参与无比残酷的战争。在有关幻想与异种生命的世界中，体验史诗与想象，情感与牵绊！",
+    "keywords": [
+      "明日方舟",
+      "明日方舟官网",
+      "明日方舟手游",
+      "二次元",
+      "明日方舟Arknights",
+      "魔物娘",
+      "战棋",
+      "策略",
+      "塔防",
+      "塔防RPG",
+      "Arknights",
+      "人外",
+      "Monster"
+    ],
+    "favicon": "https://19532mechcat.github.io/19532main/resourses/images/ico.ico"
+  },
+  "common": {
+    "goBack": "返回",
+    "backToList": "返回列表",
+    "backToHome": "返回首页",
+    "readMore": "更多情报",
+    "viewDetail": "查看详情",
+    "retry": "重试",
+    "wechatQrcodeTip": "微信扫码关注公众号"
+  },
+  "download": {
+    "qrcode": "19532"
+  },
+  "userPanel": {
+    "pleaseLogin": "请先登录您的账号。",
+    "welcomeDoctor": "欢迎回来，博士。",
+    "idle": "暂无待处理工作。",
+    "actions": {
+      "customerService": "客服中心",
+      "login": "立即登录",
+      "register": "前往注册",
+      "userCenter": "个人中心",
+      "logout": "登出"
+    }
+  },
+  "sectionTitle": {
+    "index": "",
+    "information": "",
+    "operator": "",
+    "world": "",
+    "media": "",
+    "more": "",
+    "customerService": ""
+  },
+  "info": {
+    "category": {
+      "LATEST": "Wetwork",
+      "ANNOUNCEMENT": "updates",
+      "ACTIVITY": "Events",
+      "NEWS": "More"
+    }
+  },
+  "char": {
+    "infoMap": {
+      "B003": {
+        "name": "于思远",
+        "codename": "SIYUAN YU",
+        "intro": "Siyuan Yu (born January 30, 2009) is a filmmaker, media producer, poet, philosopher, logician, professional esports player, cleaner, professional critic, photographer, and software and hardware engineer from China, currently residing in Canada. He is best known for designing and building the competition robot for the Toronto-based0 ‘19532’ team during the FTC BioBuzz season. He also founded the studio SIYUAN PRODUCTIONS, with the aim of solving various challenges for the team.",
+        "voiceActor": {
+          "cn": "刘雪",
+          "ja": "日笠阳子"
+        }
+      },
+      "R001": {
+        "name": "Terrence Zhou",
+        "codename": "Terrence",
+        "intro": "罗德岛的公开领袖，在内部拥有最高执行权。虽然，从外表上看起来仅仅是个不成熟的少女，实际上，她却是深受大家信任的合格的领袖。现在，阿米娅正带领着罗德岛，为了感染者的未来，为了让这片大地挣脱矿石病的阴霾而不懈努力。",
+        "voiceActor": {
+          "cn": "陶典",
+          "ja": "黑泽朋世"
+        }
+      },
+      "LM04": {
+        "name": "陈",
+        "codename": "CH'EN",
+        "intro": "陈，龙门高级警司，龙门近卫局特别督查组组长，毕业于维多利亚皇家近卫学校，成绩优异，表现突出。在龙门近卫局供职期间，力主取缔龙门境内非法活动，对抗暴力犯罪和有组织犯罪，追缉武装逃犯与国际重犯等行动，并取得多项重大成果。\n现作为特别人员协助罗德岛行动，并为现场提供战术指挥支援。",
+        "voiceActor": {
+          "cn": "虫虫",
+          "ja": "石上静香"
+        }
+      },
+      "PL02": {
+        "name": "德克萨斯",
+        "codename": "TEXAS",
+        "intro": "企鹅物流员工，单兵作战能力出类拔萃。\n于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛的多项行动提供协助。",
+        "voiceActor": {
+          "cn": "杨梦露",
+          "ja": "田所梓"
+        }
+      },
+      "PL03": {
+        "name": "能天使",
+        "codename": "EXUSIAI",
+        "intro": "能天使，拉特兰公民，适用拉特兰一至十三项公民权益。企鹅物流公司成员。从事秘密联络，武装押运等非公开活动，推测身份：信使。于合约期内任企鹅物流驻罗德岛联络人员，同时为罗德岛多项行动提供协助。",
+        "voiceActor": {
+          "cn": "蔡书瑾",
+          "ja": "石见舞菜香"
+        }
+      },
+      "RL04": {
+        "name": "白面鸮",
+        "codename": "PTILOPSIS",
+        "intro": "白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",
+        "voiceActor": {
+          "cn": "龟娘",
+          "ja": "金元寿子"
+        }
+      }
+    },
+    "RL05": {
+      "name": "白面鸮",
+      "codename": "PTILOPSIS",
+      "intro": "白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",
+      "voiceActor": {
+        "cn": "龟娘",
+        "ja": "金元寿子"
+      }
+    },
+    "RL06": {
+      "name": "白面鸮",
+      "codename": "PTILOPSIS",
+      "intro": "白面鸮，前莱茵生命公司，数据维护专员。在医疗类源石技艺领域取得不菲成就，于医疗数据维护，常规医疗方案应用，多项目医疗行为等相关领域，拥有丰富经验。\n现于罗德岛担任医疗干员，亦就职于医疗部门，某临床实验小组。同时，为罗德岛提供若干项医疗项目的相关辅助工作。",
+      "voiceActor": {
+        "cn": "龟娘",
+        "ja": "金元寿子"
+      }
+    }
+  },
+  "world": {
+    "infoMap": {
+      "originiums": {
+        "name": "Big Boss",
+        "nameEn": "John",
+        "intro": "Big Boss, real name John, also known as Jack, and formerly known as Naked Snake, Vic Boss, Ishmael, Saladin, or simply Snake, was a renowned special forces operative and mercenary commander. He founded U.S. Army Special Forces Unit FOXHOUND, along with the mercenary company Militaires Sans Frontières, and was one of the founding members of the Patriots. Big Boss later established the military states of Outer Heaven and Zanzibar Land as bases for his companies, in order to realize his ambitions of creating a nation for soldiers. Considered by some as 'The Greatest Warrior of the 20th Century,'' he earned such monikers as the Legendary Soldier' and 'the Legendary Mercenary,' feared in combat by both friend and foe as a hero and a madman. "
+      },
+      "originium_arts": {
+        "name": "Kazuhira Miller",
+        "nameEn": "Peace Walker",
+        "intro": "Kazuhira Miller (カズヒラ・ミラー Kazuhira Mirā?), also known as Kaz, McDonell Benedict Miller and Master Miller, was the subcommander of both the Militaires Sans Frontières and Diamond Dogs, and the survival trainer of FOXHOUND. He was well-read and possessed a vast array of scientific knowledge."
+      },
+      "reunion": {
+        "name": "Touka Kirishima",
+        "nameEn": "Rabitto",
+        "intro": "Touka Kirishima (霧嶋 董香 Kirishima Tōka) is an ex-waitress at Anteiku. She is the daughter of Arata Kirishima and Hikari Kirishima, the older sister of Ayato Kirishima, the wife of Ken Kaneki and the mother of Ichika Kaneki."
+      },
+      "infected": {
+        "name": "Cristiano Ronaldo",
+        "nameEn": "The Goat",
+        "intro": "Is there anyone who still doesn't know you?"
+      },
+      "nomadic_city": {
+        "name": "SIYUAN PRODUCTIONS",
+        "nameEn": "'Virtual Reality'",
+        "intro": "19532 Robotics has a sub-team that handle a wide range of tasks, such as programming and media. The person in charge is SIYUAN YU."
+      },
+      "rhodes_island": {
+        "name": "Dr. Liu Yuhan",
+        "nameEn": "CEO",
+        "intro": "In case you didn't know, I can tell you that he has a protégé named Tim Cook."
+      }
+    }
+  },
+  "media": {
+    "infoMap": {
+      "ABOUT TERRA": {
+        "title": "In A World Of My Own Design"
+      },
+      "MONSTER SIREN": {
+        "title": "塞壬唱片",
+        "desc": "The world calls for us, and we answer, no greater good, no just cause."
+      },
+      "GALLERY": {
+        "title": "游戏图集",
+        "desc": "节事回顾"
+      },
+      "FURNITURE": {
+        "title": "家具图鉴",
+        "desc": "互动家具展示"
+      },
+      "OPERATOR": {
+        "title": "干员展示",
+        "desc": "干员动态集录"
+      },
+      "VIDEO": {
+        "title": "视频展示",
+        "desc": "视频展示"
+      }
+    },
+    "videoCategory": {
+      "version_pv": "版本PV",
+      "cg_animation": "CG动画",
+      "terra_exploration": "泰拉探索",
+      "special": "特别映像",
+      "operator_pv": "干员PV"
+    },
+    "tip": "Please select the content you want to view."
+  },
+  "more": {
+    "infoMap": {
+      "integrated_strategies": {
+        "name": "集成战111"
+      },
+      "reclamation_algorithm": {
+        "name": "生息演算"
+      },
+      "animation": {
+        "name": "衍生动画"
+      },
+      "terra_historicus": {
+        "name": "泰拉记事社"
+      }
+    },
+    "themeActivity": {
+      "website": "活动主题网站"
+    }
+  },
+  "pageDynamicCompile": {
+    "pageTitle": "干员动态集录",
+    "detailPageTitle": "动态动作预览",
+    "typeAll": "综合",
+    "typePromotion": "干员晋升",
+    "typeSkin": "干员时装"
+  },
+  "pageDynamicFurn": {
+    "pageTitle": "互动家具",
+    "detailPageTitle": "互动家具展示"
+  },
+  "pageNews": {
+    "pageTitle": "情报中心"
+  },
+  "pageVideo": {
+    "pageTitle": "视频列表"
+  },
+  "msg": {
+    "videoFormatNotSupported": "error",
+    "protocolLoadFailed": "error"
+  }
+}

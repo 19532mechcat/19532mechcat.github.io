@@ -1,0 +1,27 @@
+                                                                                                            
+                                                    
+(function (e, t, i) {
+  "use strict";
+
+  i.d(t, {
+    Y: function () {
+      return IconTapTapSvg;
+    }
+  });
+  var n = i(84548);
+  i(58036);
+  var a = i(83961);
+  let IconTapTapSvg = e => {
+    let {
+      children: t,
+      ...i
+    } = e;
+    return (0, n.jsx)("svg", {
+      viewBox: "0 0 50 50",
+      ...i,
+      children: (0, n.jsx)("use", {
+        xlinkHref: "#".concat(a.b.iconTapTap)
+      })
+    });
+  };
+});

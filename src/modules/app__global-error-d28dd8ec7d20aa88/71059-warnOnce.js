@@ -1,0 +1,15 @@
+                                                                                                                         
+                                                    
+(function (module, exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: !0
+  }), Object.defineProperty(exports, "warnOnce", {
+    enumerable: !0,
+    get: function () {
+      return warnOnce;
+    }
+  });
+  let warnOnce = e => {};
+});

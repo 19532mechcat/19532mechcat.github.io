@@ -1,0 +1,242 @@
+Files: 19532main/web.hycdn.cn/arknights/activity/aSt4HnsU/campus-auth/index.826ff2.css, 19532main/web.hycdn.cn/arknights/activity/aSt4HnsU/campus-auth/index.ae32ed.js, 19532main/web.hycdn.cn/arknights/is/commons.57eee1.css, 19532main/web.hycdn.cn/arknights/is/commons.728cf3.js, 19532main/web.hycdn.cn/arknights/is/rogue_3.285782.js, 19532main/web.hycdn.cn/arknights/ra/relaunchanchor/index.59fdff.css, 19532main/web.hycdn.cn/arknights/ra/relaunchanchor/index.f7bd3d.js
+
+! Copyright (C) 2017 - 2026 HYPERGRYPH. All rights reserved.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/465-fbe5772fe0172cbb.js, src/modules/465-fbe5772fe0172cbb/81089-module.js
+
+*
+  * @license React
+  * use-sync-external-store-shim.production.min.js
+  *
+  * Copyright (c) Facebook, Inc. and its affiliates.
+  *
+  * This source code is licensed under the MIT license found in the
+  * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/465-fbe5772fe0172cbb.js, src/modules/465-fbe5772fe0172cbb/67635-module.js
+
+*
+  * @license React
+  * use-sync-external-store-shim/with-selector.production.min.js
+  *
+  * Copyright (c) Facebook, Inc. and its affiliates.
+  *
+  * This source code is licensed under the MIT license found in the
+  * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/474-b975add4acfe218d.js, 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/app/global-error-d28dd8ec7d20aa88.js, src/modules/474-b975add4acfe218d/38660-module.js, src/modules/app__global-error-d28dd8ec7d20aa88/38660-module.js
+
+*
+  * @license React
+  * react-jsx-runtime.production.min.js
+  *
+  * Copyright (c) Meta Platforms, Inc. and affiliates.
+  *
+  * This source code is licensed under the MIT license found in the
+  * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/868-eff782e865f465a4.js, src/modules/868-eff782e865f465a4/6889-module.js
+
+*
+  * @license React
+  * react-server-dom-webpack-client.browser.production.min.js
+  *
+  * Copyright (c) Meta Platforms, Inc. and affiliates.
+  *
+  * This source code is licensed under the MIT license found in the
+  * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/868-eff782e865f465a4.js, src/modules/868-eff782e865f465a4/30608-module.js
+
+*
+  * @license React
+  * react.production.min.js
+  *
+  * Copyright (c) Meta Platforms, Inc. and affiliates.
+  *
+  * This source code is licensed under the MIT license found in the
+  * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/868-eff782e865f465a4.js, src/modules/868-eff782e865f465a4/13397-module.js
+
+*
+  * @license React
+  * scheduler.production.min.js
+  *
+  * Copyright (c) Meta Platforms, Inc. and affiliates.
+  *
+  * This source code is licensed under the MIT license found in the
+  * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/official/_next/static/chunks/bb2c42e6-deb2ddeea53b1b06.js, src/modules/bb2c42e6-deb2ddeea53b1b06/58273-module.js
+
+*
+  * @license React
+  * react-dom.production.min.js
+  *
+  * Copyright (c) Meta Platforms, Inc. and affiliates.
+  *
+  * This source code is licensed under the MIT license found in the
+  * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/arknights/ra/main.14eca8.css
+
+! Copyright (C) 2017 - 2025 HYPERGRYPH. All rights reserved.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/hg_web_sdk/lib/3.0.1/hg-web-sdk.min.js, 19532main/web.hycdn.cn/hg_web_sdk/lib/sdk.entry.js
+
+! hg-web-sdk@3.0.1 Copyright (C) 2017 - 2026 Hypergryph Co.,Ltd. All Rights Reserved. Published at 2026-09-07 18:17:11
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/hg_web_sdk/lib/3.0.1/hg-web-sdk.min.js
+
+! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+*****************************************************************************
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/static/js/umd/react/react@18.3.1.js
+
+*
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: 19532main/web.hycdn.cn/static/js/umd/react-dom/react-dom@18.3.1.js
+
+*
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: src/baseline/465-fbe5772fe0172cbb.js
+
+*
+ * @license React
+ * use-sync-external-store-shim.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: src/baseline/465-fbe5772fe0172cbb.js
+
+*
+ * @license React
+ * use-sync-external-store-shim/with-selector.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: src/baseline/474-b975add4acfe218d.js, src/baseline/app/global-error-d28dd8ec7d20aa88.js
+
+*
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: src/baseline/868-eff782e865f465a4.js
+
+*
+ * @license React
+ * react-server-dom-webpack-client.browser.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: src/baseline/868-eff782e865f465a4.js
+
+*
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: src/baseline/868-eff782e865f465a4.js
+
+*
+ * @license React
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+
+--------------------
+
+Files: src/baseline/bb2c42e6-deb2ddeea53b1b06.js
+
+*
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.

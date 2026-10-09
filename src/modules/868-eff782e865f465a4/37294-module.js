@@ -1,0 +1,19 @@
+                                                                                                            
+                                                    
+(function (e, t) {
+  "use strict";
+
+  function getSegmentValue(e) {
+    return Array.isArray(e) ? e[1] : e;
+  }
+  Object.defineProperty(t, "__esModule", {
+    value: !0
+  }), Object.defineProperty(t, "getSegmentValue", {
+    enumerable: !0,
+    get: function () {
+      return getSegmentValue;
+    }
+  }), ("function" == typeof t.default || "object" == typeof t.default && null !== t.default) && void 0 === t.default.__esModule && (Object.defineProperty(t.default, "__esModule", {
+    value: !0
+  }), Object.assign(t.default, t), e.exports = t.default);
+});

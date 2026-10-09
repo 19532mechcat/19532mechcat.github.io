@@ -1,0 +1,131 @@
+[
+  {
+    "text": "(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([\n  [834],\n  {\n    89253: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/89253-module.js"
+  },
+  {
+    "text": ",\n    25628: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/25628-LayoutContext.js"
+  },
+  {
+    "text": ",\n    93134: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/93134-NewsPage.js"
+  },
+  {
+    "text": ",\n    9737: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/9737-mapCategoryToCategoryString.js"
+  },
+  {
+    "text": ",\n    50610: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/50610-CommonTransition.js"
+  },
+  {
+    "text": ",\n    29769: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/29769-ArrowIcons.js"
+  },
+  {
+    "text": ",\n    83961: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/83961-SoundIcon.js"
+  },
+  {
+    "text": ",\n    16928: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/16928-useElementRef.js"
+  },
+  {
+    "text": ",\n    70165: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/70165-useOrientation.js"
+  },
+  {
+    "text": ",\n    31903: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/31903-useResize.js"
+  },
+  {
+    "text": ",\n    15184: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/15184-useThrottle.js"
+  },
+  {
+    "text": ",\n    62841: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/62841-module.js"
+  },
+  {
+    "text": ",\n    19174: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/19174-SiteContent.js"
+  },
+  {
+    "text": ",\n    81087: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/81087-BrowserHelpers.js"
+  },
+  {
+    "text": ",\n    87273: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/87273-module.js"
+  },
+  {
+    "text": ",\n    16571: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/16571-module.js"
+  },
+  {
+    "text": ",\n    54795: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/54795-module.js"
+  },
+  {
+    "text": ",\n    74122: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/74122-module.js"
+  },
+  {
+    "text": ",\n    35186: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/35186-module.js"
+  },
+  {
+    "text": ",\n    71480: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/71480-module.js"
+  },
+  {
+    "text": ",\n    34548: "
+  },
+  {
+    "file": "src/modules/app__news__page-dce4bac03340f68b/34548-_baseFindIndex.js"
+  },
+  {
+    "text": ",\n  },\n  function (e) {\n    (e.O(0, [474, 815, 558, 874, 571, 126, 868, 744], function () {\n      return e((e.s = 89253));\n    }),\n      (_N_E = e.O()));\n  },\n]);\n                                                 \n"
+  }
+]

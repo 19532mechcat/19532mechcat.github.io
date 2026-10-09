@@ -1,0 +1,40 @@
+                                                                                                                 
+                                                    
+(function (module) {
+  module.exports = {
+    container: "_4629490e",
+    bgMask: "_9b55043f",
+    home: "_34a2503e",
+    active: "_e707eb53",
+    blurHandler: "_0e5b4088",
+    _home: "_dd45ecc4",
+    mainStage: "_0efc3f45",
+    moduleItem: "_c73a26d4",
+    blockOne: "_485cf5d1",
+    blockTwo: "_513d0ea7",
+    moduleImgIdle: "_146a3ade",
+    moduleImg: "_0590bd9e",
+    title: "_b13061a1",
+    box: "_ae3dada3",
+    logo: "_dfc9d2a6",
+    img: "_3e4ea084",
+    logoTitle: "_3216be07",
+    hitBox: "_4c0712fc",
+    moduleTitle: "_73f1a0d5",
+    moduleMenu: "_7409d88d",
+    item: "_7d8e81d6",
+    checkbox: "_1dd89b81",
+    info: "_78ed501f",
+    subtitle: "_5934fa73",
+    desc: "_e2a53784",
+    mainText: "_ab289376",
+    subText: "_014bd1fc",
+    detailBtn: "_362f44da",
+    hidden: "_c5fa790c",
+    visible: "_83b7e7ec",
+    icon: "_1a0d59c9",
+    floatingText: "_2adf70fd",
+    bgText: "_6f7a55e3",
+    bottomLine: "_6eae0bf4"
+  };
+});

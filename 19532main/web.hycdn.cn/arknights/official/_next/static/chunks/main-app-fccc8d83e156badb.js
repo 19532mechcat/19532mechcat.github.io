@@ -1,0 +1,69 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [744],
+  {
+    77303: 
+(function () {})
+,
+    88704: 
+(function (e, t, n) {
+  Promise.resolve().then(n.t.bind(n, 75667, 23)), Promise.resolve().then(n.t.bind(n, 86486, 23)), Promise.resolve().then(n.t.bind(n, 80384, 23)), Promise.resolve().then(n.t.bind(n, 43130, 23)), Promise.resolve().then(n.t.bind(n, 67387, 23));
+})
+,
+    94680: 
+(function (e, t, n) {
+  "use strict";
+
+  var s = n(85700),
+    i = n(24735),
+    r = n(89217),
+    _ = window;
+  _.__sentryRewritesTunnelPath__ = void 0, _.SENTRY_RELEASE = {
+    id: "ak-official-v4-web@1.0.0"
+  }, _.__sentryBasePath = void 0, _.__rewriteFramesAssetPrefixPath__ = "/arknights/official", s.S1({
+    dsn: r.L.sentry.dsn,
+    integrations: [i.Li()],
+    tracesSampleRate: 1,
+    replaysSessionSampleRate: 0.1,
+    replaysOnErrorSampleRate: 1
+  });
+})
+,
+    89217: 
+(function (e, t, n) {
+  "use strict";
+
+  n.d(t, {
+    L: function () {
+      return s;
+    }
+  });
+  let s = {
+    homeVideo: {
+      desktop: "./images/mechcat-19536bb939-07a1bb026aea4ad58435bdebe14c3455.mp4",
+      mobile: "./images/mechcat-19536bb939-07a1bb026aea4ad58435bdebe14c3455.mp4"
+    },
+    sdk: {
+      src: "https://web.hycdn.cn/hg_web_sdk/lib/sdk.entry.js"
+    },
+    sentry: {
+      dsn: ""
+    }
+  };
+})
+,
+  },
+  function (e) {
+    var __webpack_exec__ = function (t) {
+      return e((e.s = t));
+    };
+    (e.O(0, [571, 126, 868], function () {
+      return (
+        __webpack_exec__(94680),
+        __webpack_exec__(30051),
+        __webpack_exec__(88704)
+      );
+    }),
+      (_N_E = e.O()));
+  },
+]);
+                                                     

@@ -1,0 +1,30 @@
+{
+  "index": {
+    "title": "HOMEPAGE",
+    "style": "HOME"
+  },
+  "information": {
+    "title": "INFORMATION",
+    "style": ""
+  },
+  "operator": {
+    "title": "TEAM MEMBERS",
+    "style": ""
+  },
+  "world": {
+    "title": "RESOURCE",
+    "style": ""
+  },
+  "media": {
+    "title": "MEDIA",
+    "style": ""
+  },
+  "more": {
+    "title": "MORE",
+    "style": "MORE"
+  },
+  "customerService": {
+    "title": "",
+    "style": ""
+  }
+}
